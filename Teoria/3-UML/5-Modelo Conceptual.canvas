@@ -1,0 +1,33 @@
+{
+	"nodes":[
+		{"id":"0418c110874706eb","x":585,"y":37,"width":225,"height":60,"color":"2","type":"text","text":"BLOQUES BASICOS"},
+		{"id":"69504958339e3ea7","x":1020,"y":458,"width":250,"height":60,"color":"3","type":"text","text":"ESPECIFICACIONES"},
+		{"id":"275f575412798f69","x":1022,"y":525,"width":250,"height":60,"color":"3","type":"text","text":"ADORNOS"},
+		{"id":"4adbfaaca849b951","x":1021,"y":600,"width":250,"height":60,"color":"3","type":"text","text":"DIVISORES"},
+		{"id":"44cb24884da6c3f9","x":1022,"y":684,"width":250,"height":60,"color":"3","type":"text","text":"EXTENSIONES"},
+		{"id":"75490309dd75c272","x":560,"y":570,"width":250,"height":60,"color":"2","type":"text","text":"MECANISMOS"},
+		{"id":"48532be4d2d68beb","x":560,"y":280,"width":250,"height":60,"color":"2","type":"text","text":"REGLAS"},
+		{"id":"896c20dc0bd0531f","x":1022,"y":255,"width":340,"height":110,"color":"3","type":"text","text":"MODELOS BIEN-FORMADOS Y NO (DIAGRAMAS DE CLASES, DE DOMINIO)"},
+		{"id":"86528f753c7ee087","x":1021,"y":7,"width":250,"height":60,"color":"3","type":"text","text":"DIAGRAMAS"},
+		{"id":"5f3413d105aff112","x":1022,"y":97,"width":250,"height":60,"color":"3","type":"text","text":"RELACIONES"},
+		{"id":"d4b88661500e8645","x":1022,"y":-80,"width":250,"height":60,"color":"3","type":"text","text":"COSAS - OBJETOS"},
+		{"id":"81c66f32829ae78d","x":111,"y":280,"width":250,"height":60,"color":"1","type":"text","text":"ELEMENTOS"},
+		{"id":"7e8d21e639466646","x":-560,"y":-21,"width":360,"height":236,"color":"4","type":"link","url":"https://lh7-us.googleusercontent.com/docsz/AD_4nXe2n0Sedqm6ky4FQAVdt6Tp3ofa3BMmezojpmH57xZaY1wV-Ivipop2dUdDDWtaek1Vsm5_unVdHosbWFoqRwrb2rEqef5jy_Cwc-P8V8-bLm8LuL1unzMZBD3Uv2m6CuQAxc2r8U3uwJMzIN52p8ez6VM?key=VReuh94fGGpJZLGsXsGdUQ"},
+		{"id":"055ba5c4a198ac19","x":-932,"y":390,"width":745,"height":210,"color":"4","type":"text","text":"Elementos:\n* **Bloques** **básicos**. Cosas objetos clases relaciones etc \n* **Reglas**. Modelos bien formados y no(diagrama de clases, de dominio), la idea es tener reglas para tener bien forUML - modelo conceptual\nmados, aunque contemplar la posibilidad de estar incompleto \n* **Mecanismos**. Cosas agregadas, adornos, divisiones, básicamente la flecha"}
+	],
+	"edges":[
+		{"id":"3497a13e245ae0fa","fromNode":"81c66f32829ae78d","fromSide":"right","toNode":"0418c110874706eb","toSide":"left","color":"1"},
+		{"id":"2962fddfb3888c6f","fromNode":"75490309dd75c272","fromSide":"right","toNode":"69504958339e3ea7","toSide":"left","color":"2"},
+		{"id":"e7320d6d0c2b5963","fromNode":"75490309dd75c272","fromSide":"right","toNode":"44cb24884da6c3f9","toSide":"left","color":"2"},
+		{"id":"09fd661c9629f83b","fromNode":"75490309dd75c272","fromSide":"right","toNode":"4adbfaaca849b951","toSide":"left","color":"2"},
+		{"id":"c5b180d23e2de930","fromNode":"75490309dd75c272","fromSide":"right","toNode":"275f575412798f69","toSide":"left","color":"2"},
+		{"id":"9277d93052480345","fromNode":"48532be4d2d68beb","fromSide":"right","toNode":"896c20dc0bd0531f","toSide":"left","color":"2"},
+		{"id":"6e0ccde6cdfacbd0","fromNode":"81c66f32829ae78d","fromSide":"right","toNode":"48532be4d2d68beb","toSide":"left","color":"1"},
+		{"id":"59a94c3d597037d7","fromNode":"81c66f32829ae78d","fromSide":"right","toNode":"75490309dd75c272","toSide":"left","color":"1"},
+		{"id":"b5fc560f2d00d4bb","fromNode":"81c66f32829ae78d","fromSide":"left","toNode":"055ba5c4a198ac19","toSide":"right","color":"1"},
+		{"id":"97e96f7735942897","fromNode":"0418c110874706eb","fromSide":"right","toNode":"86528f753c7ee087","toSide":"left","color":"2"},
+		{"id":"fc0d8d23f32af353","fromNode":"0418c110874706eb","fromSide":"right","toNode":"5f3413d105aff112","toSide":"left","color":"2"},
+		{"id":"abe74b3fd1620719","fromNode":"0418c110874706eb","fromSide":"right","toNode":"d4b88661500e8645","toSide":"left","color":"2"},
+		{"id":"27d3a97a9f2eb4f3","fromNode":"81c66f32829ae78d","fromSide":"left","toNode":"7e8d21e639466646","toSide":"bottom","color":"1"}
+	]
+}
