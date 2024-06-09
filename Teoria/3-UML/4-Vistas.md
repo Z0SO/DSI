@@ -49,95 +49,14 @@ Permiten adaptar los elementos de modelado asignándoles una semántica particul
 - **Restricciones** (OCL - Lenguaje de Restricción de Objetos)
 
 
-![Área 
-Estructural 
-Dinámica 
-Gestión del 
-Modelo 
-Extensibilidad 
-Vista de 
-Estática 
-Casos de Uso 
-Implementación 
-Despliegue 
-Maqu.na de estados 
-Actividad 
-Interacción 
-Gestion del Modelo 
--Todas 
-Diagrama de 
-Clases 
-Casos de Uso 
-Componentes 
-Despliegue 
-Estados 
-Actividad 
-Secuencia 
-Colaboración 
-Clases 
--Todos 
-Principales Conceptos 
-Clase, 
-Caso de uso. actor, asociación. inclusión, 
-enera"zaclón 
-Componente. Integfaz, dependencia. realización 
-Nodo, componente. dependencia, localizacUOn 
-Estado, evento, translclón. accion 
-Estado. actividad. transición. divislón reunlOn 
-(10'11) 
-Interacción, obleto, mensaje, activación 
-Colaboración. Interacc*ón. rol de colaboración. 
-mensa 
-Paquete. subsistema. modelo 
-Restricciones. estereotipos. valores etiquetados.](https://lh7-us.googleusercontent.com/docsz/AD_4nXdIH4fn810fBOPRCUQD9Rig9t_6p-W38807xjLaVh78h-U9JbXLngGmCxjrPFGDdCno7KlzZLfLo1mt_ra7EMRj_-hvKBAZaHANNyO7JtLq55gZ5T1CdBQwnfoIUO3nViR5n5GR1rgAvFbFRslRAlAFcnMi?key=VReuh94fGGpJZLGsXsGdUQ)
+## Cuadros
+
+### UML 1.4
+
+![Área](https://lh7-us.googleusercontent.com/docsz/AD_4nXdIH4fn810fBOPRCUQD9Rig9t_6p-W38807xjLaVh78h-U9JbXLngGmCxjrPFGDdCno7KlzZLfLo1mt_ra7EMRj_-hvKBAZaHANNyO7JtLq55gZ5T1CdBQwnfoIUO3nViR5n5GR1rgAvFbFRslRAlAFcnMi?key=VReuh94fGGpJZLGsXsGdUQ)
 
 
-![RELACIÓN ÁREAS - VISTAS (2.0) 
-Área 
-Estructural 
-Física 
-Dinámica 
-Gestión 
-Modelo 
-del 
-Vista 
-Vista Estática 
-Diseño 
-Casos de Uso 
-Despliegue 
-Máquina de Estado 
-Actividad 
-Interacción 
-Gestión del Modelo 
-Perfil (extens.) 
-Diagramas 
-Clases 
--Estructura Interna 
-Colaboraclón 
-Comonnpnw 
-Casos de Uso 
-Despliegue 
-Maqulna de Estado 
-Actividad 
-Secuencia 
-Comunicación (Col.) 
-Paquete 
-Paquete 
-Conceptos 
-Clase, asociación, generaftzaclón, dependencja, realización, 
-interfaz 
-Conector, Interfaz, parte, puerto, interfaz provata, interfaz 
-re uenda. rol 
-Conector, colaboración, rol 
-Componente, dependencia, puerto, Interfaz provista, interfaz 
-re uenda, subsistema. realización 
-Caso de uso, actor, asociacion, extensión, inclusión, 
-eneralízación 
-Nodo, artefacto, dependencia, manifestación 
-Estado, evento, translclón, acción 
-Actividad, transición, concurrencia (fork), reunión (join) 
-Interacción, línea de vida, mensaje 
-Colaboración, rol de colaboración, mensaje 
-Paquete, Impon, modelo 
-Restricciones, estereotipos, valores etiquetados, perfiles](https://lh7-us.googleusercontent.com/docsz/AD_4nXcfpm364cb0F_2LzDnG7KqDOPdtJ1K1tICj2HhSMCP7pRhqtkJ-mN4wDrkpvaxbfskVdAn0IBpiTUT_nk9Qzr9-1HUn0Az7_pqF2IZPFCsodTWxwRMDfxbC82-EApHbgUjK7YXUduGyHx2B67CdFxmoCBsc?key=VReuh94fGGpJZLGsXsGdUQ)
+### Cuadro UML 2.0
+
+![RELACIÓN ÁREAS - VISTAS (2.0) ](https://lh7-us.googleusercontent.com/docsz/AD_4nXcfpm364cb0F_2LzDnG7KqDOPdtJ1K1tICj2HhSMCP7pRhqtkJ-mN4wDrkpvaxbfskVdAn0IBpiTUT_nk9Qzr9-1HUn0Az7_pqF2IZPFCsodTWxwRMDfxbC82-EApHbgUjK7YXUduGyHx2B67CdFxmoCBsc?key=VReuh94fGGpJZLGsXsGdUQ)
 
