@@ -35,3 +35,5 @@ Un componente conforma y proporciona la realización de un conjunto de interface
 - **Modularidad y Desacoplamiento**: Los componentes son modulares y no dependen directamente de otros componentes.
 - **Interfaces**: Se comunican y funcionan mediante interfaces proporcionadas y requeridas.
 - **Sustitución**: Es posible reemplazar un componente con otro que cumpla con las mismas interfaces, lo que permite una mayor flexibilidad y mantenimiento del sistema.
+
+
