@@ -8,6 +8,8 @@ El diseño se define como la especificación de un objeto por parte de un agente
 - **Análisis**: Responde al **qué** se va a diseñar, identificando los requisitos y restricciones.
 - **Diseño**: Responde al **cómo** se va a implementar, definiendo la estructura y componentes del sistema para alcanzar los objetivos establecidos.
 
+![](https://lh7-us.googleusercontent.com/docsz/AD_4nXfrHfRh3UXM1YkMUV1Z3VKK5Y5P1GirFDLMdBROaJVuYcLzLK77yL63jXghoMCZOPfJtVUKDGVCLlFZDOBuqJY_FCDzq4lzH9RGkweccypm5ZiZ9ayEUtpCmRKCSkkj0IXkhkBwa_-FaBQ90z-z7H_OVO0N?key=VReuh94fGGpJZLGsXsGdUQ)
+
 ### Componentes del Diseño
 
 1. **Especificaciones**: Descripción detallada de lo que se desea desarrollar.
