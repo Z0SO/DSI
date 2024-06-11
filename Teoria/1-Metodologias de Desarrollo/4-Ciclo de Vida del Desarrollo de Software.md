@@ -45,10 +45,12 @@
 | **Prototipos**              | - Iterativo, con prototipos presentados al cliente.<br>- Combina bien con otros modelos de desarrollo.                                                                                                                                                                                 | - Reducción del rechazo del producto por parte del cliente.<br>- Mejora en la comunicación de requisitos. | - Posible pérdida de trabajo en prototipos desechables.<br>- Dificultad en la planificación precisa del proyecto.                          |
 | **Espiral**                 | - Dirigido por riesgos.<br>- Iterativo, con prototipos en cada vuelta del espiral.                                                                                                                                                                                                     | - Reducción de riesgos en el desarrollo.<br>- Flexibilidad y adaptabilidad.                               | - Complejidad en la gestión del proyecto.<br>- Requiere experiencia en la identificación y gestión de riesgos.                             |
 | **Iterativo e Incremental** | - Incremental: Construcción de subsistemas que se integran en el sistema completo.<br>- Iterativo: Mejora y refinamiento continuo de la funcionalidad.<br>- Iterativo e Incremental: Combina ambos enfoques, permitiendo la entrega de versiones con nuevas funcionalidades y mejoras. | - Adaptabilidad a cambios.<br>- Entregas frecuentes y manejables.                                         | - Requiere una gestión eficiente para coordinar iteraciones e incrementos.<br>- Puede complicar la planificación y estimación de recursos. |
-| **Plan Driven**             | - Dirigido por un plan detallado.<br>- Alta prescriptividad.                                                                                                                                                                                                                           | - Claridad y control en la gestión del proyecto.<br>- Previsibilidad y consistencia en los resultados.    | - Rigidez ante cambios.<br>- Puede ser ineficiente en entornos dinámicos y cambiantes.                                                     |
-| **Agile**                   | - Enfoque incremental y adaptable.<br>- Baja prescriptividad, flexibilidad en el plan y el resultado.                                                                                                                                                                                  | - Adaptabilidad y respuesta rápida a cambios.<br>- Mayor colaboración y comunicación con el cliente.      | - Requiere una alta disciplina y coordinación.<br>- Puede ser difícil de escalar en proyectos grandes y complejos.                         |
 
-Este cuadro resume las principales características, ventajas y desventajas de cada modelo de desarrollo de software, proporcionando una comparación clara y concisa.
+## Cuadro Comparativo (Enfoques de Desarrollo)
+
+| **Plan Driven** | - Dirigido por un plan detallado.<br>- Alta prescriptividad.                                          | - Claridad y control en la gestión del proyecto.<br>- Previsibilidad y consistencia en los resultados. | - Rigidez ante cambios.<br>- Puede ser ineficiente en entornos dinámicos y cambiantes.                             |
+| --------------- | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ |
+| **Agile**       | - Enfoque incremental y adaptable.<br>- Baja prescriptividad, flexibilidad en el plan y el resultado. | - Adaptabilidad y respuesta rápida a cambios.<br>- Mayor colaboración y comunicación con el cliente.   | - Requiere una alta disciplina y coordinación.<br>- Puede ser difícil de escalar en proyectos grandes y complejos. |
 
 
 ### **Modelo en Cascada**
@@ -107,7 +109,9 @@ Este cuadro resume las principales características, ventajas y desventajas de c
   - Requiere una gestión eficiente para coordinar iteraciones e incrementos.
   - Puede complicar la planificación y estimación de recursos.
 
-### Enfoques de Desarrollo
+
+
+#### Enfoques de Desarrollo
 
 **Plan Driven**
 - **Características**: 
@@ -132,10 +136,4 @@ Este cuadro resume las principales características, ventajas y desventajas de c
   - Puede ser difícil de escalar en proyectos grandes y complejos.
 
 
-
-
 ---
-
-
-En resumen, el ciclo de vida del desarrollo de software puede abordarse mediante diversos modelos y enfoques, cada uno con sus propias ventajas y desventajas. La elección del modelo adecuado depende de la naturaleza del proyecto, los requisitos del cliente y el entorno operativo.
-
