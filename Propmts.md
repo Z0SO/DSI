@@ -27,7 +27,6 @@ const calendarData = {
 for (let page of dv.pages('"img"').where(p => p.exercise)) {
     // Añadir una entrada al calendario para cada página que tenga el campo 'exercise'
     calendarData.entries.push({
-        date: page.file.name, // Fecha de la nota (formato YYYY-MM-DD)
         intensity: page.exercise, // Intensidad (valor del campo 'exercise')
         content: "🏋️", // Contenido (emoji de ejercicio, opcional)
         color: "orange" // Color para la entrada (opcional, usa colores definidos arriba)
