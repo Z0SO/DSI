@@ -50,60 +50,26 @@ Order "0..*" -- Product
 - **Descripción**: Ranura para un atributo o lista de atributos en una asociación binaria.
 - **Implementación**: Generalmente con algún tipo de colección indizada.
 
-#### Ejemplo en PlantUML
+###### Ejemplo
 
-```plantuml
-@startuml
-class Company {
-}
+![](https://lh7-us.googleusercontent.com/docsz/AD_4nXcPbOFY1DSYUgmpD_oVNjHK_YKGLISFydbaAhjSr4P8FkiBJUwbrd6htzAfgxMl-K4596KuJGDTPEYT9AKwbOBbu_cNOydMfaE4sq6J26FdiP4Islz3U6v-Wo6qTxzUfU_IBIrlfVGES3RyRYf3u_DHx_E?key=VReuh94fGGpJZLGsXsGdUQ)
 
-class Employee {
-}
-
-Company "1" -- {SSN} Employee : employs
-@enduml
-```
 
 ### Asociación Ordenada
 
 #### Descripción
 - **Propósito**: Reforzar la unicidad de los enlaces.
 
-#### Ejemplo en PlantUML
+###### Ejemplo
 
-```plantuml
-@startuml
-class Person {
-}
-
-class Address {
-}
-
-Person "1" -- {ordered} Address : lives at
-@enduml
-```
+![](https://lh7-us.googleusercontent.com/docsz/AD_4nXdY11CaWQA-lRZoADZKls4ioIBLpeMQZc56UVOECkfBhYn39NvR86h3T3yOEwSub1CCesJYiOCla7SgcMbG0fYB1O6veaSrukceAonEut5eYbbO38P15YwK-HDSYbWTkYuuJm47yrBMa5zUAkwRroCEL2U?key=VReuh94fGGpJZLGsXsGdUQ)
 
 ### Asociación con Restricción
 
 #### Descripción
 - **Cobertura**: Un objeto de una clase se asocia con otro objeto de una clase u otra mediante un `xor`.
 
-#### Ejemplo en PlantUML
+###### Ejemplo
 
-```plantuml
-@startuml
-class Teacher {
-}
-
-class Course {
-}
-
-class Research {
-}
-
-Teacher "1" -- Course : teaches
-Teacher "1" -- Research : conducts
-@enduml
-```
-
-Estos ejemplos muestran cómo se pueden representar diferentes tipos de asociaciones especiales en UML usando PlantUML. Cada diagrama refleja los conceptos teóricos explicados previamente, facilitando su comprensión visual.
+![](https://lh7-us.googleusercontent.com/docsz/AD_4nXdUgfRMSI0UbiY32sTMvvRHVa7vBHbQR3K2836PAli3u68qO1aCl1m_VO9c844gDU4X9_mBB2nDzMz--f_hZRUtUzUCPx4PaQftIZ1LRWgQ2BiAX-MX1gwxG0Oe4rOpW5IFBDwfMATiP2TULMn1uChQVdE?key=VReuh94fGGpJZLGsXsGdUQ)
+![](https://lh7-us.googleusercontent.com/docsz/AD_4nXdsDZNaN7y9EsByl1z0jtIvVfgpGwd3pF0ceIMHErAlZxr5NqNx2nTvLXwlz2mm-Woh_-jnqWs56zDi-wuV167cHUaRPxMaJAkgk0O4Y72zoBGAgU7yWHL1nAywpSbzNmj2S4esoMAjcM_5l_1FKJbDhRk?key=VReuh94fGGpJZLGsXsGdUQ)

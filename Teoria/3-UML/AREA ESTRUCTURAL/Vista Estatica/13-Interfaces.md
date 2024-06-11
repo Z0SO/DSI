@@ -23,6 +23,9 @@ Una interfaz es la descripción del comportamiento de los objetos sin proporcion
 #### Relaciones de Dependencia
 - **Realización**: Entre una interfaz y una clase se habla de realización, y la flecha va desde la clase hacia la interfaz, indicando que la clase realiza (implementa) la interfaz.
 
+![](https://lh7-us.googleusercontent.com/docsz/AD_4nXc1vrFFD1gMRAkQl5Lb4HUuXk9uOBjFcix0WkzeR_Qdxh74c4gE1ehwfogZvfj6l8kdVHCoIEnjRFJgqr3lBY19rDOEF3k1Vx1BCG_QRkzMhn00mW2xMMeAjFHnfjv25CUmDOTACCrZxyAqP2g8y4SrxBN3?key=VReuh94fGGpJZLGsXsGdUQ)
+
+
 ### Ejemplos en PlantUML
 
 #### Implementación de una Interfaz
