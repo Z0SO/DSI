@@ -53,7 +53,7 @@ Los eventos son fundamentales para modelar el comportamiento dinámico de un sis
 ![](https://lh7-us.googleusercontent.com/docsz/AD_4nXfG_gEjWISDqudl3UyXXSpnV3Peqv4546wawkUmbzHlrZoKu1Pl-TFO4ksVTkw4gg3PPtD4tS29_wArob6qSJ7ZfWlJbgKimUMJCNIfO31mTe3NbFq2H4a20YSNQ8oSzLQM7z4zIZRU28LPPf8q6BzYe_Q?key=VReuh94fGGpJZLGsXsGdUQ)
 
 > **Comentario de la Imagen** 
-> - Italica   = Abstracto
+> - *Italica*   = Abstracto
 > - Normal = Concreto
 
 ---
