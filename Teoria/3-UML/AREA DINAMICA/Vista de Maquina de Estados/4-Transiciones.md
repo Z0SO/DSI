@@ -12,6 +12,8 @@ Las transiciones son arcos que conectan dos vértices (estados) en un diagrama d
 
 Una transición no es instantánea y puede tardar un tiempo en ejecutarse, siendo el evento el elemento instantáneo que la activa.
 
+![](https://lh7-us.googleusercontent.com/docsz/AD_4nXd0kWj0MN-QOWp4cMtrxJQrcbw-XBMDoYhD-RjA11fjpa0bd31tNO9LhYfk8_PN9vAkYMlpqtJ35PEdct4uSxnDH0aXcDseCet271yyHUlTr6Vcb550aLPBZi3Ed_LaAnHjMHV1f-1QAYJzEh3_u5tFGAs?key=VReuh94fGGpJZLGsXsGdUQ)
+
 ## Tipos de Transiciones
 
 ### Externa
@@ -33,6 +35,8 @@ No requiere un evento explícito, ya que sucede como consecuencia de la finaliza
 2. Una vez que ambas tareas han terminado, se genera un evento de finalización.
 3. Este evento provoca una transición automática al estado "Listo".
 4. En el estado "Listo", se sirve el café al usuario.
+
+![](https://lh7-us.googleusercontent.com/docsz/AD_4nXc3Z-UWMHon_-QlDrH_1_noUd4DCcjpXwin4m4hlB8FbAtInMtORiu5ITjy6A4pOne1AAs_Yk1LeAp_t6gVEj6g-5W66w6oeyJQt_2AIOG0Zn2ZWPuhXUK1QQyc3fzy7Rs-VZRkDkDKlMMueSjjcSYT1vH4?key=VReuh94fGGpJZLGsXsGdUQ)
 
 Las transiciones son fundamentales para modelar el comportamiento dinámico de un sistema y definir cómo responde a eventos y condiciones específicas.
 
