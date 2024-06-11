@@ -5,6 +5,8 @@
 
 Un **Componente** es una unidad autónoma que encapsula el estado y el comportamiento de varios Clasificadores. Especifica un contrato formal de los servicios que proporciona a sus clientes y los que requiere de otros componentes o servicios del sistema en términos de interfaces proporcionadas y requeridas.
 
+![](https://lh7-us.googleusercontent.com/docsz/AD_4nXcSdMC4e0fd19tbaW_JI67DeqEOA1QlIMsqUcNNpwHHBCSrfWk_-NNllPqJQKgBY_K0Nt81ygB3RHCGGPnbFbqXsV_1n8vQ_0h84OcPkC2SROpjCVB1f6V_-P3W_ucwqE4v9w9LmvVMzgt7d2dHCswaNT6T?key=VReuh94fGGpJZLGsXsGdUQ)
+![](https://lh7-us.googleusercontent.com/docsz/AD_4nXfY-YvMIQlPADsDrytDY9pf1K2172EBw5nvAdNxdGTX5QVXO-_qBY1W29fXH_NSo30z1TEx5ENMAFKN5W3pakJ_h3rSfCH4fitJ_FR2PwClwbkKEzzqQh0pxLPEobARXF18K7G9ZZfyzoU7mR44epu4y8Df?key=VReuh94fGGpJZLGsXsGdUQ)
 ## Características Principales
 
 - **Encapsulación**: Un componente encapsula estado y comportamiento, ofreciendo una abstracción clara y concisa.
@@ -27,7 +29,7 @@ Un **Componente** es una unidad autónoma que encapsula el estado y el comportam
 
 ## Clasificador Estructurado
 
-Un componente conforma y proporciona la realización de un conjunto de interfaces. Aunque un componente es un clasificador estructurado, se hace una distinción a nivel semántico para resaltar su reusabilidad y capacidad de sustitución.
+Un componente conforma y proporciona la realización de un conjunto de interfaces. Aunque un componente es un clasificador estructurado, se hace una distinción a *nivel* **semántico** para resaltar su reusabilidad y capacidad de sustitución.
 
 
 ---
