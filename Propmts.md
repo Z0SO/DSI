@@ -4,6 +4,7 @@ Hola necesito que te dediques a hacer apuntes para estudiar sobre la materia DIS
 ```
 
 
+
 ```dataviewjs
 // Configuración del calendario
 const calendarData = { 

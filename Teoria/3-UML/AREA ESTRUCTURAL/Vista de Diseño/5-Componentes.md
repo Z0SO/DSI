@@ -29,6 +29,9 @@ Un **Componente** es una unidad autónoma que encapsula el estado y el comportam
 
 Un componente conforma y proporciona la realización de un conjunto de interfaces. Aunque un componente es un clasificador estructurado, se hace una distinción a nivel semántico para resaltar su reusabilidad y capacidad de sustitución.
 
+
+---
+
 ### Resumen
 
 - **Clasificador Reusable**: Un componente es un clasificador reutilizable y sustituible.
