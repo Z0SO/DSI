@@ -4,10 +4,10 @@ Hola necesito que te dediques a hacer apuntes para estudiar sobre la materia DIS
 ```
 
 
-```js
+```dataviewjs
 // Configuración del calendario
 const calendarData = { 
-    year: 2022, // Año del calendario (opcional, por defecto es el año actual)
+     // Año del calendario (opcional, por defecto es el año actual)
     colors: { // Colores para las diferentes intensidades (opcional)
         blue: ["#8cb9ff", "#69a3ff", "#428bff", "#1872ff", "#0058e2"],
         green: ["#c6e48b", "#7bc96f", "#49af5d", "#2e8840", "#196127"],
@@ -24,7 +24,7 @@ const calendarData = {
 }
 
 // Bucle para llenar las entradas del calendario
-for (let page of dv.pages('"daily notes"').where(p => p.exercise)) {
+for (let page of dv.pages('"img"').where(p => p.exercise)) {
     // Añadir una entrada al calendario para cada página que tenga el campo 'exercise'
     calendarData.entries.push({
         date: page.file.name, // Fecha de la nota (formato YYYY-MM-DD)
