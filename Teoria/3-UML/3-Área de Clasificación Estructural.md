@@ -5,23 +5,36 @@ En el ámbito de UML, la **Clasificación Estructural** se refiere a la organiza
 
 ## Clasificador
 
-Es la superclase de UML y representa cuestiones estéticas más que nada. Describe los elementos del sistema (clasificadores) y sus relaciones, es decir, la **estructura del sistema**. Algunos de los clasificadores más comunes en UML incluyen:
+**Es la superclase de UML** y representa **cuestiones estáticas** más que nada, pero no únicamente estáticas. Describe los elementos del sistema (clasificadores) y sus relaciones.
 
-- Clases
-- Casos de uso
-- Componentes
-- Nodos
-- Vistas
+En otras palabras describe la **estructura del sistema**. 
+### Tipos de Clasificadores
+
+#### Clasificadores de elementos del sistema
+- Clase
+- Interfaz
+- Tipos de datos
+
+#### Clasificadores de conceptos de comportamiento
+- Caso de Uso
+
+#### Clasificadores de cosas del entorno
+- Actor
+
+#### Clasificadores de estructuras de implementación
+- Componente
+- Nodo
+- Subsistema
 
 ## Vistas
 
 En UML, las vistas se utilizan para representar diferentes aspectos del sistema. Algunas de las vistas más utilizadas en el contexto de la **Clasificación Estructural** son:
 
-- **Vista Estática:** Representada mediante el **diagrama de clases**, muestra la estructura estática del sistema, incluyendo las clases y sus relaciones.
+- **Vista Estática:** Representada mediante el **diagrama de clases**, **muestra la estructura estática del sistema**, incluyendo las clases y sus relaciones.
 
-- **Vista de Casos de Uso:** Representada mediante el **diagrama de casos de uso**, muestra cómo interactúan los actores con el sistema y los casos de uso que este ofrece.
+- **Vista de Casos de Uso:** Representada mediante el **diagrama de casos de uso**, muestra **cómo interactúan los actores con el sistema** y los casos de uso que este ofrece.
 
-- **Vista de Diseño:** Representada mediante el **diagrama de componentes**, muestra los componentes del sistema y cómo están interconectados.
+- **Vista de Diseño:** Representada mediante el **diagrama de componentes**, muestra los **componentes del sistema** y cómo están interconectados.
 
 Estas vistas nos permiten comprender mejor la organización y la estructura del sistema desde diferentes perspectivas, lo que facilita el análisis y el diseño de software.
 

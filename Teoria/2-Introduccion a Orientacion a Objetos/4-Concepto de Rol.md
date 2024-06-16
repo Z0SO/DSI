@@ -1,5 +1,5 @@
 
-# Definicion
+# Definición
 
 Un rol es un conjunto de responsabilidades relacionadas. Se utiliza como el *propósito* de la clase.
 

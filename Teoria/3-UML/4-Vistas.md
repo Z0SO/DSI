@@ -1,13 +1,13 @@
 
 ---
 
-## Área de Comportamiento Dinámico
+## Área Dinámica
 Describe el comportamiento del sistema a través del tiempo.
 
 ### Vista de Interacción
 - **Diagrama de Comunicación UML 2.0** (antes Colaboración)
 - **Diagrama de Secuencia**
-- 
+
 ### Vista de Máquina de Estados
 - **Diagrama de Estados**
 - ![](https://lh7-us.googleusercontent.com/docsz/AD_4nXeN6NkKtCt8yap6M7FfGqjnFVj1ULwXlYqcM3nii0R2JoYYrENF9Ec84Bat8cXd2OFi5xiMAPHbIKMkIAk0ClIEHmr3fWJTN4HZBsIdEdcpsVQhlcJI0PC2ZOU1nYISwqlNNlBwQQlxcU6RyceM31OvlSW2?key=VReuh94fGGpJZLGsXsGdUQ)
