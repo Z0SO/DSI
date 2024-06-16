@@ -1,0 +1,17 @@
+{
+	"nodes":[
+		{"id":"2ed6a0ecf74363c3","x":-397,"y":-191,"width":237,"height":111,"type":"text","text":"ARCHIVOS / DIR\nMODIFICADOS"},
+		{"id":"df188cd916b2fd8a","x":1440,"y":-305,"width":357,"height":65,"type":"text","text":"\n\nREPOSITORIO EN LA NUBE\n"},
+		{"id":"85426496e164d2fa","x":-720,"y":-60,"width":1871,"height":660,"color":"1","type":"text","text":""},
+		{"id":"cf6e462c8361cdb8","x":920,"y":-167,"width":151,"height":64,"color":"4","type":"text","text":"COMMIT"},
+		{"id":"5b002e4e32be11f6","x":160,"y":-191,"width":250,"height":111,"type":"text","text":"SEMI CONFIRMACION\nCOMMIT"},
+		{"id":"86e41906d2569342","x":920,"y":133,"width":391,"height":87,"type":"text","text":""},
+		{"id":"cbb0a4589a6b7041","x":1720,"y":-387,"width":455,"height":504,"color":"5","type":"text","text":""}
+	],
+	"edges":[
+		{"id":"baa81350bbc547a2","fromNode":"2ed6a0ecf74363c3","fromSide":"right","toNode":"5b002e4e32be11f6","toSide":"left","label":"git add ."},
+		{"id":"56d42077a5c9b167","fromNode":"5b002e4e32be11f6","fromSide":"right","toNode":"cf6e462c8361cdb8","toSide":"left","label":"git commit -m 'cambio xd'"},
+		{"id":"9a5125acf74f54da","fromNode":"cf6e462c8361cdb8","fromSide":"right","toNode":"df188cd916b2fd8a","toSide":"left","label":"git push origin master"},
+		{"id":"f21683bf64bc14af","fromNode":"df188cd916b2fd8a","fromSide":"bottom","toNode":"86e41906d2569342","toSide":"right","label":"git pull orign master"}
+	]
+}
