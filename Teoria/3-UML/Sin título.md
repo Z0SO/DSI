@@ -3,7 +3,6 @@
 ## Vistas de Despliegue - Diagrama de Despliegue
 
 
-
 # Área de Gestión
 
 ## Diagrama de Paquetes
@@ -35,12 +34,13 @@ Una buena organización refleja la arquitectura de alto nivel del sistema.
 
 ### Dependencia de Importación
 
-- **Visibilidad**:
+**Visibilidad**
   - **Público (+)**: Constituye la interfaz del paquete.
   - **Privado (-)**: No son visibles para nadie fuera del paquete.
   - **Protegido (#)**: Solo son visibles para los paquetes que heredan de otro paquete.
 - **Operador `::`**: Permite designar una clase definida en un contexto distinto del actual. Se denomina nombre totalmente calificado.
-- **Import**:
+
+**Import**
   - Evita escribir el nombre completo.
   - Aplica dos estereotipos (import y access) y ambos especifican que el paquete origen tiene acceso al contenido del destino.
   - `Import` añade el contenido del destino al espacio de nombres público del origen, evitando la necesidad de calificar los nombres. Esto implica la posibilidad de colisión de nombres que hay que evitar para tener un modelo bien formado.
@@ -52,4 +52,4 @@ Una buena organización refleja la arquitectura de alto nivel del sistema.
 - **Modelo**: Es un paquete que abarca una descripción completa de una vista particular de un sistema. Proporciona una descripción cerrada de un sistema a partir de un punto de vista.
 - **Subsistema**: Paquete que tiene piezas separadas de especificación y de realización. Representa una partición del sistema.
 
-### Arquitecturas Multicapas
+Arquitecturas Multicapas

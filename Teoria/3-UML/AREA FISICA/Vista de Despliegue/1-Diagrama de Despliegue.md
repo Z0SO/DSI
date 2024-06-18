@@ -7,6 +7,10 @@
   - **Manifestación**: Vincula componentes de diseño con los artefactos que los representan.
   - **Rendimiento**: Resalta cuellos de botella en rendimiento debido a la ubicación de los artefactos en diferentes nodos.
 
+
+![](https://lh7-us.googleusercontent.com/docsz/AD_4nXd47e6m9Cc2Qm1jbxyvcQE4hUghHaZUuzL1bEtiPNtC9VRJME-vG7pQxeMgos9ntdDUk6DAKLQkCXTU_GaLysmxZsq9iNFVwKIlkW_W-_lNp2-8wqGXubQijLXIXDFJWDUytns9iIcvj_99rsralGmMIgJ4?key=VReuh94fGGpJZLGsXsGdUQ)
+
+
 ### Nodo
 
 - **Definición**: Modela un recurso computacional de tiempo de ejecución.
