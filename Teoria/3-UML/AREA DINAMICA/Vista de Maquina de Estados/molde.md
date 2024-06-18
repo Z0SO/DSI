@@ -1,6 +1,8 @@
 
 
-# Condición de Guarda
+# Diseño de Sistemas de Información
+
+## Condición de guarda
 
 La condición de guarda es algo que se verifica luego de que ocurre un evento, y dependiendo si la condición se cumple, las acciones se ejecutan para producir la transición de estado.
 
@@ -8,35 +10,24 @@ La condición de guarda es algo que se verifica luego de que ocurre un evento, y
 - Solo se evalúan una vez por transición.
 - Es posible tener muchas transiciones desde el mismo estado origen y con el mismo evento de disparo, siempre y cuando sus condiciones no se solapen.
 
->  **Ejemplo del Libro de Martin Fowler**
->  Un ejercicio comúnmente utilizado para comprender las condiciones de guarda es el de la vela en el libro de Martin Fowler. En este ejercicio, se puede establecer una condición de guarda que evalúe si la vela está encendida antes de apagarla.
+## Acciones (efectos)
 
+Una acción es un cómputo atómico y breve. Tipos:
 
+- Una sentencia de asignación.
+- Una operación aritmética.
 
-
-## Acciones (Efectos)
-
-Una acción es un cómputo atómico y breve que ocurre como resultado de una transición de estados. Estas acciones pueden incluir:
-
-> El envío de una señal a otro objeto. Palabra reservada `SEND`.
-
-
-- Asignación de valores.
-- Operaciones aritméticas.
-- Envío de señales a otros objetos.
-- Invocación de operaciones propias.
+- La invocación de una operación propia.
+- Asignación de valores de retorno.
 - Creación o destrucción de objetos.
-- Secuencia de acciones simples.
+- Una secuencia de acciones simples.
 
-A todo comportamiento se lo denomina acción, puede ser cualquier método. La idea es que en principio sea breve pero, en realidad, no hay límite.
-
+### Acciones específicas
 
 
 ## Estados avanzados y transiciones
 
 Para modelar comportamiento más complejo que en una máquina de estado plana.
-
-![](https://lh7-us.googleusercontent.com/docsz/AD_4nXeaRY2pasRVLP-dhMNAliJT8rmAU0JxvQL74F4uZkV9SpZefve1cPWBgRP9h8m8zRusMYtKnyg4NAL21gVqO63JbpFGXtIc2Sp6SYsUTn0EUkXzUgTHTC76Oo2BKVI8ejd19tbAjPtsBT5HAILR42q9fwAf?key=VReuh94fGGpJZLGsXsGdUQ)
 
 ### Palabras reservadas
 
@@ -45,7 +36,6 @@ Para modelar comportamiento más complejo que en una máquina de estado plana.
 - `do`
 
 No se pueden usar como nombres de eventos y etc.
-
 
 ### Acciones `DO`
 
@@ -57,12 +47,6 @@ No se pueden usar como nombres de eventos y etc.
 - Nunca se sale del estado, se ejecutan acciones simplemente.
 - En especial cuando no quieres hacer acciones de entrada o salida.
 
-### Acciones `entry` & `exit`
-
-- Útiles para entrada (configuración inicial) o salida (limpieza final).
-- Sí o sí se ejecutan, no pueden tener argumentos o condiciones de guarda.
-- Sin embargo, el efecto de entrada del nivel superior de una máquina de estados de una clase puede tener parámetros, para los argumentos que recibe la máquina cuando se crea el objeto.
-
 ### Diferencia entre transición interna y auto-transición
 
 - **Auto-transición**: Un evento dispara la transición, se abandona el estado, se ejecuta una acción (si la hay), y se vuelve a entrar en el mismo estado. Como la transición sale y entra en el estado, una auto-transición ejecuta la acción de salida, después ejecuta la acción de la auto-transición y, por último, ejecuta la acción de entrada del estado.
@@ -72,8 +56,11 @@ No se pueden usar como nombres de eventos y etc.
 
 - Escuchando eventos y aplicándolos, ante un cambio de estado se van desapilando.
 
+## Acciones `entry` & `exit`
 
-![](https://lh7-us.googleusercontent.com/docsz/AD_4nXfHsYHsFy0P4ClhKimRC7QgAKfORyxvy4w_IfRujI2bpwLsg_Crw96zEpV4WvLgspPkOo2yOsCMpr5G7v0yAd_EsxN4LTfm8Ax3NXU94j2pVKo8KxfiBFcP9zKHvm_m4FJvEdNnQs5C7xcGfp6lST9fjAk?key=VReuh94fGGpJZLGsXsGdUQ)
+- Útiles para entrada (configuración inicial) o salida (limpieza final).
+- Sí o sí se ejecutan, no pueden tener argumentos o condiciones de guarda.
+- Sin embargo, el efecto de entrada del nivel superior de una máquina de estados de una clase puede tener parámetros, para los argumentos que recibe la máquina cuando se crea el objeto.
 
 ## Estados compuestos (subestados)
 
@@ -81,6 +68,7 @@ Estados que a su vez poseen varios estados. Una transición de un estado a un su
 
 - **Estados no ortogonales**: Un objeto puede tener un estado a la vez. Son los que más vemos. No puede haber dos estados concurrentes.
 - **Estados ortogonales**: Múltiples estados simultáneos, estos tienen más sentido cuando modelamos un sistema completo.
+
 ## Estado de Submáquina
 
 Sinónimo de `REF` en diagrama de secuencia. Sale de la idea de la máquina de estado, por lo que no lo vemos. Al estado que referencia a la submáquina se lo llama estado de submáquina.
@@ -97,9 +85,3 @@ Los estados no son clasificadores, se llaman elementos nombrados. Notación: `no
 ### Submáquina
 
 Una máquina de estados ser referenciada desde, dentro de otra máquina. Una máquina de estados así referenciada se denomina submáquina. Éstas son útiles para construir grandes modelos de estados de manera estructurada.
-
----
-### Resumen
-
-Las condiciones de guarda, acciones y tipos de transiciones son elementos esenciales en el modelado de sistemas mediante diagramas de estado, permitiendo representar el comportamiento dinámico de un sistema de manera precisa y eficiente.
-
