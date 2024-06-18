@@ -1,5 +1,3 @@
-
-
 # Transiciones
 
 Las transiciones son arcos que conectan dos vértices (estados) en un diagrama de estado, representando el pasaje de un estado a otro en respuesta a un evento específico. Cada transición tiene cinco características esenciales:

@@ -1,12 +1,12 @@
 
 # Definiciones
 ## Sobreescritura de Métodos (Overriding)
+
 - **Definición:** En POO, es una característica que permite a una subclase proporcionar una implementación específica de un método que ya está definido en una de sus superclases.
 - **Polimorfismo:** Permite un tipo específico de polimorfismo llamado subtipado. Los objetos de diferentes clases (subclases y superclases) pueden responder de manera diferente a las mismas llamadas de método.
-- **Requisitos:**
-  - El método en la subclase debe tener la misma firma (nombre y parámetros) que el método en la superclase.
-
+- **Requisitos:** El método en la subclase debe tener la misma firma (nombre y parámetros) que el método en la superclase.
 ## Sobrecarga de Métodos (Overloading)
+
 - **Definición:** Capacidad de una clase de tener múltiples métodos con el mismo nombre pero con diferentes parámetros.
 - **Características:**
   - Pueden existir varios métodos con el mismo nombre en una clase, pero cada uno con una lista de parámetros diferente.

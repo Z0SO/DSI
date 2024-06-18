@@ -1,5 +1,4 @@
 
-
 # Tipos de Relaciones en Casos de Uso
 
 ![](https://lh7-us.googleusercontent.com/docsz/AD_4nXdFfHJBrFS2vraOd7F_CtPCYb1w67Pi4uPAAIJRJI3u308Z1roiyQ4JBUwnVv_iGP0x1RxMVgHCR2m-F_gjrVXyuRC9fGfXL3dOQLB_1AxvxHMAAPsFc9LIclqxoA3fujVvLRVS3JpWipKSEQFnlHbdd7sB?key=VReuh94fGGpJZLGsXsGdUQ)

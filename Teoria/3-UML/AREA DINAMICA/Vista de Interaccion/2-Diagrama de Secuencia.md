@@ -1,7 +1,8 @@
-
 ### Diagrama de Secuencia
 
-Un diagrama de secuencia en UML es una herramienta utilizada para visualizar la interacción entre objetos en el contexto de una operación, con el tiempo representado en el eje vertical y los roles u objetos en el eje horizontal. Este tipo de diagrama es esencial para modelar el flujo de control y la comunicación entre diferentes componentes de un sistema.
+Un diagrama de secuencia en UML es una herramienta utilizada para visualizar la interacción entre objetos en el contexto de una operación, con el tiempo representado en el eje vertical y los roles u objetos en el eje horizontal.
+
+>Este tipo de diagrama es esencial para modelar el flujo de control y la comunicación entre diferentes componentes de un sistema.
 
 #### Ejes del Diagrama
 
@@ -31,44 +32,20 @@ Un diagrama de secuencia en UML es una herramienta utilizada para visualizar la 
 
 #### Ejemplo de Diagrama de Secuencia
 
-```plantuml
-@startuml
-actor Usuario
-participant Sistema
-participant BaseDatos
-
-Usuario -> Sistema : solicitarDatos()
-Sistema -> BaseDatos : obtenerDatos()
-BaseDatos --> Sistema : devolverDatos()
-Sistema --> Usuario : mostrarDatos()
-
-Sistema -> Sistema : create()
-Sistema --> Sistema : destroy()
-@enduml
-```
+**![](https://lh7-us.googleusercontent.com/docsz/AD_4nXcfjyrypaJNz7p7c6EZ__ZDp9DrDuVsovNqEBgJXr0yG3FuObSxG1GtLvYunFSJARPggwjfGgYzKiVUUQY9sXzZNF1_k7m-nG5EwWA-8nMAhuE62A3iGpry806gpiavSrmeLB_OYTi25Hr9JGX_ZZ8z58k?key=eC-A4tU6YurBdRY8QSa-gA)**
 
 #### Fragmentos de Interacción o Combinados
 
 Estos fragmentos permiten modelar estructuras de control complejas dentro de un diagrama de secuencia.
 
 1. **Operadores de Interacción**:
-   - **alt**: Alternativa (if - else).
-   - **loop**: Bucle (iteración).
-   - **ref**: Referencia a otro diagrama de secuencia.
-   - **opt**: Opción (solo if).
-   - **break**: Romper (terminar ejecución).
-   - **par**: Paralelo (ejecución concurrente).
-
-#### Colaboración Relajada
-
-La colaboración relajada en UML se divide en dos aspectos:
-
-1. **Aspecto Estático**:
-   - **Vista Estática**: Incluye roles y relaciones entre ellos.
-
-2. **Aspecto Dinámico**:
-   - **Interacción**: Conjunto de mensajes intercambiados entre objetos que representan los roles.
-
+	   - **opt**: Opción (solo if).
+	   - **alt**: Alternativa (if - else).
+	   - **loop**: Bucle (iteración).
+	   - **ref**: Referencia a otro diagrama de secuencia.
+	   - **break**: Romper (terminar ejecución). 
+	   - **par**: Paralelo (ejecución concurrente).
+---
 ### Resumen
 
 Un diagrama de secuencia es una herramienta poderosa para visualizar la dinámica de la interacción entre objetos en un sistema. Permite entender cómo los objetos se comunican, cómo se crean y destruyen, y cómo se controlan los flujos de ejecución complejos a través de fragmentos de interacción. Es fundamental para modelar y diseñar sistemas orientados a objetos de manera eficiente y clara.

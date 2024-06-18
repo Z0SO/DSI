@@ -1,6 +1,5 @@
-
 ## Actor
-Un **actor** es una idealización de un rol desempeñado por una persona externa, un proceso o cosa que interactúe con el sistema, subsistema o clase.
+Un **actor** es una **idealización de un rol desempeñado por una persona externa, un proceso o cosa** que interactúe con el sistema, subsistema o clase.
 
 - Cada actor participa en uno o más casos de uso.
 - Interactúa con el caso de uso (y, por tanto, con el sistema o clase que posee el caso de uso) mediante el intercambio de mensajes.

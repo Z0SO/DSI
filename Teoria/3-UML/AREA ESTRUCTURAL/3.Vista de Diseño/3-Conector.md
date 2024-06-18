@@ -1,8 +1,7 @@
 
----
 # ¿Que es un Conector?
 
-Un **conector** es una relación contextual entre dos partes en un clasificador estructurado. Define una relación entre objetos que sirven de partes del mismo objeto estructurado.
+Un **conector** es una **relación contextual** entre dos partes en un clasificador estructurado. Define una relación entre objetos que sirven de partes del mismo objeto estructurado.
 
 ## Características Principales
 

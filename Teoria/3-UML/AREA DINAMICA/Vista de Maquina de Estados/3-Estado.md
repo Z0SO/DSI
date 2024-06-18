@@ -1,7 +1,9 @@
 
 # Estado
 
-Un estado representa una condición o situación específica en un objeto durante un periodo determinado de tiempo en su ciclo de vida. Es fundamental en un diagrama de estado, ya que define el comportamiento del objeto en función de su estado actual.
+Un estado representa una **condición o situación específica en un objeto** durante un periodo determinado de tiempo en su ciclo de vida.
+
+Es fundamental en un diagrama de estado, ya que define el comportamiento del objeto en función de su estado actual.
 
 ## Características
 

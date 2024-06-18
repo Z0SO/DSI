@@ -1,7 +1,9 @@
 
 ### Diagrama de Comunicación
 
-El diagrama de comunicación, antes conocido como diagrama de colaboración, pone énfasis en la distribución física y las relaciones entre objetos. Este tipo de diagrama es crucial para visualizar cómo los objetos interactúan entre sí en un sistema, enfocándose más en la estructura de las interacciones que en el orden temporal de los mensajes.
+El diagrama de comunicación, antes conocido como diagrama de colaboración, pone énfasis en la distribución física y las relaciones entre objetos. 
+
+Este tipo de diagrama es crucial para **visualizar cómo los objetos interactúan** entre sí en un sistema, **enfocándose más en la estructura de las interacciones** que en el orden temporal de los mensajes.
 
 
 ![](https://lh7-us.googleusercontent.com/docsz/AD_4nXdKQtF5pK_x5joiYnHph9GnjTAzjMf5fVRqtau7ScCHEdkTYePSmh3Cjkw4dMCiaJ9S7KsRiIaB0g9AmMBLDeM2Wz32FP81UofeXjveumt4U41oin4y9iO-vFMTviNW34WntI0q9encfrlXElSZrJ8p7b3A?key=VReuh94fGGpJZLGsXsGdUQ)

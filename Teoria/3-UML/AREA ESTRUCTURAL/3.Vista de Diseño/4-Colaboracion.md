@@ -1,8 +1,6 @@
-
----
 # Definicion
 
-Una **colaboración** es un clasificador estructurado que describe una colección de objetos que interactúan para implementar algún comportamiento en un contexto específico.
+Una **colaboración** es un **clasificador estructurado** que **describe una colección de objetos** que interactúan para implementar algún comportamiento en un contexto específico.
 
 ![](https://lh7-us.googleusercontent.com/docsz/AD_4nXfI8JAooE6FFGU5zU2_nTVL7srObJDOTH9u-i4RJl_Z10EzGaoCMQWbJ9wP1OlQucCqqwTAnXyAEWhpSNibhBysirZRJk3h03R0YegSgmwabDqNcobW7FhqBjosZKmgqkpfpjPjCcZhLesPRS9zYoJMgbXK?key=VReuh94fGGpJZLGsXsGdUQ)
 

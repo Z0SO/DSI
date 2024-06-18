@@ -1,9 +1,7 @@
 
----
-
 ## DataType
 
-Un **DataType** es un clasificador cuyas instancias son identificadas por sus valores. 
+Un **DataType** es un clasificador cuyas **instancias son identificadas por sus valores.** 
 
 - **Diferencia con la identidad de un objeto**:
   - En un **DataType primitivo**, por ejemplo, `1` y `1` son lo mismo.
@@ -12,13 +10,7 @@ Un **DataType** es un clasificador cuyas instancias son identificadas por sus va
 - **Conveniencia de uso**:
   - En ciertos casos, es conveniente usar un DataType en lugar de una clase, dependiendo de si se quieren instanciar objetos únicos.
 
-### Características
-- **Instancia**: Valores.
-- **Estructura**: Pueden tener estructura si se tratan como clase (ej: `DATE`).
-- **Inmutabilidad**: No pueden cambiar.
-- **Operaciones**: Pueden participar en operaciones.
-- **Modificación**: No modifican sus valores propios.
-
+>	Ese tipo de dato pueden ser tanto clases, como interfaces o algún tipo de clasificador
 ### Tipos
 
 #### PrimitiveType

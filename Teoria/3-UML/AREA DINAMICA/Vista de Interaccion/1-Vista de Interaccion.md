@@ -1,5 +1,9 @@
 #### Definición
-La vista de interacción en UML modela de forma dinámica una colaboración, que es un conjunto de clases agrupadas para cumplir un objetivo específico. Esta vista permite visualizar el intercambio de mensajes entre objetos (también llamados partes) en un sistema.
+La vista de interacción en UML **modela de forma dinámica una colaboración**
+
+> Una colaboración es un conjunto de clases agrupadas para cumplir un objetivo específico
+
+ Esta vista **permite visualizar el intercambio de mensajes entre objetos** (también llamados partes) en un sistema.
 
 #### Elementos Principales
 

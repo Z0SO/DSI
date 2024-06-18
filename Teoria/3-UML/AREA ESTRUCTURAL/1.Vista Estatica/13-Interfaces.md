@@ -2,12 +2,12 @@
 ### Interfaces
 
 #### Descripción
-Una interfaz es la descripción del comportamiento de los objetos sin proporcionar su implementación o estado. 
+Una interfaz es la **descripción del comportamiento de los objetos** sin proporcionar su implementación o estado. 
 
 #### Características
 - **Contrato**: Las clases que implementan una interfaz deben adherirse a ella completamente, no se pueden omitir partes.
 - **Métodos Abstractos**: Todos los métodos de una interfaz son abstractos, es decir, solo se proporcionan las firmas de los métodos sin su implementación.
-- **Constantes**: Las interfaces pueden especificar constantes, pero no pueden tener variables de instancia.
+- **Constantes**: **Las interfaces pueden especificar constantes**, pero no pueden tener variables de instancia.
 - **Instanciación**: Una interfaz no puede ser instanciada directamente.
 
 #### Implementación
@@ -45,6 +45,7 @@ class EnchufeUK implements Adaptador {
 }
 
 Adaptador <|.. EnchufeEU
+
 Adaptador <|.. EnchufeUK
 @enduml
 ```
@@ -98,7 +99,7 @@ class Cliente {
 
 IServicio <|.. ServicioA
 IServicio <|.. ServicioB
-Cliente --> IServicio : usa
+Cliente --> IServicio :usa
 @enduml
 ```
 
@@ -122,6 +123,7 @@ class Document implements Printable, Savable {
 
 Printable <|.. Document
 Savable <|.. Document
+
 @enduml
 ```
 

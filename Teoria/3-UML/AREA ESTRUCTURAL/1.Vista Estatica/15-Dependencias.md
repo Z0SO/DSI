@@ -11,20 +11,20 @@ Una **dependencia** es una relación entre dos elementos en un sistema, donde un
 
 #### Representación en UML
 
-- **Dependencias de Uso**: Indican que una clase necesita algo de otra clase, como utilizar un método o acceder a una propiedad. Se representan con una línea discontinua y una flecha abierta.
-- **Dependencias de Abstracciones**: Relacionan una clase con una interfaz o un componente abstracto. Se representan con una línea discontinua y una flecha cerrada.
+- **Dependencias de Uso**: Indican que una **clase necesita algo de otra clase,** como utilizar un método o acceder a una propiedad. Se representan con una línea discontinua y una flecha abierta.
+- **Dependencias de Abstracciones**: Relacionan una **clase con una interfaz** o un componente abstracto. Se representan con una línea discontinua y una flecha cerrada.
 
 ![](https://lh7-us.googleusercontent.com/docsz/AD_4nXdeaIaO33C4GyL8FcaUIbjvrewnSZSEnVQeZXJJ-KFGK3ghOst-h5Pgr9uf7HvsuQk2O7eW2Nk84_EF6wbwmtOHvlRwQy7uNvVrB3sR8ptiobxmg5KVFvEOEf6RnYeDnEM21LYdAVFieM2h9uMOgpPNTEkP?key=VReuh94fGGpJZLGsXsGdUQ)
 
 
 #### Comparación entre Dependencias y Asociaciones
-- **Dependencias**:
-  - Relación temporal y circunstancial.
+ **Dependencias**:
+  - Relación **temporal** y **circunstancial**.
   - Los cambios en el proveedor pueden afectar al cliente.
-  - No implica una referencia continua entre los objetos.
+  - No implica una **referencia continua** entre los objetos.
   - Se activa en situaciones específicas, como pasar un objeto como parámetro o crear un objeto temporalmente.
 
-- **Asociaciones**:
+**Asociaciones**:
   - Relación permanente y siempre activa.
   - Implica una referencia constante y continua entre los objetos.
   - Ejemplo: una clase Pedido tiene una asociación con una clase Cliente, donde cada Pedido tiene un Cliente asociado en todo momento.

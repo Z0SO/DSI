@@ -1,5 +1,4 @@
 
-
 # Definicion
 
 ## Asociación
@@ -12,14 +11,14 @@
 
 ### Enlace
 
-- Una instancia de una asociación es un enlace.
+- **Una instancia de una asociación es un enlace.**
 - Un enlace es una asociación entre dos objetos.
 - Un enlace consta de una tupla (una lista ordenada) de objetos, cada uno obtenido a partir de su clase correspondiente.
 - Un enlace binario comprende un par de objetos.
 
 ### Adornos
 
-Adornos son todos los elementos adicionales que se pueden poner en el diagrama. Estos mecanismos incluyen:
+Adornos son **todos los elementos adicionales** que se pueden poner en el diagrama. Estos mecanismos incluyen:
 
 - **Nombre**
 - **Rol**
@@ -39,7 +38,7 @@ Adornos son todos los elementos adicionales que se pueden poner en el diagrama. 
 
 #### Rol
 
-- Es el papel interpretado por una clase en una asociación.
+- Es el **papel interpretado por una clase** en una asociación.
 - Nombre del extremo (rol) -> A los extremos se le agrega el rol.
 
 ![](https://lh7-us.googleusercontent.com/docsz/AD_4nXeC6Bu4VUQXgQZRq5kyxTuMID_lJa-H41L_SJxrHHIVhWzLrANS8doARkcRvucx7Hv2SRSIdmInDpA1VPCBaodhQkvHFuPdWDV16v1We6C7XjAZ4ES29uyLwczTfAvwqs6TFjF2eD6Gp6aNAPyPeFhObFs?key=VReuh94fGGpJZLGsXsGdUQ)
@@ -61,8 +60,8 @@ Adornos son todos los elementos adicionales que se pueden poner en el diagrama. 
 
 ### Agregación y Composición
 
-- Representa una relación todo-partes entre objetos.
-- Variante de la asociación, con mayor fuerza semántica.
+- **Representa una relación todo-partes entre objetos.**
+- Variante de la asociación, con **mayor fuerza semántica**.
 
 #### Agregación (o Agregación Compartida)
 

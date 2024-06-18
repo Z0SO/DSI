@@ -1,14 +1,14 @@
 
 ---
-
 ## Asociación: Navegabilidad
 
 
 ![](https://lh7-us.googleusercontent.com/docsz/AD_4nXdKW_2ktrcGksBKOHpmkXyrPjHcos3a-Hy6XAw7Y2er0as-TJ4JQjSFKL9vDOIoWI0i1yKOVPaQnsvUD9crMfTkfP4J_Wc2fIedqIhVXo4W1ak5GZ-ku4QS6W9UU83dKuGAqnyEKKxmUiW8ppYY8iEdauhM?key=VReuh94fGGpJZLGsXsGdUQ)
 
+
+**Navegabilidad**: Indica la dirección en que los objetos de una clase pueden acceder a los objetos de otra clase a través de una asociación, en tiempo de ejecución.
 ### Conceptos Clave
 
-- **Navegabilidad**: Indica la dirección en que los objetos de una clase pueden acceder a los objetos de otra clase a través de una asociación, en tiempo de ejecución.
   - *Dirección de conocimiento*: En la imagen de arriba, pedidos CONOCE A productos, no al revés.
   - *Adorno de un extremo de asociación (association end)*: `> <`
   - *Relaciones binarias*.
@@ -47,8 +47,6 @@
 - **Flecha (->)**: Se usa para indicar tanto navegabilidad como propiedad (en el sentido clásico).
 - **Cruz (x)** y **Punto (.)**: No se usan salvo que se indique lo contrario.
 - **Navegabilidad implica Pertenencia**: Según la convención de la cátedra, aunque teóricamente no es así.
-
-
 ### Casos Posibles
 
 ![](https://lh7-us.googleusercontent.com/docsz/AD_4nXdQyZHjGZy_2AMfoU_t-sooxa4_t2eiqGft27eNHy5meKFgUTkWLD9Hrd8m1ndIlwdr4dHJ_Jha81u0_CvS3-bxja4pgtPyJqE12iT6Kbb5ncGQ-RbobhB-UxKfQvxcm6xUqkCMwkoAQluKDnWqkQo6XoU?key=VReuh94fGGpJZLGsXsGdUQ)

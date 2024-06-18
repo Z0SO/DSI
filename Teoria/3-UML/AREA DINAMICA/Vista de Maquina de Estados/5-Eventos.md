@@ -6,7 +6,7 @@
 Un evento es una ocurrencia significativa que tiene una localización en tiempo y espacio. Representa un estímulo o acontecimiento que ocurre en un punto específico en el tiempo y no tiene duración. Es importante diferenciar los eventos de las señales:
 
 - **Evento**: Ocurre en un punto específico en el tiempo y puede ser interno o externo al objeto.
-- **Señal**: Es un tipo de clasificador que vehicula la comunicación entre objetos de manera explícita, asincrónica y con nombre.
+- **Señal**: Es un tipo de clasificador que vincula la comunicación entre objetos de manera explícita, asincrónica y con nombre.
 
 ## Tipos de Eventos
 
@@ -24,7 +24,7 @@ Ocurren dentro del objeto, como el cambio de estado de un temporizador en un dis
 Representan la recepción de una comunicación asincrónica y explícita entre objetos, como un evento de un formulario.
 
 ### Eventos de Llamada
-Son peticiones explícitas y síncronas donde un objeto invoca un método de otro objeto y espera una respuesta inmediata, como las operaciones push y pop en una lista.
+Son peticiones síncronas y explícitas donde un objeto invoca un método de otro objeto y espera una respuesta inmediata, como las operaciones push y pop en una lista.
 
 ### Eventos de Cambio
 Representan un cambio en el valor de una expresión booleana y se disparan automáticamente cuando se cumple una condición lógica, como solicitar que un usuario sea mayor de 18 años.

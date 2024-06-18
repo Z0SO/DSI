@@ -1,11 +1,12 @@
-
 # Vista de Máquina de Estados
 
-La vista de máquina de estados describe el comportamiento dinámico de los objetos, modelando su ciclo de vida a través de autómatas finitos con estados y transiciones. Cada objeto se trata de forma aislada, detectando eventos y respondiendo a ellos, comunicándose con el resto del mundo.
+La vista de máquina de estados describe el comportamiento dinámico de los objetos, **modelando su ciclo de vida a través de autómatas finitos con estados y transiciones.** 
+
+Cada objeto se trata de forma aislada, detectando eventos y respondiendo a ellos, comunicándose con el resto del mundo.
 
 ## Utilidad
 
-Es útil modelar el comportamiento estado-dependiente de objetos específicos, centrándose en su ciclo de vida y cómo su estado afecta su comportamiento.
+Es útil modelar el **comportamiento estado-dependiente** de **objetos específicos**, centrándose en su **ciclo de vida** y **cómo su estado afecta su comportamiento.**
 
 ## Diagramas de Estado
 

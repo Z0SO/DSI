@@ -41,5 +41,8 @@ Existen dos tipos de estados: no ortogonales, donde un objeto puede tener un est
 
 Una submáquina es una manera de simplificar diagramas de estado al agrupar múltiples estados y transiciones bajo un solo estado. Se utiliza para reducir la complejidad y mejorar la legibilidad del diagrama.
 
+---
+### Resumen
+
 Las condiciones de guarda, acciones y tipos de transiciones son elementos esenciales en el modelado de sistemas mediante diagramas de estado, permitiendo representar el comportamiento dinámico de un sistema de manera precisa y eficiente.
 
