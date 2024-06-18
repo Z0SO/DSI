@@ -1,7 +1,5 @@
 
-Aquí tienes el principio de sustitución de Liskov (LSP) ampliado y convertido a Markdown para tus apuntes en Obsidian:
-
-```markdown
+----
 ## Principio de Sustitución de Liskov (LSP)
 
 ### Enunciado
@@ -10,12 +8,25 @@ Aquí tienes el principio de sustitución de Liskov (LSP) ampliado y convertido 
 ### Interpretación
 Las subclases deben comportarse adecuadamente cuando sean usadas en lugar de sus clases base.
 
+![[Pasted image 20240618202437.png]]
+
 ### Explicación
 El principio de sustitución de Liskov establece que los objetos de una clase derivada deben ser sustituibles por objetos de la clase base sin alterar la funcionalidad del programa. Esto implica que las subclases deben cumplir con el contrato establecido por sus clases base, comportándose de manera coherente cuando se usan en su lugar.
 
 ### Ejemplo Práctico
 
-#### Problema Inicial
+
+![](https://lh7-us.googleusercontent.com/docsz/AD_4nXdM0G0i6beZ1ZGFOdqvzgPLLKNH5c2fSDV5kol7KtjRjiGd1MqciTrti6Wp9sJrDbCb0cnD2TwbPHegRHSWDdSp1LdNBoLvFb5MOgZFCfH-OYCOLFnio5DWG52iTYcZDM3hpGR1oEq5fY9UufNMQiMx1fM?key=VReuh94fGGpJZLGsXsGdUQ)
+### Beneficios del LSP
+- **Consistencia**: Garantiza que las subclases se comporten de manera coherente con sus clases base, evitando errores inesperados.
+- **Reusabilidad**: Aumenta la reusabilidad del código al asegurar que las subclases puedan ser usadas en lugar de sus clases base sin problemas.
+- **Mantenibilidad**: Facilita el mantenimiento del código al asegurar que las extensiones del mismo no rompan el comportamiento esperado.
+
+
+
+---
+
+#### Otro Ejemplo
 En un sistema, se define una clase `Rectangulo` con métodos para calcular el área. Luego, se crea una clase `Cuadrado` que hereda de `Rectangulo`. Aunque `Cuadrado` es un tipo de `Rectangulo`, su comportamiento no es consistente al calcular el área.
 
 ```java
@@ -95,9 +106,5 @@ class Cuadrado implements Figura {
 // Ahora, tanto Rectangulo como Cuadrado implementan Figura y son intercambiables
 ```
 
-### Beneficios del LSP
-- **Consistencia**: Garantiza que las subclases se comporten de manera coherente con sus clases base, evitando errores inesperados.
-- **Reusabilidad**: Aumenta la reusabilidad del código al asegurar que las subclases puedan ser usadas en lugar de sus clases base sin problemas.
-- **Mantenibilidad**: Facilita el mantenimiento del código al asegurar que las extensiones del mismo no rompan el comportamiento esperado.
 
 Aplicando el LSP, se mejora la solidez del software, haciendo que las jerarquías de clases sean más coherentes y predecibles.

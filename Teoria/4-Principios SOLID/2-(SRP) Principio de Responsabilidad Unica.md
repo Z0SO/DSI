@@ -9,6 +9,7 @@
 ### Interpretación
 Una clase debería concentrarse sólo en hacer una cosa de tal forma que cuando cambie algún requisito en mayor o menor medida, dicho cambio sólo afecte a dicha clase por una razón.
 
+![](https://lh7-us.googleusercontent.com/docsz/AD_4nXeD4SAduEEhgbXjDAndj9DKSeLpjeIjcKJoR9J0LOvhoIA0MBzAIc0Hh_BNBlssl-4GgYVXnHB6ROurrcrJz3tPam0SSg0ZyN7y0ggGd0BvQIjOA_8oVLARWEGwZjFkSi4aIO8TpM8_Lph5B-nlpVdfUb0N?key=VReuh94fGGpJZLGsXsGdUQ)
 ### Explicación
 Cuando el sistema evoluciona, aparecen nuevos requisitos. Si al cambiar el modelo hay que modificar más de una parte, es porque no se aplicó correctamente el SRP. El SRP asegura que una clase tenga una única responsabilidad, lo que facilita la mantenibilidad y extensibilidad del código.
 
