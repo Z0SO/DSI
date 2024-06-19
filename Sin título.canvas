@@ -5,7 +5,7 @@
 		{"id":"85426496e164d2fa","type":"text","text":"","x":-720,"y":-60,"width":1871,"height":660,"color":"1"},
 		{"id":"cf6e462c8361cdb8","type":"text","text":"COMMIT","x":920,"y":-167,"width":151,"height":64,"color":"4"},
 		{"id":"5b002e4e32be11f6","type":"text","text":"SEMI CONFIRMACION\nCOMMIT","x":160,"y":-191,"width":250,"height":111},
-		{"id":"86e41906d2569342","type":"text","text":"leer 8y9 de 2\nleer 6 7 8 9 \nleer 1\nterminar 5 y 6","x":760,"y":117,"width":680,"height":243},
+		{"id":"86e41906d2569342","type":"text","text":"leer 8y9 de 2\nleer 6 7 8 9  area denamica vista maquina estados.\nleer 1\nterminar 5 y 6","x":760,"y":117,"width":680,"height":243},
 		{"id":"cbb0a4589a6b7041","type":"text","text":"","x":1720,"y":-387,"width":455,"height":504,"color":"5"}
 	],
 	"edges":[
