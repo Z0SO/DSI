@@ -25,6 +25,5 @@ Son las hojas de un grafo de actividad y representan actividades básicas predef
 - Crear o destruir objetos.
 - Invocar operaciones.
 - Enviar señales.
-
-
 ----
+![](https://lh7-us.googleusercontent.com/docsz/AD_4nXd0C5NVxgmvYzhYgyuzDVGLNru25UTxxrwyTFB3wvBQmSHpe-yvnMlI2vDhpNX3epHwSrHMf6mSXge4VPr8Xwt1qXeXqeUMAn0vi74g6cB01-xHzFIFimvH0c8zCWDK29mSKmhKO_PGyJjj0QgfkzP1psli?key=VReuh94fGGpJZLGsXsGdUQ)

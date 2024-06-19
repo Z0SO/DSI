@@ -1,7 +1,3 @@
-
-
-----
-
 ### Artesanía vs Ingeniería en el Desarrollo de Software
 
 ##### Artesanía (Antes)

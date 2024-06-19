@@ -10,8 +10,7 @@ Para encontrar las clases candidatas, puedes utilizar varios métodos, incluyend
 - **Sistemas Similares y Modelos de Empresa:** Analiza sistemas similares o modelos de empresas que enfrenten problemas similares.
 - **Sesiones de Tarjetas CRC (Clase Responsabilidad Colaboración):** Realiza sesiones de tarjetas CRC para identificar clases, responsabilidades y colaboraciones.
 - **Glosarios de Términos y Análisis Gramatical:** Consulta glosarios de términos relevantes al dominio del problema y realiza un análisis gramatical para identificar sustantivos relevantes que puedan representar clases.
-
-### Elección de Nombres de Clases
+#### Elección de Nombres de Clases
 
 Es fundamental elegir nombres de clases cuidadosamente y describir su propósito. Aquí algunas pautas:
 

@@ -1,4 +1,3 @@
-
 # Área Dinámica - Vista de Actividades
 
 Lo usamos para modelar el comportamiento que va a tener el caso de uso. En general se utiliza para expresar el flujo de trabajos. Lo más normal es que tenga ejecuciones paralelas. No hablamos del ciclo de vida de un objeto.

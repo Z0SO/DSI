@@ -1,4 +1,6 @@
-En UML (Lenguaje de Modelado Unificado), los "artefactos" se refieren a cualquier cosa tangible que se produce o se utiliza durante el desarrollo de un sistema software. Los artefactos son resultados físicos del proceso de desarrollo y pueden incluir documentos, modelos, código fuente, archivos ejecutables y otros elementos que ayudan a construir y mantener el sistema.
+En UML (Lenguaje de Modelado Unificado), los "artefactos" se refieren a **cualquier cosa tangible** que **se produce o se utiliza** durante el **desarrollo de un sistema software**.
+
+Los artefactos son resultados físicos del proceso de desarrollo y pueden incluir documentos, modelos, código fuente, archivos ejecutables y otros elementos que ayudan a construir y mantener el sistema.
 
 ### Definición Clara y Fácil de Entender:
 

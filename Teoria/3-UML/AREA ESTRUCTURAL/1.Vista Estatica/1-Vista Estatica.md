@@ -1,5 +1,6 @@
 # Vista Estática
-- Captura la estructura de los objetos.
+- **Captura la estructura de los objetos.**
+
 - Es la base sobre la que se construyen otras vistas.
 - Es un modelo incremental, especialmente útil en un proceso iterativo-incremental.
 

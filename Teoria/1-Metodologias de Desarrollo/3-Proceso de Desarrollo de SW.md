@@ -24,28 +24,30 @@
 #### Según Shari Pfleeger
 
 - **Proceso**: Una serie de pasos que incluyen actividades, restricciones y recursos, diseñados para producir un resultado previsto.
-- **Proceso de Desarrollo de Software**: También conocido como ciclo de vida del software, describe desde la concepción hasta la implementación, entrega, uso y mantenimiento de un producto de software. Impone consistencia y estructura mediante procedimientos bien definidos:
+
+**Proceso de Desarrollo de Software**: También conocido como ciclo de vida del software, describe desde la concepción hasta la implementación, entrega, uso y mantenimiento de un producto de software. Impone consistencia y estructura mediante procedimientos bien definidos:
   - **Análisis y definición de requisitos**: Comprender y documentar lo que el usuario necesita.
   - **Diseño de sistemas y programas**: Planificar cómo cumplir esos requisitos.
   - **Escritura de programas**: Implementar el diseño en código.
   - **Revisión de unidad y pruebas de integración**: Verificar que las partes individuales y combinadas del software funcionen correctamente.
   - **Prueba del sistema**: Asegurar que el sistema completo funcione como se espera.
   - **Entrega y mantenimiento del sistema**: Implementar el software y mantenerlo operativo y actualizado.
-- Este ciclo abarca toda la vida del software, desde su nacimiento hasta su mantenimiento continuo.
+  
+Este ciclo abarca toda la vida del software, desde su nacimiento hasta su mantenimiento continuo.
 
 #### Según Roger Pressman
 
-- **Proceso de Software**: Un marco compuesto por actividades, acciones y tareas, cada una con su propio enfoque y objetivos:
+**Proceso de Software**: Un marco compuesto por actividades, acciones y tareas, cada una con su propio enfoque y objetivos:
   - **Actividad**: Un objetivo amplio y abarcativo, como la planificación del proyecto.
   - **Acción**: Un conjunto de tareas que producen un producto de trabajo principal, como la creación de un diagrama de diseño.
   - **Tarea**: Se enfoca en un objetivo pequeño y bien definido, como escribir una función específica en el código.
-- Las cinco actividades comunes en cualquier definición de desarrollo de software son:
+
+Las cinco actividades comunes en cualquier definición de desarrollo de software son:
   - **Comunicación**: Interactuar con las partes interesadas para entender y definir los requisitos.
   - **Planificación**: Establecer un plan detallado para el desarrollo del proyecto.
   - **Modelado**: Crear representaciones abstractas del sistema para entender y comunicar su estructura y comportamiento.
   - **Construcción**: Implementar y probar el software.
   - **Despliegue**: Entregar el software al cliente y asegurar su funcionamiento en el entorno operativo.
-
 
 ----
 

@@ -16,8 +16,8 @@ Los principios SOLID son guías que pueden ser aplicadas en el desarrollo de sof
    - Permite que el comportamiento de una clase se extienda sin modificar su código fuente.
 
 3. **Liskov Substitution Principle (LSP)**
-   - Los objetos de una clase derivada deben ser reemplazables por objetos de la clase base sin alterar el funcionamiento del programa.
-   - Las subclases deben ser sustituibles por sus clases base.
+   - Los objetos de una clase derivada deben poder reemplazar objetos de la clase base sin alterar el funcionamiento del programa.
+   - Las clase base deben ser sustituibles por sus subclases.
 
 4. **Interface Segregation Principle (ISP)**
    - Los clientes no deben estar obligados a depender de interfaces que no utilizan.

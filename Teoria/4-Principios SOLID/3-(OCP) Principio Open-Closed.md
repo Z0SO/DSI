@@ -15,7 +15,6 @@ Cambia el comportamiento de una clase mediante herencia, polimorfismo y composic
 El **OCP** establece que el comportamiento de las entidades de software debe poder extenderse sin modificar su código fuente original. Esto se logra mediante la herencia, el polimorfismo y la composición, permitiendo que las clases sean reutilizables y resistentes a cambios futuros sin necesidad de alterarlas directamente.
 
 ### Ejemplo Práctico
-
 #### Problema Inicial
 En una aplicación de dibujo, la clase `EditorGrafico` tenía métodos definidos para dibujar cada tipo de figura. Esto provocaba que siempre que apareciera una nueva figura, hubiera que modificar la clase `EditorGrafico` y crear nuevas clases, no cumpliendo con el OCP.
 
@@ -70,7 +69,9 @@ class Triangulo implements Figura {
 }
 ```
 
+**Clase EditorGrafico**: Contiene un método `dibujarFigura()` que acepta un objeto de tipo `Figura` y llama al método `dibujar()` del objeto proporcionado. Esto permite que el editor gráfico pueda dibujar cualquier figura que implemente la interfaz `Figura`.
 ### Beneficios del OCP
+
 - **Flexibilidad**: Permite que las entidades de software se adapten a nuevos requisitos sin cambiar el código existente.
 - **Mantenibilidad**: Facilita el mantenimiento del código, ya que las extensiones no afectan la funcionalidad existente.
 - **Reusabilidad**: Aumenta la reusabilidad de las clases y módulos al permitir que se extiendan sin ser modificados.

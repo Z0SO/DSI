@@ -1,5 +1,5 @@
 
-Según ***Booch***, el diseño orientado a objetos es un método que abarca el proceso de descomposición orientada a objetos y una notación para representar modelos tanto lógicos como físicos, estáticos y dinámicos del sistema bajo diseño.
+Según ***Booch***, el diseño orientado a objetos es un **método** que abarca el **proceso de descomposición orientada a objetos** y **una notación para representar modelos** tanto lógicos como físicos, estáticos y dinámicos del sistema bajo diseño.
 
 ## Características del Diseño Orientado a Objetos
 

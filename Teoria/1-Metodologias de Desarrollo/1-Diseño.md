@@ -3,7 +3,9 @@
 ---
 ## Concepto de Diseño según Ralph y Wand
 
-El diseño se define como la especificación de un objeto por parte de un agente, destinado a lograr objetivos en un entorno particular, utilizando un conjunto de componentes primitivos, satisfaciendo un conjunto de requisitos y sujeto a algunas restricciones. Este enfoque resalta la importancia del diseño en el proceso de desarrollo de software, diferenciando claramente entre análisis y diseño:
+*El diseño se define como la **especificación** de un **objeto** por parte de un **agente**, destinado a lograr **objetivos** en un **entorno** particular, utilizando un conjunto de **componentes primitivos**, satisfaciendo un conjunto de **requisitos** y sujeto a algunas **restricciones.*** 
+
+Este enfoque resalta la importancia del diseño en el proceso de desarrollo de software, diferenciando claramente entre análisis y diseño:
 
 - **Análisis**: Responde al **qué** se va a diseñar, identificando los requisitos y restricciones.
 - **Diseño**: Responde al **cómo** se va a implementar, definiendo la estructura y componentes del sistema para alcanzar los objetivos establecidos.

@@ -48,8 +48,10 @@ Estados que a su vez poseen varios estados. Una transición de un estado a un su
 
 **Estados no ortogonales**: Un objeto puede tener un estado a la vez. Son los que más vemos. No puede haber dos estados concurrentes.
 
-- ![](https://lh7-us.googleusercontent.com/docsz/AD_4nXcuUE4OEH02sv3AQ4Ns8_ZHkZuugdaA7gEbr91t3Ewbijv8xYZNcb9x6xqiI2ka3_25jDiF0FaTi0qyqBnOSHprU_mCj0fVigfJgA3Tqz7cwwhfrnCLScMTRBts2TPv_S4M3Snj9dYr1UHlbyhQS32BthIs?key=VReuh94fGGpJZLGsXsGdUQ)
+- ![](https://lh7-us.googleusercontent.com/docsz/AD_4nXdDLKEcAONC97pKn5UFtCkgyzOOwua-r02rUgmBNtEJ77IVvTAr3CVtCIAMvoby2E8Stn3ULBRpfT0ndzhuFB-OFOIFw_l9dnkZjdbTSXz42TgFGY54lSkXub9eyKfGpJbOB8pisbdjgw4GdUamRZmonJkI?key=VReuh94fGGpJZLGsXsGdUQ)
 
 **Estados ortogonales**: Múltiples estados simultáneos, estos tienen más sentido cuando modelamos un sistema completo.
 
-- ![](https://lh7-us.googleusercontent.com/docsz/AD_4nXdDLKEcAONC97pKn5UFtCkgyzOOwua-r02rUgmBNtEJ77IVvTAr3CVtCIAMvoby2E8Stn3ULBRpfT0ndzhuFB-OFOIFw_l9dnkZjdbTSXz42TgFGY54lSkXub9eyKfGpJbOB8pisbdjgw4GdUamRZmonJkI?key=VReuh94fGGpJZLGsXsGdUQ)
+- ![](https://lh7-us.googleusercontent.com/docsz/AD_4nXcuUE4OEH02sv3AQ4Ns8_ZHkZuugdaA7gEbr91t3Ewbijv8xYZNcb9x6xqiI2ka3_25jDiF0FaTi0qyqBnOSHprU_mCj0fVigfJgA3Tqz7cwwhfrnCLScMTRBts2TPv_S4M3Snj9dYr1UHlbyhQS32BthIs?key=VReuh94fGGpJZLGsXsGdUQ)
+
+
