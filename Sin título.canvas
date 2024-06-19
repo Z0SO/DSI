@@ -1,12 +1,12 @@
 {
 	"nodes":[
-		{"id":"2ed6a0ecf74363c3","x":-397,"y":-191,"width":237,"height":111,"type":"text","text":"ARCHIVOS / DIR\nMODIFICADOS"},
-		{"id":"df188cd916b2fd8a","x":1440,"y":-305,"width":357,"height":65,"type":"text","text":"\n\nREPOSITORIO EN LA NUBE\n"},
-		{"id":"85426496e164d2fa","x":-720,"y":-60,"width":1871,"height":660,"color":"1","type":"text","text":""},
-		{"id":"cf6e462c8361cdb8","x":920,"y":-167,"width":151,"height":64,"color":"4","type":"text","text":"COMMIT"},
-		{"id":"5b002e4e32be11f6","x":160,"y":-191,"width":250,"height":111,"type":"text","text":"SEMI CONFIRMACION\nCOMMIT"},
-		{"id":"86e41906d2569342","x":920,"y":133,"width":391,"height":87,"type":"text","text":""},
-		{"id":"cbb0a4589a6b7041","x":1720,"y":-387,"width":455,"height":504,"color":"5","type":"text","text":""}
+		{"id":"2ed6a0ecf74363c3","type":"text","text":"ARCHIVOS / DIR\nMODIFICADOS","x":-397,"y":-191,"width":237,"height":111},
+		{"id":"df188cd916b2fd8a","type":"text","text":"\n\nREPOSITORIO EN LA NUBE\n","x":1440,"y":-305,"width":357,"height":65},
+		{"id":"85426496e164d2fa","type":"text","text":"","x":-720,"y":-60,"width":1871,"height":660,"color":"1"},
+		{"id":"cf6e462c8361cdb8","type":"text","text":"COMMIT","x":920,"y":-167,"width":151,"height":64,"color":"4"},
+		{"id":"5b002e4e32be11f6","type":"text","text":"SEMI CONFIRMACION\nCOMMIT","x":160,"y":-191,"width":250,"height":111},
+		{"id":"86e41906d2569342","type":"text","text":"leer 8y9 de 2\nleer 1\nterminar 5 y 6","x":920,"y":133,"width":520,"height":227},
+		{"id":"cbb0a4589a6b7041","type":"text","text":"","x":1720,"y":-387,"width":455,"height":504,"color":"5"}
 	],
 	"edges":[
 		{"id":"baa81350bbc547a2","fromNode":"2ed6a0ecf74363c3","fromSide":"right","toNode":"5b002e4e32be11f6","toSide":"left","label":"git add ."},
