@@ -92,7 +92,7 @@ Se pueden usar distintos enfoques: modelo de dominio, modelo de negocio o ningun
 
    Algunos requisitos no funcionales son más genéricos y no se pueden conectar a un caso de uso particular ni a una clase específica del mundo real. Se mantienen como una lista de requisitos suplementarios.
 
-# Captura de Requisitos como Casos de Uso
+## Captura de Requisitos como Casos de Uso
 
 Los requisitos funcionales pueden estructurarse eficazmente como **casos de uso**. Esta forma de modelado permite capturar las necesidades del sistema de una manera **sistemática** e **intuitiva**. Además, se enfoca en los **usuarios** y en las **necesidades comerciales** que deben satisfacer, asegurando que se agregue valor a cada usuario o sistema externo.
 
