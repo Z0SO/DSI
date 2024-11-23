@@ -21,5 +21,4 @@
 - Cada modelo tiene como entrada al anterior, aumentando el grado de especificidad.
 - El modelo de CU está en lenguaje natural.
 
-**Nota**: Aquí puedes incluir otra imagen.  
-`<inserta tu imagen en Obsidian>`  
+![[Pasted image 20241123172711.png]]

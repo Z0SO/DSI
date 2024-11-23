@@ -24,6 +24,7 @@ La arquitectura de software es el **conjunto de decisiones significativas** acer
 - **Fomentar la reutilización**: Identificar elementos reutilizables.
 - **Hacer evolucionar el sistema**: Facilitar su adaptación a nuevos requisitos.
 
+![[Pasted image 20241123172752.png]]
 ### Importancia de una Buena Arquitectura
 - Permite implementar los **casos de uso correctos** de manera **económica** y **eficaz**, tanto en el presente como en el futuro.
 - Establece una **línea base** al final de la fase de elaboración:
@@ -38,8 +39,10 @@ La descripción de la arquitectura debe mantenerse **actualizada** a lo largo de
 - **Actualización de componentes reutilizables**.
 - **Reordenación de la estructura de procesos**.
 
+![[Pasted image 20241123172821.png]]
 ### Nivel de Detalle
 - Aunque debe ser detallada en lo esencial, la arquitectura se representa como una **vista de alto nivel**:
   - **Propósito**: Satisfacer las necesidades de todos los participantes del proyecto.
   - **Descripción**: Una vista consolidada de los modelos del sistema en un momento específico.
 
+![[Pasted image 20241123172846.png]]

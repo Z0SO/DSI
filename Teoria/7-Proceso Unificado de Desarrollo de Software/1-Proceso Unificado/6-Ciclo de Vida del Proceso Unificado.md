@@ -1,0 +1,49 @@
+## CICLO DE VIDA
+
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdSSpvoAg5uTnW78uldy0HJVs8c3MAfn0kc7bqAUJ1vQcMUf9teWFXABwjgsLHwQyX0du2pbzKKT6O2g1vgj3czRvnE1QFFEVdc2QyFtjUUQqiZlQAwaDWTkaJWVwXo5lxhDcbrnBxfDJFJhpnosRTxEs8?key=VReuh94fGGpJZLGsXsGdUQ)
+
+Cada ciclo tiene una version del sistema
+
+Cada ciclo esta compuesto por 4 fases
+
+Cada fase se realiza mediante iteraciones
+
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeU5O2NcbF_h34cPBnWjQgnSvvA3xiwl3CsCaslUJWEfZ_OVyNTKOvOnqLp6dQugT1WLUAaCwm7iCsf7bOzwcPjnvJQg_mxBzQLGAoJ6TuD7fNq6jDPcun1YF-xx8pObuyppiakLV_P8SPQGA2OSGkT8JU?key=VReuh94fGGpJZLGsXsGdUQ)
+
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfTotqyZljibESnQhdA2vauoCioHdBlnRowNWQYuz_IjKZs_Hz-euqZon95cKgpOdRP6OQZcAC36d5FOs9_hPUih4CZhI3jbkgmSgjMKG3gFQxCMKPAYyLdj7zeO3mz_lPaWnkPx6LEUvJAcu4hmfz1uTA?key=VReuh94fGGpJZLGsXsGdUQ)
+
+  
+
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXciZpupTgkpETPJVA6CQdZtsM0vfstUH93p3jwqJYYBz_R6PuOVZ6k5R7ao3KVwEYB2C9EoWVN0T1jv1BXcsRQ4c-9L3PAeOTTnNVDs_PfEbi2FljVUh_CSnOJ7NYL1kFY9-DCAS1_IKixIGXBoxjUj0yfA?key=VReuh94fGGpJZLGsXsGdUQ)
+
+  
+
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcH2cKFphHMf8UrGOJDTcoFIxlAFzoC8nnodMsKToZOhlRrtDjcZwcy0xobtm3irhoLfl_HL6XLdM6ZmOFjZ7N05Jp4plzx7K6fG9FSW6shYg3gCeApfl4CfFbvOt_akj6Rm5ViaMiWeZKOTiTW6moORsaL?key=VReuh94fGGpJZLGsXsGdUQ)
+
+## CONCEPTOS CLAVES (LAS 4 P DE PUDS)
+
+Flujo de Trabajo Fundamental![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXd33A94KJvzheBfabYe-0QAfpQKgXYq0KEpXRAB5uzO1HxG8tEJqUGBx14fRtKn-i35mou_lqg1qOv569yGKIomTIZJD-C1sYVS-ZuasB4wZr5cX9nwSSdhQ7mmZLbgKcfYsLHOgZzQkJ_SzslbTshtFFSi?key=VReuh94fGGpJZLGsXsGdUQ)
+
+Actividad![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcICtKn52jLRnnHoqj2Q8X88KbCKonUpC_8h_c4Lkw_DcKndBqRyP9sQ3IJkgWndcQvYXibFRoZZPPWAlIB-OY4kY1eApSCdBHEUoZ3HcEnPrlhwqUQeOJTMUqB_pbz8zM7z8HN92hzhVwMVaDtBNL66HYL?key=VReuh94fGGpJZLGsXsGdUQ)
+
+Trabajador![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeNDz2dmOLiVM7XXR0XKturCzFoNmPfr2vZVuNEtt6criW5qtiaJ0q4Jml9oh7l4LDolitYbrIHcjFjdJjPss0ZMq7159d0pRbaHgY8ipDBxVXZLfsVnXnuZcrZWjgLY5E8kJWXQJpAdIZzbN-j0LjFy9KV?key=VReuh94fGGpJZLGsXsGdUQ)
+
+  
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdpUT9LqODci1uc6KwHjwPEHQCWR9EHWnhEE9Dno9MxxKCGdbDXeqqwzFDNjWm2RyeaHfArQH6jwG2S-Stbcj6-tq_yy1xcTA4lughQfRI0K8BXkURdxKHIMuyl_n2_jzItJ-JhXT46a2MuJqSH66c5IFA?key=VReuh94fGGpJZLGsXsGdUQ)
+
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXflPAHYszCh0y_wIrrOTmDuMQmvkEf0BSMvgDlFL0KDdu2cF_JnA0WMztbLHt0_9Xql4GSlM4V0vPP_O7la0QQqduH3Tk7R8MLWXKTqsp5CfzjKASicUulG9pqwMs1PpuJ7JnwCURvq4PFKgHfTSeUFRLU?key=VReuh94fGGpJZLGsXsGdUQ)
+
+Artefacto
+
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXe7PGvgO2oKGLwSCvBuu-Fal-W1MQPveW4KTq-I4LoGvSw9Mqa1xHQhWQQJUZnLyFVWzKskOMtbnR8pEge67IuiopnCCFPtYFbupDYE9STHCw7FLdk-ZhHD4gVQFoDiyM9KUGUKV6GMxb0mjNnHEnfk8v8?key=VReuh94fGGpJZLGsXsGdUQ)
+
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXesDL1RFzavaec16USdsenLJVPlO57Od3ED3nhee2vlWEQtvV0Nq1vlDmp09A3b-Jz52rKhKs3SNUzSgcHPuQtpK3zfalmwH7fA6jwQFOgwgMFvYlqAc5txzeKHylZ3fxV6ljjh2NnhwVrtlWVzMzr2udka?key=VReuh94fGGpJZLGsXsGdUQ)  
+  
+Notación alternativa para flujo de trabajo (seguro pregunta el ggs):
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeJzppKXrVlPZZUInC-OT79QJ-2Kb2L8wfiiWiGE696QoYwHd4wL-Xr-AHOH0ref3ehmmLmLaAsI8MOnkDbt0kN9lSB3tSwWzLxT4uLtOgFv0QTD6-MWb5ycyLTrnRw-r2rw8QTR0lmKyc8R1is8wvmPhxL?key=VReuh94fGGpJZLGsXsGdUQ)
+
+DIFERENCIAS CON RUP
+
+- Workflows distintos.![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfHXi4-n06lFlBKXffzlk3NdZoXC6_DJ6P2QxoWNkwpayW3BoFVxUioH8gDtXNQie7ckU_T7WywKmAXsd5rjhJWA5hRmpWAbXw9C_hC0Ep66hKfNTLkbGEUBZddseN-64g5uTprJFxvgdC1SJ69DmZ611A?key=VReuh94fGGpJZLGsXsGdUQ)
+    
+- En general, son lo mismo. RUP es la especialización, PUDS es generalización.

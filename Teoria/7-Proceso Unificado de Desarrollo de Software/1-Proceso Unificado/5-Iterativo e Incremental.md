@@ -37,3 +37,25 @@
   En ciclos iterativos e incrementales, cada iteración añade incrementos significativos y genera cambios importantes.
 - **Función principal**:  
   Actuar como control de versiones, asegurando que los cambios y adiciones no rompan funcionalidades previas.
+
+![[Pasted image 20241123172927.png]]
+
+---
+
+## ¿Que se pretende en cada fase?
+
+![[Pasted image 20241123173106.png]]![[Pasted image 20241123173124.png]]![[Pasted image 20241123173156.png]]
+
+### Flujos de trabajo
+![[Pasted image 20241123173218.png]]
+### Comparacion con el modelo en cascada
+
+![[Pasted image 20241123173249.png]]
+![[Pasted image 20241123173257.png]]
+
+#### Beneficios del enfoque iterativo
+- La iteración controlada reduce el riesgo a los costes de un solo incremento.
+- **Reduce el riesgo** de retrasos en el calendario atacando los riesgos más importantes primero.
+- **Acelera el desarrollo**. Los trabajadores trabajan de manera más eficiente al obtener resultados a corto plazo.
+- Tiene un **enfoque más realista** al reconocer que los requisitos no pueden definirse completamente al principio.
+- ![[Pasted image 20241123173500.png]]
