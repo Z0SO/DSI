@@ -155,508 +155,338 @@ La arquitectura de software puede verse como un conjunto de decisiones que deben
 El modelo **Vista 4+1** describe la arquitectura del sistema utilizando múltiples vistas concurrentes. Cada vista representa el sistema desde el punto de vista de diferentes interesados, como usuarios finales, desarrolladores o directores de proyecto. El **+1** es la vista central que describe el sistema a través de **casos de uso**.
 
 ![Vista 4+1](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfjchy8DjeSCRBImrFjqsVLC1RdfWyVvxfnANPmXC5yT07Xpt0tMBOnx7bHgABNe0VJVRZhkGpvvbpQDlPU1raDBs8qgeUa5vM3C5TLkDNbTWQqOEyq8JJnc_xa24dvEoQKQmT6otU91-UrHO4VHoBIcZXl?key=VReuh94fGGpJZLGsXsGdUQ)
-
 [Ver Video Explicativo](https://www.youtube.com/watch?app=desktop&v=r8ucofiI8vY)
+## ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcth-bGk5IgBmgmmFbIh8VZQMw_VPY-b6DkRaZxvppCORevovom_QVu7bB_vanGE0S8ApzP9W9grlccthO0iFuGTrIttK0K2sXoqPhkwi2xFeqH3nQjakH6BWNq_lHagz-uEpVK9EBxfCu0jAlrnIvOAsIi?key=VReuh94fGGpJZLGsXsGdUQ)  
 
 ---
+## Estilos Arquitectónicos
 
-## Referencias Visuales
+Un **estilo arquitectónico** define una familia de sistemas en términos de un patrón de organización estructural. Según Garlan y Shaw, este estilo determina el vocabulario de **componentes** y **conectores** que se pueden utilizar en instancias de ese estilo.
 
-![Imagen Final](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcth-bGk5IgBmgmmFbIh8VZQMw_VPY-b6DkRaD_N5rJmlF_wWwE4gxQw16Afdu6q4otgIUm6tPEOBYdcG8Xjle7Le9_VpwlMyLqcQkb7t3qX_jxqPQKwHtPtkC-V_4QKZpnnSg2sOhp_GdJVm3vH_gNWtLo?key=VReuh94fGGpJZLGsXsGdUQ)
+Un **patrón arquitectónico** es una descripción estilizada y abstracta de buenas prácticas, probadas en diferentes sistemas y entornos, como menciona Somerville.
 
-  
-  
-  
-  
-  
-
-## Estilos Arquitectonicos
-
-Define una familia de sistemas en términos de un patrón de organización estructural. [Garlan y Shaw].
-
-Determina el vocabulario de componentes y conectores que se pueden utilizar en instancias de ese estilo.
-
-Un patrón arquitectónico es una descripción estilizada y abstracta de buenas prácticas, que ha sido probada en diferentes sistemas y entornos [Somerville].
+---
 
 ## Patrones de Arquitectura (Centralizados)
 
 ### En Capas (Layered)
 
-Se la considera monolítica: ensamblada en un solo bloque de código, archivo o ejecutable.
+El patrón **en capas** se considera monolítico, ya que agrupa todo en un solo bloque de código, archivo o ejecutable. Este patrón divide el software en unidades denominadas **capas**, donde cada capa es una agrupación de módulos que ofrecen un conjunto cohesivo de servicios.
 
-El patrón por capas divide el software en unidades llamadas capas.
+#### Características:
 
-Cada capa es una agrupación de módulos que ofrece un conjunto cohesivo de servicios.
+- **Independencia y separación**: Cada capa depende únicamente de la capa inmediatamente inferior y es independiente de las superiores.
+- **Desarrollo incremental**: Permite un desarrollo modular y escalable.
+- **Cambio y portabilidad**: Las capas pueden ser reemplazadas sin afectar al sistema global. Además, la localización de dependencias facilita la implementación multiplataforma.
+- **Dificultades**: Mantener una separación limpia entre capas puede ser complicado, y el rendimiento podría verse afectado.
 
-  
+#### Comunicación entre capas:
 
-![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXc29xbKnN2mLq3-Da7aGlomRvwTQiP3oTSTf2w5xSsTEhFH_682Hx3Wbh-Mn97HqYrix6cdIQo_gqMXCDsAeybXSWFJyHB5KVvwdtbxgQoaNCQWSFN2pdp8afldIvHJYD26dMy3xAlBhX2ejOEq9IhYz2r_?key=VReuh94fGGpJZLGsXsGdUQ)
+- **Mensajes de abajo hacia arriba**: Asíncronos, sin necesidad de esperar una respuesta.
+- **Mensajes de arriba hacia abajo**: Síncronos, se espera una respuesta para continuar.
 
-- Una forma de lograr la separación e independencia.
-    
-- La funcionalidad se organiza en capas separadas.
-    
-- Cada capa depende de la capa inmediatamente inferior.
-    
-- Cada capa es independiente de las capas superiores.
-    
-- Desarrollo incremental de sistemas.
-    
-- Cambiable, una nueva capa puede reemplazar una capa existente.
-    
-- Portable, ya que los sistemas en capas localizan las dependencias de la máquina, implementaciones multiplataforma.
-    
-- Una separación limpia entre capas suele ser difícil.
-    
-- El rendimiento puede ser un problema.
-    
-- RIGUROSAMENTE cada capa solo puede comunicarse con la inmediata superior e inferior NADA MÁS.
-    
+#### Términos:
 
-LAYER y TIER SE TRADUCEN COMO CAPA
+- **LAYER**: Capa lógica.
+- **TIER**: Capa física o de implementación.
 
-- LAYER: Capa lógica.
+La **infraestructura** se refleja en la capa vertical derecha, que representa la realidad de que un modelo de capas riguroso no siempre es posible de implementar.
+
+---
+
+### Ejemplos de Aplicación:
+
+- **Modelo OSI**: ![OSI Model 7 Layers](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdMaCqJerZSy4297dZrNXdTmGLQuKH-KnWgjwkXNg3b5WpgA5LCla3QcGu26uzmcLiyzu2j5pGnI2OM3jRDzoopgj_mftSBVI7X_IASX9pfHdxHA8OhbOkVamCujePA2eytupXJG696T-rGevi0AekNkubW?key=VReuh94fGGpJZLGsXsGdUQ)
     
-- TIER: Capa física o de implementación.
+- **Diagrama de capas sencillo**: ![Diagrama de Capas](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeNelua2Oem78hh_HhHtHPMU8ZJlh9XDiYm0ZtiUnYrYiM3PBo7hWujl75jBpXc6BW7bXUM8zADMvp-Fu8pP6fUo8AAKB-GCJAFpGOv-nMUbrsCEKXaQ29Wz9txo5gneDHSjGYKaG6CZh1m2OaUMU8_fl-N?key=VReuh94fGGpJZLGsXsGdUQ)
+    
+- **Ejemplo gráfico de capas con un lobo vestido**: ![Lobo vestido de capas](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdQbxAJVpiJMEKZQIV5MdteGmyZNEI_wdFu4eWFT1mMx9LsWwj4CKkaP12RANyFjRWbBksXeh8CYmaysRnzuzSffTdiF-00Xb0gGXeCzyzijYSeHyorFvimKi-5Dthl2UNBeMGtsQ4PZtiYqAPQ9kXfaoA?key=VReuh94fGGpJZLGsXsGdUQ)
     
 
-Mensajes de abajo hacia arriba: Asincronicos, no se espera una respuesta para continuar.
+Este ejemplo muestra un diseño erróneo de capas, ya que las capas están completamente interconectadas, lo que genera una dependencia total.
 
-Mensajes de arriba hacia abajo: Sincronicos, se espera una respuesta para continuar.
+---
 
-La capa vertical de la derecha indica la infraestructura (por ej. el lenguaje que se utiliza), refleja que en la realidad es imposible utilizar un modelo riguroso de capas.
+#### Ejemplos adicionales:
 
-Ejemplos:
-
-- Modelo OSI.![OSI Model 7 Layers](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdMaCqJerZSy4297dZrNXdTmGLQuKH-KnWgjwkXNg3b5WpgA5LCla3QcGu26uzmcLiyzu2j5pGnI2OM3jRDzoopgj_mftSBVI7X_IASX9pfHdxHA8OhbOkVamCujePA2eytupXJG696T-rGevi0AekNkubW?key=VReuh94fGGpJZLGsXsGdUQ)
+- **Capas con un lateral**: ![Capas con lateral](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfbMRzvWmoNFwzuYY6j-O90mI7lUjalkxht-LCyFHM_DlE3MSeCOflq_LZ5aVnyPatfQdj9PTbMXcY5-iy3n4qPjyl05ueg59Qv_8uKlcyvc3wNfbczLt5SUxOeIewtSB4h2S383JsFGOSks-8J1SYfswU?key=VReuh94fGGpJZLGsXsGdUQ)
     
-- Un diagrama de capas sencillo con una clave sencilla que responde a la pregunta de usos.![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeNelua2Oem78hh_HhHtHPMU8ZJlh9XDiYm0ZtiUnYrYiM3PBo7hWujl75jBpXc6BW7bXUM8zADMvp-Fu8pP6fUo8AAKB-GCJAFpGOv-nMUbrsCEKXaQ29Wz9txo5gneDHSjGYKaG6CZh1m2OaUMU8_fl-N?key=VReuh94fGGpJZLGsXsGdUQ)
+- **Capas con funciones comunes**: La capa D contiene funcionalidades comunes que necesitan todas las capas, como manejo de errores y métodos de acceso a bases de datos.
     
-
-  
-
-- Un lobo vestido de capas.![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdQbxAJVpiJMEKZQIV5MdteGmyZNEI_wdFu4eWFT1mMx9LsWwj4CKkaP12RANyFjRWbBksXeh8CYmaysRnzuzSffTdiF-00Xb0gGXeCzyzijYSeHyorFvimKi-5Dthl2UNBeMGtsQ4PZtiYqAPQ9kXfaoA?key=VReuh94fGGpJZLGsXsGdUQ)
+- **Diseño de capas segmentadas**: ![Capas segmentadas](https://lh7-rt.googleusercontent.com/docsz/AD_4nXft61leKUwQtNHXzT2_Tn97y1XXFo6niPjpkiQLPueTR17Ib_OathZSlVcT73JLMsU2J6KNrwSKmMcnjjBplyrKhvTmA9xqRwz8DV6dRC0eI5QnVVBndWdsAiYJCAkGgXVS_aSSfHtnh7K4v0Vu6bkQulUs?key=VReuh94fGGpJZLGsXsGdUQ)
     
 
-Esto no es un diseño por capas porque al estar todo conectado todas las capas dependen de todas y hay dependencia total.
+En este diseño, los segmentos de la capa superior no pueden ser utilizados entre sí, pero sí pueden hacerlo los de la capa inferior.
 
-- Capas con un lateral.![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfbMRzvWmoNFwzuYY6j-O90mI7lUjalkxht-LCyFHM_DlE3MSeCOflq_LZ5aVnyPatfQdj9PTbMXcY5-iy3n4qPjyl05ueg59Qv_8uKlcyvc3wNfbczLt5SUxOeIewtSB4h2S383JsFGOSks-8J1SYfswU?key=VReuh94fGGpJZLGsXsGdUQ)
-    
+## Repositorio / Pizarrón (Shared-Data)
 
-La capa D contiene cosas comunes que necesitan todas las capas (manejo de errores, métodos de acceso a BD, etc.).
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdptz5mXhZfH4aXsMFosH-dYi2YJCC49YurDvXX-7kX3wzrA7NVxJ0q-xqz9fbJaeOmvYjKEv6ExVbxZaC83z4ql417i2a-iuJ_wCcS91n0cZrfZM8R0sW4SYUNQDoojrC7Dsj-l9X4MI0aTq2TQePpEkaV?key=VReuh94fGGpJZLGsXsGdUQ)
 
-- Diseño de capas con capas segmentadas![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXft61leKUwQtNHXzT2_Tn97y1XXFo6niPjpkiQLPueTR17Ib_OathZSlVcT73JLMsU2J6KNrwSKmMcnjjBplyrKhvTmA9xqRwz8DV6dRC0eI5QnVVBndWdsAiYJCAkGgXVS_aSSfHtnh7K4v0Vu6bkQulUs?key=VReuh94fGGpJZLGsXsGdUQ)
-    
+El **repositorio** es un componente central de almacenamiento de datos que permite la comunicación entre otros componentes del sistema. Estos componentes **independientes** no interactúan directamente entre sí, sino que comparten datos a través de este repositorio.
 
-Los segmentos de la capa superior no pueden utilizarse entre sí, pero sí los segmentos de la capa inferior.
+### Ventajas
 
-### Repositorio / Pizarrón (Shared-Data)
+- **Gestión consistente de datos**: Todos los datos se almacenan y gestionan de manera centralizada.
+- **Uso eficiente de grandes volúmenes de datos**: Es útil para almacenar grandes cantidades de datos a largo plazo.
+- **Acciones desencadenadas por los datos**: Puede utilizarse como un _pizarrón activo_ donde la inclusión de datos genera acciones.
 
-![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdptz5mXhZfH4aXsMFosH-dYi2YJCC49YurDvXX-7kX3wzrA7NVxJ0q-xqz9fbJaeOmvYjKEv6ExVbxZaC83z4ql417i2a-iuJ_wCcS91n0cZrfZM8R0sW4SYUNQDoojrC7Dsj-l9X4MI0aTq2TQePpEkaV?key=VReuh94fGGpJZLGsXsGdUQ)  
-Los componentes independientes se comunican a través de un repositorio de datos central (tmb componente).
+### Desventajas
 
-Los componentes independientes no interactúan directamente.
+- **Cuello de botella**: El repositorio centralizado puede convertirse en un punto de congestión.
+- **Punto único de fallo**: Un error en el repositorio puede afectar a todo el sistema.
 
-Todos los datos se pueden administrar de manera consistente.
+### Ejemplo de uso
 
-Conviene cuando:
+- **IDE con control de versiones**: Los datos de código y otros archivos se almacenan en un repositorio centralizado que permite la interacción con diferentes herramientas del IDE.
 
-- Se generan grandes volúmenes de datos que tienen que ser almacenados durante mucho tiempo (repositorio-pasivo).
-    
-- La inclusión de datos en el repositorio desencadena una acción (pizarrón-activo).![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXddoKi781-j2rSLuzwyv9pQWfQoFHxpGMerqHYovy3baQ6qFo8WtSJSzuTz_wP7dFGYhpl_2G4sjSGU7xdK2deZ_f8-FL8q6V34UjT3yIGZS5VfgZv56vX-kls1He2tf3Hjy_9TmkYz72u1SoInBROjwqY?key=VReuh94fGGpJZLGsXsGdUQ)
-    
-- Lo uso cuando tengo datos y necesito trabajarlos en conjunto.
-    
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXf5pwPUSQ0_p30zhVej0si4qLABVisDdphaL8CIWUqnWhOndh681uGggvp8Ta6wBlU4E-yKO3FFK_XGEWZnzUdwAEdEZkEndZ8n2FTVdkcJjgxdxGdVo6uCqESOZw4zRBY03ygQ3hGP1J1intfOo48no6s?key=VReuh94fGGpJZLGsXsGdUQ)
 
-Desventaja:
+---
 
-- Cuello de botella.
-    
-- El repositorio es un único punto de fallo (afecta a todo el sistema).
-    
+## Pipes and Filters (Canalizaciones y Filtros)
 
-  
-  
-  
-
-Ejemplo: IDE con varias herramientas y un repositorio con control de versiones.![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXf5pwPUSQ0_p30zhVej0si4qLABVisDdphaL8CIWUqnWhOndh681uGggvp8Ta6wBlU4E-yKO3FFK_XGEWZnzUdwAEdEZkEndZ8n2FTVdkcJjgxdxGdVo6uCqESOZw4zRBY03ygQ3hGP1J1intfOo48no6s?key=VReuh94fGGpJZLGsXsGdUQ)![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXchs4RsA5I1EvV-NYhSYOBscyi1bmcLbDCRL88jWhgEZr3WI6LKcqwCk0ezsLG1Wq3vNBPGno9yYmYB9SGQR5q3Eviz3zcnTp4RpMTvnWopnomaDTkelAmHFNSYQR8Bbv55Ilcp4ed7898SCKLG2O9UNDs?key=VReuh94fGGpJZLGsXsGdUQ)
-
-### Pipes and Filters  
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXffVmDpPOu_ArQkf-Tbsb-G-cs1KV4jEt7wfZUSNIDLQf1x0emEFyAUJkD0_iaGjE3b2oWO5fMTtzOC3pX23gBbb5WvBxxmKQy6SvoMxKv00GMsApJ62wn7UD4WQRZrGzup3_IXnJb3BOgXT-9DolDFyYA8?key=VReuh94fGGpJZLGsXsGdUQ)
 
-Arquitecturas de tuberías o filtros o canalizaciones → PIPELINES.
+La arquitectura **Pipes and Filters** es un patrón en el que los datos fluyen a través de una serie de filtros conectados por tuberías.
 
-Voy a usarla cuando necesite funcionalidades o transformaciones sucesivas sobre un conjunto de datos.
+### Conceptos clave
 
-Cada componente tiene un conjunto de entradas y de salidas.
+- **Filtros**: Cada filtro transforma los datos de entrada y produce una salida. Los filtros procesan los datos de forma **incremental**, comenzando la salida antes de que toda la entrada haya sido procesada.
+- **Tuberías**: Las tuberías actúan como **conectores** entre los filtros, permitiendo que los datos fluyan de uno a otro.
 
-Filtro: Produce un resultado aplicando una transformación local a los flujos de entrada y calculando de forma incremental (usualmente) para que la salida comience antes de que se consuma la entrada.
+### Cuándo usar este patrón
 
-Tubería: Es un conector entre filtros, conducto para los flujos de datos.![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdznTRCTMCQri2LuBpageSte9WqzteLb2cYjYieJLbqz4J3ocFOW52KwXCdEdkrCRBy0n30P_7mEKSYwHCPg0OdjWrZ5G71WLDeUfG4XonFIRHaf5RWgc8UolQ_rntInNn9nJSLVfotd_ZUP6xzHKg1ucpV?key=VReuh94fGGpJZLGsXsGdUQ)
+Este patrón es útil cuando se requiere **transformaciones sucesivas** sobre un conjunto de datos, permitiendo que cada componente (filtro) realice su tarea en una secuencia ordenada.
 
-d![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeJZi0iIASfWQ3zTkmj-lJih9LQ6tuoAafGbJRtmspfdQaWfZNakaxXHZEQV9UGZbZL9BpmcPcVXDqWZ73K3i84zw0Qzc0617nRHYsxgZ2omTtALB96J--pC8_AG5UVvcjqy8Kvu1QZNmAgrB6De2mK02eb?key=VReuh94fGGpJZLGsXsGdUQ)
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdznTRCTMCQri2LuBpageSte9WqzteLb2cYjYieJLbqz4J3ocFOW52KwXCdEdkrCRBy0n30P_7mEKSYwHCPg0OdjWrZ5G71WLDeUfG4XonFIRHaf5RWgc8UolQ_rntInNn9nJSLVfotd_ZUP6xzHKg1ucpV?key=VReuh94fGGpJZLGsXsGdUQ)
 
-  
-  
-  
-  
-  
+---
 
-### Microkernel / Plug-in
+## Microkernel / Plug-in
 
-Consta de un sistema central y plug-in’s que proporcionan extensibilidad, adaptabilidad y aislamiento de las características de la aplicación y la lógica de procesamiento personalizada.
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcjXGB6kzcv2y5hIJq-vbzGBtE1pk9ryhG4jKNu3KET9tL6ul7YjGwYdV7xgT2oXvP8-_ho4bCs3s7R9uPMqaVTFe8eSYoM95dc9bmscPe0hBRzUAG7_-imQ2as_OAX2TnjfPvvIKQNhWtZh5ILXHUbZ7TA?key=VReuh94fGGpJZLGsXsGdUQ)
 
-Sistema Central: Componente con la funcionalidad mínima requerida para ejecutar el sistema.
+El patrón **Microkernel** consta de un sistema central mínimo y una serie de **plug-ins** que extienden y mejoran la funcionalidad de dicho sistema.
 
-Plug-ins: Componentes independientes y autónomos que contienen procesamiento especializado, características adicionales y código personalizado destinado a mejorar o ampliar el sistema central.
+### Características
 
-La comunicación suele ser punto a punto.![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcjXGB6kzcv2y5hIJq-vbzGBtE1pk9ryhG4jKNu3KET9tL6ul7YjGwYdV7xgT2oXvP8-_ho4bCs3s7R9uPMqaVTFe8eSYoM95dc9bmscPe0hBRzUAG7_-imQ2as_OAX2TnjfPvvIKQNhWtZh5ILXHUbZ7TA?key=VReuh94fGGpJZLGsXsGdUQ)
+- **Sistema central**: Proporciona la funcionalidad básica necesaria para ejecutar el sistema.
+- **Plug-ins**: Son componentes autónomos que aportan características adicionales y código personalizado.
+- **Comunicación punto a punto**: Los plug-ins se comunican directamente con el sistema central o entre sí.
 
-  
-![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcQGHaUATIWvtzInuAZiql8zJb_13HO915jRHCLOIe5311m5gOlXoFcKtfueWrCYdNH-9R9jldh5xlFjM-5JLRivPnS_48mtz4iVoFgmytIVZt7IdFnndMha5LxjeXpoPf5WMe8LERbGRoHOD9vxN0gwpI?key=VReuh94fGGpJZLGsXsGdUQ)
+### Ventajas
 
-- El estilo de arquitectura de microkernel es flexible y extensible, permitiendo agregar fácilmente funcionalidad y características adicionales a una aplicación existente.
-    
-- Los módulos complementarios son componentes independientes que contienen lógica de procesamiento especializada, características adicionales, lógica de adaptador o código personalizado que mejora o extiende el sistema principal.
-    
-- El sistema principal necesita saber qué módulos complementarios están disponibles y cómo acceder a ellos, a menudo a través de un registro de módulos complementarios.
-    
-- Los módulos complementarios se pueden implementar de varias maneras, ya sea como bibliotecas/módulos separados, dentro de un solo conjunto de código consolidado o como servicios remotos.
-    
-- Se basa en iterativo incremental.
-    
-- Bajo costo, simple de entender.
-    
-- Se presentan cuellos de botella. No es muy apto para sistemas que requieren alta escalabilidad o elásticos.
-    
-- El core es el punto de entrada, por lo tanto también es un vector de fallo bastante grande.
-    
-- Si siempre se modifica el core, este patrón no es el apto.
-    
-
-Resumen: La funcionalidad del CORE es extendida mediante los Plug-ins. La idea principal es definir el Core de manera tal de no volver a modificarlo.
-
-Ejemplo: Google Chrome tiene funcionalidad básica y las extensiones agregan funcionalidad.![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXegIqxKRhVms1dCGYbPQW0v9LTusZ-OVPdtwcplFxcxRsT9liOoNOwupAtSAR3nv0_v-qLQNCn0uN2nKfqNRu4xXxlmnnx3uvhpCqPD4qPC-PKKffywNSNwzKbB9COvKdwcAr_sCkaxSwqO5YRljLMr3LBG?key=VReuh94fGGpJZLGsXsGdUQ)
-
-## Sistemas distribuidos (CONCEPTO)
-
-Un sistema distribuido es un conjunto de ordenadores independientes que aparece ante sus usuarios como un único sistema coherente. ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdrIOp8NQ5BWOuKIdpn-0pENRdvuoRVR3NbDYCE2eScjSJYtXkK80xeyjHF0BCSM35i5lguoKMQPBimAUkLZHwOktn6amh-q5Hb85nS1gbfXYZ2tVCqfb94TrjTLaaENmkI5LKyaEO1Qj_tWb01EO75zrdL?key=VReuh94fGGpJZLGsXsGdUQ)
-
-La idea es separar al sistema en varios nodos o componentes (computadores), solucionando el problema de cuello de botella o tolerancia a fallos que tenían algunas arquitecturas. Además, el usuario nunca se debe enterar, solo debe ver el sistema como tal.
-
-Objetivos de los Sistemas Distribuidos (Ventajas):
-
-- Recursos compartidos: Lo principal es que reduce costos, pero a medida que crece, también hay que ver la seguridad.
-    
-- Transparencia: Es ocultar el hecho de que sus procesos y recursos están físicamente distribuidos en varios ordenadores.![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXf5NMYxQRdcecEqiOlDIo3m55xgA5ZjaDdD9_zE53qjWb1COBU16mzkS8FdT7NZ4htQ_LmZvjX_ZVQF9zjIiPByByqNewARn2bGZdnhPoqMpH36v49X9T8hfNmS8k77rabeSdlUhpVPJg6DOEbRskkxNUM?key=VReuh94fGGpJZLGsXsGdUQ)
-    
-
-La transparencia nunca se puede conseguir al 100%, incluso en algunos casos no conviene conseguirla.
-
-- Apertura: Es un sistema que ofrece servicios de acuerdo con reglas estándar (Lenguaje de definición de interfaces) que describen la sintaxis y la semántica de dichos servicios. Por ejemplo, en las redes informáticas, las reglas estándar rigen el formato, el contenido y el significado de los mensajes enviados y recibidos. Estas reglas se formalizan en protocolos.  
-    La interoperabilidad caracteriza el grado en que dos implantaciones de sistemas o componentes de distintos fabricantes pueden coexistir y trabajar juntos simplemente basándose en los servicios de la otra parte, tal y como especifica una norma común.
-    
-- Concurrencia: Los procesos pueden funcionar simultáneamente en equipos separados. Los procesos pueden comunicarse entre sí.
-    
-- Escalabilidad: Puede medirse en al menos tres dimensiones:
-    
-
-- Escalable con respecto a su tamaño, lo que significa que podemos añadir fácilmente más usuarios y recursos al sistema.
-    
-- Escalable geográficamente es aquel en el que los usuarios y los recursos pueden estar muy alejados.
-    
-- Administrativamente escalable, lo que significa que puede seguir siendo fácil de gestionar aunque abarque muchas organizaciones administrativas independientes.
-    
-
-Desgraciadamente, un sistema escalable en una o varias de estas dimensiones suele presentar cierta pérdida de rendimiento a medida que se amplía. (más datos a manejar, peor rendimiento)
-
-La vinculación de red (conectar todo para tener el sistema) limita la escalabilidad. Al conectar las computadoras, depende como se haga, la escalabilidad que tendrá el sistema va a ser una.
-
-- Tolerancia a fallos: Disponibilidad de varios equipos y posibilidad de replicar información (redundancia).
-    
-
-Algunas Desventajas:
-
-- Complejidad: Difícil de entender sus propiedades emergentes y de probar, p. ej., el rendimiento dependiente de un procesador vs dependencia del ancho de banda de la red y de varios procesadores.
-    
-
-- Seguridad: Acceso desde varios ordenadores diferentes, espionaje del tráfico de red. Es difícil garantizar la integridad de los datos. Degradación por ataques de denegación de servicio.
-    
-- Manejabilidad: Diferentes tipos de computadoras, diferentes versiones del sistema operativo. Los fallos pueden propagarse a otras máquinas. Se requiere más esfuerzo para mantener el sistema en funcionamiento.
-    
-- Imprevisibilidad: La respuesta depende de la carga global del sistema, de su organización y de la carga de la red.
-    
-
-  
-  
-  
-
-Formas muy utilizadas de organizar la arquitectura de un sistema distribuido:
+- **Flexibilidad y extensibilidad**: Es fácil agregar nuevas funcionalidades sin modificar el sistema central.
+- **Aislamiento de características**: Las funcionalidades adicionales están aisladas, lo que permite la adaptación del sistema.
 
-### Arquitectura Maestro/Esclavo
+### Desventajas
 
-Las arquitecturas maestro-esclavo se utilizan habitualmente en los sistemas en tiempo real con plazos de procesamiento, en los que puede haber procesadores independientes asociados a la adquisición de datos del entorno del sistema, al tratamiento de los datos y a la gestión de los cálculos y los actuadores. También se utilizan en replicación de BD.
+- **Cuello de botella**: La modificación del sistema central puede convertirse en un punto de fallo crítico.
+- **Escalabilidad limitada**: No es ideal para sistemas de alta escala o con necesidades dinámicas.
 
-Arquitectura maestro-esclavo, que se utiliza en sistemas en tiempo real en los que se requieren tiempos de respuesta de interacción garantizados.
+### Resumen
 
-Proceso Maestro: Responsable del cálculo, la coordinación y las comunicaciones, y controla los procesos «esclavos».
+Este patrón permite la **extensión del core** del sistema mediante el uso de plug-ins sin necesidad de modificar el sistema base.
 
-Procesos Esclavos: Dedicados a acciones específicas, como la adquisición de datos.
+### Ejemplo
 
-Adecuado para el procesamiento distribuido predecible, requisitos de alto rendimiento, tolerancia a fallos o precisión.
+- **Google Chrome**: El navegador tiene una funcionalidad básica, y las **extensiones** agregan nuevas características sin modificar el sistema central.
 
-Los procesadores esclavos se encargan de las operaciones computacionalmente intensivas, como el procesamiento de señales y la gestión de equipos.
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXegIqxKRhVms1dCGYbPQW0v9LTusZ-OVPdtwcplFxcxRsT9liOoNOwupAtSAR3nv0_v-qLQNCn0uN2nKfqNRu4xXxlmnnx3uvhpCqPD4qPC-PKKffywNSNwzKbB9COvKdwcAr_sCkaxSwqO5YRljLMr3LBG?key=VReuh94fGGpJZLGsXsGdUQ)
 
-![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcg-KI9MG4n9S7kYz2iugq54UISf2nii1SycWhkhI5QUnqNyb1BMgYz3WkxSdBa2YFDSmyrMyZfwbpnUYd9ksUe2MBkcWlbGn5HbF8mIV6eNYq089wLTHFQjqbvttRwKhgVNdp5NRzp66nfGcK18PKaxa5P?key=VReuh94fGGpJZLGsXsGdUQ)
+### Sistemas Distribuidos: Concepto y Arquitecturas
 
-  
-  
-  
+Un **sistema distribuido** es un conjunto de computadoras independientes que, al ser interconectadas, se presentan como un único sistema coherente para los usuarios. Esta arquitectura resuelve problemas de cuellos de botella y tolerancia a fallos, que eran comunes en sistemas más centralizados. La principal característica de los sistemas distribuidos es que el usuario interactúa con un sistema único, sin necesidad de saber que está compuesto por varios nodos.
 
-### Arquitectura Cliente Servidor
+![Sistemas Distribuidos](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdrIOp8NQ5BWOuKIdpn-0pENRdvuoRVR3NbDYCE2eScjSJYtXkK80xeyjHF0BCSM35i5lguoKMQPBimAUkLZHwOktn6amh-q5Hb85nS1gbfXYZ2tVCqfb94TrjTLaaENmkI5LKyaEO1Qj_tWb01EO75zrdL?key=VReuh94fGGpJZLGsXsGdUQ)
 
-![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcT30jbU-9QuN4gepmmeJoBzXSqTKM8OAwBWMBP1tztxjqxACekzjZLSxoC55Z3ETxWx9273aoaPExzpo22Xp2GfvaScfaKY-EqOe42c9ZqZKFZLEmsESYLYA3yLF78a_6J4UhJJFZhbD5WBvDL0EZhhGgB?key=VReuh94fGGpJZLGsXsGdUQ)
+#### Objetivos de los Sistemas Distribuidos
 
-- La aplicación se modela como:
+1. **Recursos Compartidos**:
     
-
-- Un conjunto de servicios proporcionados por servidores.
+    - Reducen costos, pero a medida que crece el sistema, también surgen desafíos de seguridad.
+2. **Transparencia**:
     
-- Los clientes pueden acceder a estos servicios.
+    - Ocultar la distribución física de los procesos y recursos. Aunque la transparencia total no siempre es alcanzable, es un objetivo fundamental.
+    - Ejemplo de transparencia: ocultar si los datos se encuentran en un nodo o en varios.
     
-
-- Los clientes conocen a los servidores, pero no se conocen entre sí.
+    ![Transparencia](https://lh7-rt.googleusercontent.com/docsz/AD_4nXf5NMYxQRdcecEqiOlDIo3m55xgA5ZjaDdD9_zE53qjWb1COBU16mzkS8FdT7NZ4htQ_LmZvjX_ZVQF9zjIiPByByqNewARn2bGZdnhPoqMpH36v49X9T8hfNmS8k77rabeSdlUhpVPJg6DOEbRskkxNUM?key=VReuh94fGGpJZLGsXsGdUQ)
     
-- Algún mecanismo de descubrimiento de los servidores.
+3. **Apertura**:
     
-- Los servidores no conocen a los clientes (a priori).
+    - El sistema sigue reglas estándar (protocolos) para describir la sintaxis y semántica de los servicios, permitiendo la interoperabilidad entre sistemas diferentes.
+4. **Concurrencia**:
     
-- Los servidores pueden o no tener estados.
+    - Los procesos pueden ejecutarse simultáneamente en equipos separados, permitiendo una mayor eficiencia y flexibilidad.
+5. **Escalabilidad**:
     
-- Los clientes y los servidores son procesos separados, en la misma máquina o en máquinas diferentes.
+    - Escalable en **tamaño** (más usuarios y recursos), **geográficamente** (distribución en grandes distancias) y **administrativamente** (gestión a través de varias organizaciones).
+    - Sin embargo, a medida que se escala un sistema, puede experimentar pérdida de rendimiento debido al mayor volumen de datos y procesamiento.
+6. **Tolerancia a fallos**:
     
-
-Los clientes interactúan solicitando servicios a los servidores, que proporcionan un conjunto de servicios. Algunos componentes pueden actuar como clientes y servidores. Puede haber un servidor central o varios distribuidos.![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdghZH87dYW6aUL_gd0kt-dx7Gl-wvbusRW1YwFJqrlmGphu_Uja_JAQV53sJRmfYP0kWOgXoPM5nmkVajT6wMg46GcJVzfMGJGJiYfGmwDK5q89w2GDWK8uqzNFJ9tD97hwiYH72xc_1SRH-bb4mbwQFw?key=VReuh94fGGpJZLGsXsGdUQ)![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcwbZl717vkiapTGvVG-Pnjshu71fKQehuf2_8D7e8pltKqhKc_G88oCQ4CLYL6vXObYgiRLQZNyOdhzo9aQ84rqFJ6xcGHkH3sD8mz_w6cqHVq3eglyZ4wSLaUxAMRi1aMRG1wwLy-aEsk_Qa6LcpPtMJM?key=VReuh94fGGpJZLGsXsGdUQ)
+    - Permite la disponibilidad continua mediante la redundancia y replicación de datos.
 
-Servidores tiene servicios usados por clientes
+#### Desventajas de los Sistemas Distribuidos
 
-Internet es el ejemplo más facil, HTTP seria el conector, cliente el navegador, servidores de internet  
-  
-
-### Arquitectura C/S (Cliente-Servidor) de dos niveles (2-tier)
-
-En una arquitectura cliente-servidor de dos niveles, el sistema se implementa como un único servidor lógico más un número indefinido de clientes que utilizan ese servidor.
-
-Dos formas:
-
-Cliente liviano: Capa de presentación en cliente, el resto en el servidor. La capa de presentación se implementa en el cliente y todas las demás capas (gestión de datos, procesamiento de aplicaciones y base de datos) se implementan en un servidor.
-
-- Fácil gestión de clientes.
+- **Complejidad**:
     
-- Gran carga de procesamiento en el servidor y en la red.![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXc_4CZDraFfjGFaNBo81oztON4qtAgQEtHLJiZY6KQUxvXlxjrDLjNttSKszCYDCDPRFdlqzgO5q4doN5HCn_-i8oP634az-lgEsobzz0UapviMDhZyGNwtzBHvCTminjz3GFWGC3z7-VwCeRPB_rXcNgA?key=VReuh94fGGpJZLGsXsGdUQ)
+    - Los sistemas distribuidos son difíciles de entender y gestionar, especialmente cuando se combinan dependencias como el procesamiento de múltiples procesadores o el ancho de banda limitado de la red.
+- **Seguridad**:
     
-
-Se utiliza cuando los sistemas viejos se migran a arquitecturas cliente-servidor. El sistema viejo actúa como un servidor en sí mismo con una interfaz gráfica implementada en un cliente.
-
-Su principal desventaja es que supone una gran carga de procesamiento tanto para el servidor como para la red.
-
-Cliente Pesado: Capa de presentación + aplicación en cliente. datos en servidor. Una parte o la totalidad del procesamiento de la aplicación se realiza en el cliente. Las funciones de gestión de datos y bases de datos se implementan en el servidor.
-
-- Hace uso de la potencia de procesamiento disponible en el cliente.
+    - La accesibilidad desde diferentes ordenadores puede abrir puertas a riesgos como espionaje o denegación de servicio, lo que complica la integridad de los datos.
+- **Manejabilidad**:
     
-- Se necesita desplegar y mantener el software en el cliente.![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXckAX2Pk44AS4zJN0s06awRhW_f6dOpM8SHo3EQROtI53qET1FEPmTdDLYCzO_pHRkiEoHcTauQrGNqhWItwmQ9_UR4Lp1E5lu-xYsreniqxXdhE1UkmOby1DW8EYXHTX9BRqBgtQvH4GZ20Q_WVYO7Qu3n?key=VReuh94fGGpJZLGsXsGdUQ)
+    - La diversidad de componentes (hardware y software) hace que los fallos puedan propagarse y que se requiera más esfuerzo para mantener el sistema en funcionamiento.
+- **Imprevisibilidad**:
     
-
-Se delega más procesamiento en el cliente, ya que el procesamiento de la aplicación se ejecuta localmente.
-
-Más adecuado para nuevos sistemas C/S en los que las capacidades del sistema cliente se conocen de antemano.
-
-Más complejo que un modelo de cliente ligero, especialmente para la gestión. Hay que instalar nuevas versiones de la aplicación en todos los clientes.
-
-###   
-Arquitectura C/S multinivel (multitier)
-
-En una arquitectura cliente-servidor multinivel, las distintas capas del sistema, a saber, presentación, gestión de datos, procesamiento de aplicaciones y base de datos, son procesos separados que pueden ejecutarse en distintos procesadores.
-
-De este modo se evitan problemas de escalabilidad y rendimiento si se opta por un modelo thin-client de dos capas, o problemas de gestión del sistema si se utiliza un modelo fat-client.
-
-Desventajas: su coste y complejidad. En sistemas sencillos, las ventajas de la arquitectura multinivel pueden no justificar sus costes iniciales y continuos, en términos de hardware, software y complejidad de diseño e implementación.
-
-Los niveles no son componentes, sino agrupaciones lógicas de componentes. Tampoco hay que confundir niveles con capas. Las capas son un patrón de módulos (una unidad de implementación), mientras que los niveles sólo se aplican a las entidades en tiempo de ejecución.
-
-###   
-Componentes distribuidos![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdJB9MTCPqyN8uCgynIZZc9_QqdkP8stBvum6e_kuuE1he4tdd_LPKgQohw2yPgvlTmN3IoYHJo3cPJggaVzOCqHiPBlJPbp3kyLdyfdUiqDPmt2asFmuA5ilUSKgymKj9A_IB114IL2cGdMU5mgU0jrxhJ?key=VReuh94fGGpJZLGsXsGdUQ)![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdnO704ZBAYFUtTgYILaoAHoMXUKf02fNx60Xl6PqLoe1baU1sh7YU1c4AfuSooKOyzgSjnfizXWpYCMdRG2Q9013-qoQPy6vwQAac7ShSJlNtV87sPGmsR-EHaQ9MR5Cs_nL0ls0p7cD2c0cVjlaVjpD0X?key=VReuh94fGGpJZLGsXsGdUQ)![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeD1hDX76pRKGFxImCNu730mzLM9YtPucwpkH7sqtF-xl5v6aEbqlCNru95GQh3Xnaoe6LdH_5i1P9NKezelDYhZ1XpkeOmsL1Pd4Yo07Dn9J7JRMm0W0V_T_yF3gnQx7m4FbOJ160CDwqYe_CUYvxlDonc?key=VReuh94fGGpJZLGsXsGdUQ)![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcvf5Q_O1Zn1mgOePR1bDE8nGthSUXCNmg_k-oEzegkKrJx7eJ16ClLjxLZ9lWVWGkR5UtQO0jDZxSFI1WM5NuQnD_pJWJqfsEyErZd1G7K97gDDQf4OEYaFRC-9YqTGzdvkwXKZATDE0Mh3tc_ReD1LYY?key=VReuh94fGGpJZLGsXsGdUQ)
-
-En una arquitectura de componentes distribuidos no hay distinción entre clientes y servidores.
+    - La respuesta de un sistema distribuido depende de factores como la carga global, su organización interna y la carga de la red.
 
-Cada entidad distribuible es un componente independiente que presta servicios a otros componentes y recibe servicios de otros componentes.
+---
 
-La comunicación entre componentes se realiza a través de un sistema middleware.![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXf7X7xBnt-YUeVoToIK6o7BMPX5sYgi00D2kVDkOl-pS6lcuPXxIYjrwZGIEJmrYLKYV2XVdL24eTz1A88Q9SV736tT5o90sD-ouVbtEbAqEoNC7_EJtdg7vB_U7Ugv0oskTY0K2vqA-B_20wQz0BUQ1z6e?key=VReuh94fGGpJZLGsXsGdUQ)
+### Arquitecturas Comunes en Sistemas Distribuidos
 
-Ventajas:![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfum8DUOwpvjaioNmUV0P0EtnVW_08KMf_x1hbdasHNSiytyKb4M2YM1W36y5AC3q8zLoJnR-qluQ5HCU24P4MtNB0pGG_IqZ6_6dX5IiN2xzywzv4R_cW-Op7lWpYfANY4ycJ8Gj60l4WEjhT8n_h_6Che?key=VReuh94fGGpJZLGsXsGdUQ)
+#### 1. **Arquitectura Maestro/Esclavo**
 
-- Permite al diseñador del sistema retrasar las decisiones sobre dónde y cómo deben prestarse los servicios.
+- Utilizada en sistemas de tiempo real o en la replicación de bases de datos, esta arquitectura tiene un **proceso maestro** que coordina las acciones de varios **procesos esclavos**.
     
-- Es una arquitectura de sistema muy abierta que permite añadir nuevos recursos según las necesidades.
+- **Proceso Maestro**: Responsable de la coordinación y control, gestionando la comunicación y los cálculos.
     
-- El sistema es flexible y escalable.
+- **Procesos Esclavos**: Dedicados a tareas específicas como la adquisición de datos o el procesamiento de señales.
     
-- Es posible reconfigurar el sistema dinámicamente con objetos que migran a través de la red según sea necesario.
-    
-
-Desventajas:
-
-Las arquitecturas de componentes distribuidos adolecen de dos grandes desventajas:
-
-- Son más complejas de diseñar que los sistemas cliente-servidor. Las arquitecturas de componentes distribuidos son difíciles de visualizar y comprender.
-    
-- El middleware estandarizado para sistemas de componentes distribuidos nunca ha sido aceptado por la comunidad. Diferentes proveedores, como Microsoft y Sun, han desarrollado middleware diferente e incompatible.
-    
 
-Como consecuencia de estos problemas, las arquitecturas orientadas a servicios están sustituyendo a las arquitecturas de componentes distribuidos en muchas situaciones.
+![Arquitectura Maestro/Esclavo](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcg-KI9MG4n9S7kYz2iugq54UISf2nii1SycWhkhI5QUnqNyb1BMgYz3WkxSdBa2YFDSmyrMyZfwbpnUYd9ksUe2MBkcWlbGn5HbF8mIV6eNYq089wLTHFQjqbvttRwKhgVNdp5NRzp66nfGcK18PKaxa5P?key=VReuh94fGGpJZLGsXsGdUQ)
 
-### Peer to peer (P2P)
+**Aplicaciones**:
 
-![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeu0BLbI-4EXXrUzvanSJ3frbzfbKlKq1Mqf4L_rhCbb48-nw_R6sH5BY_oEf12e7aogNVG0WmR1lMZayuOoPYeEnzuLUC8lECV24QX1CYZPUIgD-xiXV13HL0dZmeRIeVQR3yI0LRFdkML_BxgbwprbkbN?key=VReuh94fGGpJZLGsXsGdUQ)
+- Procesamiento distribuido predecible.
+- Requiere tolerancia a fallos y alto rendimiento.
 
-Los sistemas peer to peer (p2p) son sistemas descentralizados en los que cualquier nodo de la red puede realizar cálculos.
+#### 2. **Arquitectura Cliente-Servidor**
 
-El sistema en su conjunto está diseñado para aprovechar la capacidad de cálculo y almacenamiento de un gran número de ordenadores conectados en red.
-
-La mayoría de los sistemas p2p han sido sistemas personales, pero cada vez es mayor el uso empresarial de esta tecnología.
-
-Sistemas Peer-to-peer
-
-- Sistemas de intercambio de archivos basados en el protocolo BitTorrent
-    
-- Sistemas de mensajería como Jabber
-    
-- Sistemas de pago - Bitcoin
-    
-- Bases de datos - Freenet es una base de datos descentralizada 
-    
-- Sistemas de telefonía - Viber
+- En esta arquitectura, los **clientes** solicitan servicios a los **servidores**, que proporcionan los recursos necesarios. Los clientes pueden estar distribuidos y no se conocen entre sí.
     
-- Sistemas de computación - SETI@home
+- **Características**:
     
+    - Los servidores ofrecen servicios y los clientes los consumen.
+    - Los clientes interactúan con los servidores a través de un protocolo estándar (por ejemplo, HTTP en la web).
 
-  
+![Arquitectura Cliente Servidor](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcT30jbU-9QuN4gepmmeJoBzXSqTKM8OAwBWMBP1tztxjqxACekzjZLSxoC55Z3ETxWx9273aoaPExzpo22Xp2GfvaScfaKY-EqOe42c9ZqZKFZLEmsESYLYA3yLF78a_6J4UhJJFZhbD5WBvDL0EZhhGgB?key=VReuh94fGGpJZLGsXsGdUQ)
 
-Modelos arquitectónicos Peer-to-peer
+**Ejemplo**: La web, donde un navegador (cliente) solicita servicios a un servidor web.
 
-- La arquitectura lógica de la red.
-    
-
-- Arquitecturas descentralizadas.
-    
-- Arquitecturas semicentralizadas.
-    
+#### 3. **Arquitectura Cliente-Servidor de Dos Niveles (2-Tier)**
 
-- La arquitectura de las aplicaciones.
+- En esta arquitectura, un único servidor maneja las capas de **gestión de datos**, **procesamiento de aplicaciones** y **base de datos**, mientras que el cliente maneja la **capa de presentación**.
     
-
-- Organización genérica de los componentes de una aplicación p2p.
+- **Cliente Liviano**:
     
-
-- Se centra en las arquitecturas de red.
+    - El cliente solo gestiona la presentación, mientras que el servidor maneja el procesamiento de datos y la base de datos.
+    - **Ventajas**: Facilidad de gestión, pero con gran carga en el servidor y la red.
+- **Cliente Pesado**:
     
+    - El cliente maneja tanto la presentación como una parte del procesamiento de la aplicación.
+    - **Ventajas**: Utiliza la potencia de procesamiento del cliente, pero requiere la instalación y mantenimiento de software en cada cliente.
 
-Arquitectura p2p descentralizada                                            Arquitectura p2p semicentralizada![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcQz17dpCAIclxJI_mqZZLXK97YeAeIawuZr0thwtze8U7Rixt56HHqhxJd2aF4ydJGBVEVVNfYeXK6aCpWIpIt00R3jKun9cakak8XgdnZIOTeOfENqUSr66agk2sF2MFZAIXUsGoIqkPacLUwZ7bcbtM9?key=VReuh94fGGpJZLGsXsGdUQ)![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeWP11MKTbL2azMTtqXeqNvHlYrEOxva2mrTes9EUESLsyEay7Ua19AdE5SHzRpzqd27CLnAfTsoorkzmEV7f4kbEqvypHA5NYVfj8dKiKdS27iThxOc0DywouH29r16Agzc_y8AZHDtDPRbuABa-XsTbk?key=VReuh94fGGpJZLGsXsGdUQ)
+![Cliente Pesado](https://lh7-rt.googleusercontent.com/docsz/AD_4nXckAX2Pk44AS4zJN0s06awRhW_f6dOpM8SHo3EQROtI53qET1FEPmTdDLYCzO_pHRkiEoHcTauQrGNqhWItwmQ9_UR4Lp1E5lu-xYsreniqxXdhE1UkmOby1DW8EYXHTX9BRqBgtQvH4GZ20Q_WVYO7Qu3n?key=VReuh94fGGpJZLGsXsGdUQ)
 
-Cuando se usa una arquitectura p2p
+#### 4. **Arquitectura Cliente-Servidor Multinivel (Multitier)**
 
-- Cuando un sistema es intensivo desde el punto de vista computacional y es posible separar el procesamiento necesario en un gran número de cálculos independientes.
+- Este modelo divide el sistema en múltiples capas que pueden ejecutarse en diferentes servidores. Esto mejora la escalabilidad y permite una mayor eficiencia, aunque aumenta la complejidad.
     
-- Cuando un sistema implica principalmente el intercambio de información entre ordenadores individuales de una red y no hay necesidad de que esta información se almacene o gestione de forma centralizada.
+- **Características**:
     
+    - Evita cuellos de botella que podrían aparecer con sistemas de 2 capas.
+    - Aumenta la flexibilidad y el rendimiento, pero a costa de una mayor complejidad y costos.
 
-Problemas de seguridad en el sistema p2p
+**Desventajas**:
 
-- Los problemas de seguridad son la principal razón por la que las arquitecturas p2p no se utilizan de forma generalizada.
-    
-- La falta de una gestión centralizada permite a los nodos maliciosos enviar spam y malware a otros nodos de la red.
-    
-- Las comunicaciones P2P requieren una cuidadosa configuración para proteger la información local y, si no se hace correctamente, ésta queda expuesta a los demás usuarios.
-    
+- Costos elevados de implementación y mantenimiento.
 
-### Orientada a Servicios (SOA)![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfTkjk23TF2Nif3ZSoV5bHNnE7fwjx9njIMC0ca92jaPe77Lm5MgeAVpsf8MaUOXfFrET43X8mPyFYGlcqpbxPhwFeOss5HKQtyjonQTx16EsXJJBV-g8H325pcTQHAeih0nLF23L1zHclQguISJS9Gmzip?key=VReuh94fGGpJZLGsXsGdUQ)
+#### 5. **Componentes Distribuidos**
 
-La arquitectura orientada a servicios es un enfoque para estructurar un sistema de software como un conjunto de servicios separados y sin estado, que pueden ser proporcionados por múltiples proveedores y pueden estar distribuidos.
+- Un sistema distribuido se compone de varios componentes interconectados que trabajan de manera conjunta para ofrecer servicios. Cada componente puede ser un nodo que ejecuta tareas específicas del sistema.
 
-Normalmente, las transacciones son cortas: se llama a un servicio, éste hace algo y devuelve un resultado.
+## Peer to Peer (P2P)
 
-La computación se consigue mediante un conjunto de componentes que cooperan y que proporcionan y/o consumen servicios a través de una red. El cálculo suele describirse mediante un lenguaje de flujo de trabajo.
+Los sistemas **peer-to-peer (P2P)** son sistemas descentralizados en los cuales **cualquier nodo** de la red puede realizar cálculos, aprovechando la capacidad de **cálculo** y **almacenamiento** de una gran cantidad de ordenadores conectados en red.
 
-Elementos:
+### Ejemplos de sistemas P2P:
+- **Intercambio de archivos**: Protocolo BitTorrent.
+- **Mensajería**: Jabber.
+- **Sistemas de pago**: Bitcoin.
+- **Bases de datos**: Freenet (base de datos descentralizada).
+- **Telefonía**: Viber.
+- **Computación distribuida**: SETI@home.
 
-Componentes:
+![Imagen ilustrativa P2P](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeu0BLbI-4EXXrUzvanSJ3frbzfbKlKq1Mqf4L_rhCbb48-nw_R6sH5BY_oEf12e7aogNVG0WmR1lMZayuOoPYeEnzuLUC8lECV24QX1CYZPUIgD-xiXV13HL0dZmeRIeVQR3yI0LRFdkML_BxgbwprbkbN?key=VReuh94fGGpJZLGsXsGdUQ)
 
-- Proveedores de servicios que proporcionan uno o más servicios a través de interfaces publicadas. Las preocupaciones suelen estar vinculadas a la tecnología de implementación elegida e incluyen el rendimiento, las restricciones de autorización, la disponibilidad y el coste. En algunos casos, estas propiedades se especifican en un acuerdo de nivel de servicio.
-    
-- Consumidores de servicios, que invocan los servicios directamente o a través de un intermediario.
-    
+### Modelos Arquitectónicos Peer-to-Peer
 
-Los proveedores de servicios también pueden ser consumidores de servicios.
+Existen diferentes modelos de arquitectura para redes P2P:
 
-- ESB, que es un elemento intermediario que puede enrutar y transformar mensajes entre proveedores y consumidores de servicios.
-    
-- Registro de servicios, que puede ser utilizado por los proveedores para registrar sus servicios y por los consumidores para descubrir servicios en tiempo de ejecución.
-    
-- Servidor de orquestación, que coordina las interacciones entre consumidores y proveedores de servicios basándose en lenguajes de procesos empresariales y flujos de trabajo.
-    
+1. **Arquitecturas descentralizadas**: Todos los nodos tienen la misma capacidad.
+2. **Arquitecturas semicentralizadas**: Un nodo central coordina algunas operaciones pero no gestiona completamente el sistema.
 
-Conectores:
+#### Ejemplo de Arquitecturas P2P:
+- **Arquitectura P2P descentralizada**  
+- **Arquitectura P2P semicentralizada**  
+![Arquitectura P2P Semicentralizada](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcQz17dpCAIclxJI_mqZZLXK97YeAeIawuZr0thwtze8U7Rixt56HHqhxJd2aF4ydJGBVEVVNfYeXK6aCpWIpIt00R3jKun9cakak8XgdnZIOTeOfENqUSr66agk2sF2MFZAIXUsGoIqkPacLUwZ7bcbtM9?key=VReuh94fGGpJZLGsXsGdUQ)
+![Arquitectura P2P Descentralizada](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeWP11MKTbL2azMTtqXeqNvHlYrEOxva2mrTes9EUESLsyEay7Ua19AdE5SHzRpzqd27CLnAfTsoorkzmEV7f4kbEqvypHA5NYVfj8dKiKdS27iThxOc0DywouH29r16Agzc_y8AZHDtDPRbuABa-XsTbk?key=VReuh94fGGpJZLGsXsGdUQ)
 
-- Conector SOAP, que utiliza el protocolo SOAP para la comunicación síncrona entre servicios web, normalmente a través de HTTP.
-    
-- Conector REST, que se basa en las operaciones básicas de solicitud/respuesta del protocolo HTTP.
-    
-- Conector de mensajería asíncrona, que utiliza un sistema de mensajería para ofrecer intercambios de mensajes asíncronos punto a punto o publicar suscribir.
-    
+### Cuándo utilizar una arquitectura P2P:
+- Cuando un sistema es **intensivo en cómputo** y el procesamiento puede ser distribuido en múltiples nodos.
+- Cuando el sistema implica el **intercambio de información** entre nodos sin necesidad de centralizar la gestión o almacenamiento de la información.
 
-Relaciones:
+### Problemas de Seguridad en P2P:
+- **Seguridad**: La falta de una gestión centralizada permite que nodos maliciosos envíen **spam** y **malware**.
+- Las **comunicaciones** deben ser cuidadosamente configuradas para proteger la **información local**, ya que, si no se hace correctamente, esta puede quedar expuesta a otros usuarios.
 
-- Fijación de los distintos tipos de componentes disponibles a los respectivos conectores.
-    
+---
 
-Restricciones:
+## Arquitectura Orientada a Servicios (SOA)
 
-- Los consumidores de servicios están conectados a los proveedores de servicios, pero pueden utilizarse componentes intermediarios (por ejemplo, ESB, registro, servidor de orquestación).
-    
+La **Arquitectura Orientada a Servicios (SOA)** organiza un sistema como un conjunto de **servicios independientes y sin estado**. Estos servicios pueden ser proporcionados por múltiples proveedores y estar distribuidos a través de la red.
 
-Desventajas:
+### Elementos de SOA:
+1. **Componentes**:
+   - **Proveedores de servicios**: Ofrecen servicios a través de interfaces públicas, con preocupaciones como rendimiento, autorización, disponibilidad y costos.
+   - **Consumidores de servicios**: Invocan los servicios, ya sea directamente o a través de un intermediario.
+   - **ESB (Enterprise Service Bus)**: Intermediario que enruta y transforma mensajes.
+   - **Registro de servicios**: Permite a los proveedores registrar servicios y a los consumidores descubrirlos en tiempo de ejecución.
+   - **Servidor de orquestación**: Coordina las interacciones basadas en flujos de trabajo.
 
-- Los sistemas basados en SOA suelen ser complejos de construir. No se controla la evolución de los servicios independientes. Hay una sobrecarga de rendimiento asociada al middleware, y los servicios pueden ser cuellos de botella de rendimiento, y normalmente no ofrecen garantías de rendimiento.
-    
+2. **Conectores**:
+   - **Conector SOAP**: Utiliza el protocolo SOAP para comunicación síncrona.
+   - **Conector REST**: Utiliza el protocolo HTTP para comunicaciones basadas en solicitudes/respuestas.
+   - **Conector de mensajería asíncrona**: Utiliza un sistema de mensajería para intercambios asíncronos de mensajes.
 
-  
+### Desventajas de SOA:
+- **Complejidad**: La construcción de sistemas SOA es compleja.
+- **Evolución de los servicios**: No siempre es posible controlar cómo evolucionan los servicios independientes.
+- **Rendimiento**: El middleware puede introducir sobrecarga y cuellos de botella en el rendimiento.
+- **Garantías de rendimiento**: No siempre se ofrecen garantías de rendimiento.
 
-### ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdjvpfIBDS80bRrngTZuC3u1FmKcPlh0l-grlIaibqPs1JEBxTwWZtTG9SLaf6_JkDtT9O1C3lib7Tu7kgmmAr0S7n_ugT8BH9tS9moBJtp0oT2H36sZp3vivpdj2ZAeU-KiCfJXHePg2FFJvxbpQnGZp8?key=VReuh94fGGpJZLGsXsGdUQ)
+![Imagen ilustrativa SOA](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfTkjk23TF2Nif3ZSoV5bHNnE7fwjx9njIMC0ca92jaPe77Lm5MgeAVpsf8MaUOXfFrET43X8mPyFYGlcqpbxPhwFeOss5HKQtyjonQTx16EsXJJBV-g8H325pcTQHAeih0nLF23L1zHclQguISJS9Gmzip?key=VReuh94fGGpJZLGsXsGdUQ)
 
-### Microservicios
+---
 
-Este estilo de arquitectura se utiliza para implementar arquitecturas lógicas cliente-servidor donde el servidor se implementa como un conjunto de microservicios que interactúan.
+## Microservicios
 
-Los microservicios son servicios a pequeña escala que se pueden combinar para crear aplicaciones.
+La arquitectura de **microservicios** es una forma de implementar **arquitecturas cliente-servidor**, donde el servidor se implementa como un conjunto de microservicios que interactúan.
 
-Los microservicios son:
+### Características de los microservicios:
+- **Autónomos**: No dependen de otros servicios, gestionan sus propios datos e interfaces.
+- **Ligereza**: Usan protocolos ligeros para minimizar el gasto de comunicación.
+- **Independencia de implementación**: Pueden implementarse usando diferentes tecnologías y lenguajes.
+- **Desplegables independientemente**: Cada microservicio se ejecuta en su propio proceso y se puede desplegar de forma independiente.
+- **Orientación al negocio**: Se enfocan en implementar las capacidades del negocio, no solo en servicios técnicos.
 
-- Autónomos: no tienen dependencias externas. Gestionan sus propios datos e implementan su propia interfaz de usuario.
-    
-- Ligero: comunícate mediante protocolos ligeros, de modo que los gastos generales de comunicación del servicio sean bajos.
-    
-- Independiente de la implementación: pueden implementarse utilizando diferentes lenguajes de programación y pueden utilizar diferentes tecnologías (por ejemplo, diferentes tipos de bases de datos) en su implementación,
-    
-- Desplegable de forma independiente: Cada uno se ejecuta en su propio proceso y se puede desplegar de forma independiente, utilizando sistemas automatizados.
-    
-- Orientado al negocio: debe implementar las capacidades y necesidades del negocio, en lugar de simplemente proporcionar un servicio técnico.
-    
+![Imagen ilustrativa de Microservicios](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfZXY1ksTdVGdAAjkBs4ArOxjWg6-SrBTcHvkfZZhucOmvC-pldwmrc6PunhRnpySNd0qLZpr7nO7xG9L6Zco163Qkim_NGgyfaGAUbmfjTImZYrNQyioot1ghF_V-Y-oeuP0k8NUg_4nSLks4LPFLw7KE?key=VReuh94fGGpJZLGsXsGdUQ)
+
+### Comparación: Aplicación Monolítica vs Microservicios
 
-  
-![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfZXY1ksTdVGdAAjkBs4ArOxjWg6-SrBTcHvkfZZhucOmvC-pldwmrc6PunhRnpySNd0qLZpr7nO7xG9L6Zco163Qkim_NGgyfaGAUbmfjTImZYrNQyioot1ghF_V-Y-oeuP0k8NUg_4nSLks4LPFLw7KE?key=VReuh94fGGpJZLGsXsGdUQ)  
-  
-  
+En un **servicio de impresión de fotos**, la arquitectura monolítica es centralizada, mientras que los microservicios permiten tener una implementación distribuida y más flexible.
 
-Aplicacion Monolitica vs Arquitectura de Microservicios
+![Comparación Microservicios](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeIp-s1bikolsNN_Hl03IcVTW-uqHniZLNkaGTyq57Z7OzCjwgfcUQNKMKPlxc7rXnxHqpa8ihDEVdRqgmf5GCuT2TkndYM4Z3z7-utj3zqrkPJvEwyyFi_fN74CoqS3YDdiCaY86Be43wfu6gqW67XhDM?key=VReuh94fGGpJZLGsXsGdUQ)
+![Ejemplo de Arquitectura Monolítica](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfBl3PMXpIrXzTtZJy2Oh3y_gj8kSFKZPtTDbnOHB1piLMpFW-__-0aldTHJk7RsdHd3lC_9k7sTKKbWFAvBUdw0R9kGEIJ8AKr1wh352MQ3lewikgjixyjZrFqBdNBCQKZUdbhIXE_mqlCa7MYwknescpK?key=VReuh94fGGpJZLGsXsGdUQ)
 
-Ejemplo: Servicio de impresión de fotos![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeIp-s1bikolsNN_Hl03IcVTW-uqHniZLNkaGTyq57Z7OzCjwgfcUQNKMKPlxc7rXnxHqpa8ihDEVdRqgmf5GCuT2TkndYM4Z3z7-utj3zqrkPJvEwyyFi_fN74CoqS3YDdiCaY86Be43wfu6gqW67XhDM?key=VReuh94fGGpJZLGsXsGdUQ)![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfBl3PMXpIrXzTtZJy2Oh3y_gj8kSFKZPtTDbnOHB1piLMpFW-__-0aldTHJk7RsdHd3lC_9k7sTKKbWFAvBUdw0R9kGEIJ8AKr1wh352MQ3lewikgjixyjZrFqBdNBCQKZUdbhIXE_mqlCa7MYwknescpK?key=VReuh94fGGpJZLGsXsGdUQ)
