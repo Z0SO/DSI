@@ -1,573 +1,241 @@
-  
-  
-  
-  
+# Introducción a Metodologías Ágiles
 
-AGILE XP
+## Problemas de los Métodos Clásicos
 
-Problemas de los métodos clásicos:
+- **Burocracia**: Los métodos tradicionales requieren una gran cantidad de documentación y procesos burocráticos.
+- **Impredecibilidad de los Requerimientos**: Los requerimientos cambian a lo largo del proyecto, lo que hace difícil predecirlos con precisión desde el inicio.
+- **Métodos Predictivos y Rígidos**: Los métodos tradicionales siguen un enfoque estricto y planificado, sin adaptarse fácilmente a cambios.
 
-- Burocracia.
-    
-- Impredecibilidad de los requerimientos.
-    
-- Métodos predictivos, rígidos.
-    
+---
 
-## Frameworks Agiles
+## Frameworks Ágiles
 
-- Son adaptativos, no predictivos.
-    
+Los **frameworks ágiles** se caracterizan por ser **adaptativos** y **centrados en las personas** en lugar de procesos rígidos. A diferencia de los métodos tradicionales, no se puede predecir con certeza el costo o el tiempo de un proyecto desde el principio, ya que el enfoque es adaptarse a las necesidades cambiantes del cliente. 
 
-En lo clásico podemos estimar cuestiones monetarias o de tiempo, debido a que tenemos claras separaciones de fases de trabajo, como diseño y construcción. Pero en el caso de ÁGIL, estamos en un terreno cambiante donde no se pueden estimar costos fijos por ej. Se adapta a las necesidades del cliente.
+**Características principales**:
+- **Adaptativos**: Se ajustan a los cambios a lo largo del desarrollo.
+- **Orientados a las personas**: Prioriza la interacción entre individuos en lugar de seguir procesos estrictos.
+- **Importancia del factor humano**: Las personas son vistas como piezas esenciales, no como recursos reemplazables.
 
-- Orientados a las personas, no a los procesos.
-    
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdeHLM1i5aCXCnln6bPEqgBMWdffwp1l697asNgu8uyIzIySS02BR5ena7qppRpW7v1gYR9eDBkw0bDZeXVzTkIRxyCvgn5bqd-bVgb_WI6p0wsgLmaSZ5BV8REbwmVYvEg8f-T?key=VReuh94fGGpJZLGsXsGdUQ)
 
-Se trabaja con la naturaleza de la gente y no en contra de ella.
+### Frameworks Ágiles Comunes:
+- **Scrum**
+- **XP (Extreme Programming)**
+- **Crystal**
+- **ASD (Adaptive Software Development)**
+- **FDD (Feature Driven Development)**
+- **DSDM (Dynamic System Development Method)**
 
-En las tradicionales la comunicación es parte del proceso, por medio de documentación. En el caso de Ágil, la comunicación es constante entre el equipo de desarrollo y la documentación es poca.
-
-- Importancia del factor humano para el éxito del proyecto.
-    
-
-En las clásicas las personas son recursos que toman un rol, partes reemplazables. 
-
-Cuando hablamos de agilidad las personas integran un equipo, donde cada una no es una parte reemplazable.
-
-- Aparecen al final del siglo XX como una reacción a los métodos clásicos.![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdeHLM1i5aCXCnln6bPEqgBMWdffwp1l697asNgu8uyIzIySS02BR5ena7qppRpW7v1gYR9eDBkw0bDZeXVzTkIRxyCvgn5bqd-bVgb_WI6p0wsgLmaSZ5BV8REbwmVYvEg8f-T?key=VReuh94fGGpJZLGsXsGdUQ)
-    
-- En febrero del 2001 se reúnen los principales representantes y firman el “Manifiesto Ágil”.
-    
-- Ejemplos de Frameworks Ágiles:
-    
-
-- Scrum
-    
-- XP (Extreme Programming)
-    
-- Crystal
-    
-- ASD (Adaptive Software Development)
-    
-- FDD (Feature Driven Development)
-    
-- DSDM (Dynamic System Development Method)
-    
+---
 
 ## Manifiesto Ágil
 
-### Valores
+### **Valores del Manifiesto Ágil**
 
-- Individuos e interacciones por sobre procesos y herramientas.
-    
+1. **Individuos e interacciones sobre procesos y herramientas**:
+   - Las personas son más importantes que los procesos o herramientas, ya que un equipo motivado es crucial para el éxito del proyecto.
+   
+2. **Software funcionando sobre extensa documentación**:
+   - La documentación extensa puede ser innecesaria. Lo importante es que el software funcione correctamente.
 
-Priorizar las personas, ya que incluso un buen proceso o el uso de buenas herramientas no sirven de nada si las personas que llevan a cabo el desarrollo no son buenas.
+3. **Colaboración con el cliente sobre negociación contractual**:
+   - Es mejor colaborar estrechamente con el cliente que aferrarse estrictamente a lo estipulado en el contrato.
 
-  
+4. **Responder al cambio sobre seguir un plan**:
+   - Los planes deben ser flexibles y adaptarse a los cambios del entorno y del proyecto.
 
-- Software funcionando por sobre extensa documentación.
-    
+---
 
-Mucha documentación hace perder el tiempo, y muchas veces dice mentiras. La idea es tener algo de documentación, pero que el software ande.
+### **Principios Ágiles**
 
-  
+1. **Satisfacción del cliente**:
+   - La prioridad más alta es entregar software valioso y funcional de manera temprana y continua.
 
-- Colaboración con el cliente por sobre negociación contractual.
-    
+2. **Bienvenida al cambio de requerimientos**:
+   - Los procesos ágiles permiten cambios incluso tarde en el desarrollo, lo que genera una ventaja competitiva.
 
-El contrato muchas veces específica cosas incumplibles. La idea es tener al cliente al lado.
+3. **Entrega frecuente de software funcionando**:
+   - El software debe entregarse con frecuencia, idealmente cada pocas semanas, para asegurar que se cumplan las necesidades del cliente.
 
-  
+4. **Colaboración diaria**:
+   - Desarrolladores y personas del negocio deben trabajar juntos todos los días para asegurar el éxito del proyecto.
 
-- Responder al cambio por sobre seguir un plan.
-    
+5. **Motivación y confianza en el equipo**:
+   - Construir proyectos alrededor de personas motivadas y brindarles el entorno adecuado para que puedan realizar su trabajo con éxito.
 
-Un plan puede verse alterado por el entorno, la idea es adaptarse. Se puede planificar, pero pensando en plazo de semanas y no periodos tan largos.
+6. **Comunicación cara a cara**:
+   - La conversación cara a cara es el medio más efectivo para transmitir información dentro del equipo de desarrollo.
 
-### Principios
+7. **Medición del progreso por software funcionando**:
+   - El progreso no se mide por documentación ni fases, sino por la funcionalidad y calidad del software.
 
-- Nuestra prioridad más alta es satisfacer al cliente a través de la entrega temprana y continua de software valioso.
-    
+8. **Desarrollo sostenible**:
+   - Los equipos deben mantener un ritmo constante de trabajo para evitar el agotamiento y permitir un desarrollo sostenible a largo plazo.
 
-Entrega inicial sin tanta funcionalidad, desde ahí entregas constantes.
+9. **Excelencia técnica y buen diseño**:
+   - La atención continua a la excelencia técnica y al buen diseño mejora la agilidad del equipo.
 
-  
+10. **Simplicidad**:
+   - Se valora la simplicidad en las soluciones para maximizar el trabajo no realizado y evitar sobrecarga innecesaria.
 
-- El cambio de requerimientos es bienvenido, aún tarde en el desarrollo. Los procesos ágiles aprovechan el cambio para una ventaja competitiva del cliente.
-    
+11. **Organización del equipo**:
+   - Las mejores arquitecturas y diseños emergen de equipos bien organizados, donde cada miembro aporta a la toma de decisiones.
 
-La posibilidad de cambiar las cosas, incluso tarde, permite que los procesos ágiles ofrezcan una ventaja competitiva al cliente, agregando funcionalidades al software que ofrecen diferencias en el mercado. El software es flexible, y se desarrolla de esa manera para poder agregar cosas.
+12. **Reflexión y mejora continua**:
+   - Los equipos deben reflexionar regularmente sobre cómo ser más efectivos y ajustar su comportamiento en consecuencia.
 
-  
-
-- Entregar software funcionando frecuentemente, desde un par de semanas a un par de meses, con la mayor brevedad preferentemente.
-    
-
-Idem punto 1. Entregas constantes, inicial a las dos semanas, y luego cada un par de semanas. La idea siempre es cumplir las necesidades del cliente.
-
-  
-
-- Las personas del negocio y los desarrolladores trabajan diariamente juntas en el proyecto.
-    
-
-Entre clientes, stakeholders, devs, etc.
-
-  
-
-- Construir proyectos alrededor de individuos motivados. Brindarles el entorno y el soporte que necesitan, y confiar en ellos para obtener el trabajo realizado.
-    
-
-Las personas son el principal factor, todo lo demás, entorno, proceso, direccion son factores secundarios. Si algún secundario no funciona bien, se necesita corregir para que el factor principal esté contento.
-
-  
-
-- El método más eficiente y efectivo para transmitir información hacia y dentro del equipo de desarrollo es la conversación cara a cara.
-    
-
-Documentación opcional, la principal forma de comunicación es el habla.
-
-  
-
-- Software funcionando es la primera medida de progreso.
-    
-
-No se mide según cantidad de documentación, o según fase actual, etc. Si el software está funcionando, y cumple con el cliente listo.
-
-  
-
-- Los procesos ágiles promueven el desarrollo sostenible. Los auspiciantes, desarrolladores y usuarios deben ser capaces de mantener un ritmo constante indefinidamente.
-    
-
-Ritmo constante de trabajo, sin ‘quemarse’ pero a su ritmo.
-
-  
-
-- La atención continua a la excelencia técnica y el buen diseño aumenta la agilidad.
-    
-
-Perfección a la hora de codear por ej. No dejar las cosas a arreglar para más tarde, arreglarlo antes que finalice el día.
-
-  
-
-- La simplicidad (el arte de maximizar el trabajo no realizado) es esencial.
-    
-
-Se trabaja de forma simple. El camino más simple para realizar el software, con alto grado de calidad.
-
-  
-
-- Las mejores arquitecturas, requerimientos y diseños emergen de equipos organizados.
-    
-
-Equipo organizados = equipos ágiles
-
-El equipo es un todo, toda persona tiene poder sobre el resto. Las tareas se reparten entre todos, pero ninguno se encarga de una parte fundamental por sí solo (arquitectura por ej).
-
-  
-
-- A intervalos regulares, reflexiona como ser mas efectivo y luego ajusta y afina su comportamiento en concordancia.
-    
-
-Los equipos cambian según el entorno para mantenerse ágiles.
-
-  
-  
-  
-  
-  
 
 ## XP - Programación Extrema
 
-- Pensada para dominios de problema muy dinámicos. CAMBIO DE REQUERIMIENTOS.
-    
+La **Programación Extrema (XP)** es una metodología ágil diseñada para enfrentar problemas que requieren un alto nivel de adaptación y flexibilidad, especialmente en entornos donde los requerimientos cambian frecuentemente.
 
+### Características Principales de XP
+
+- **Cambio de requerimientos:** XP se adapta bien a dominios de problemas dinámicos, donde los requerimientos pueden cambiar en cualquier momento.
   
+- **Equipos pequeños:** Ideal para equipos de trabajo de entre 2 y 10 personas. Equipos más grandes dificultan la aplicación de sus principios.
 
-- Orientada a pequeños equipos de trabajo. 2-10 personas, equipos más grandes es difícil de aplicar.
-    
+- **Equipo extendido:** Además de los desarrolladores, en XP participan también administradores, clientes y otros stakeholders involucrados en el proyecto.
 
+- **Priorización de pruebas:** Se enfoca en la automatización de pruebas, tanto unitarias como de integración, para garantizar la calidad del software.
+
+- **Metodología liviana:** XP tiene pocas reglas y prácticas sencillas. Se hace solo lo que el cliente necesita, evitando la sobrecarga de procesos.
+
+### Valores Fundamentales de XP
+
+- **Comunicación:** La interacción continua entre el equipo y los representantes del usuario es clave para mantener alineados los objetivos del proyecto.
   
+- **Simplicidad:** Se busca simplificar tanto el software como el proceso de desarrollo, utilizando modelos y diagramas que faciliten la comprensión.
 
-- Requiere también un equipo de trabajo extendido. No solo desarrolladores sino también administradores, clientes, y todas las personas de alguna u otra forma involucradas con el proyecto (stakeholders). 
-    
+- **Retroalimentación:** La retroalimentación rápida es esencial para adaptar el proyecto a las nuevas circunstancias y necesidades.
 
-  
+- **Coraje:** Se necesita valentía para tomar decisiones importantes y estar dispuesto a descartar o refactorizar trabajo previo cuando sea necesario.
 
-- Prioriza la prueba. Unitarias e integración, automatización.
-    
+- **Respeto:** Todos los miembros del equipo, incluidos clientes y otros stakeholders, deben ser tratados con respeto y reconocerse como piezas clave del proyecto.
 
-  
+### Principios Centrales de XP
 
-- Es una “metodología liviana”. Pocas reglas y prácticas sencillas, solo se hace lo que el cliente necesita
-    
+- **Retroalimentación rápida:** Trabajar estrechamente con los clientes para obtener retroalimentación continua sobre los requerimientos y el producto.
 
-### Valores
+- **Cambio incremental:** El desarrollo se realiza de manera incremental, sin tener el producto final desde el inicio. Se evoluciona paso a paso.
 
-- Comunicación: Entre el equipo y los representantes del usuario, así como entre los desarrolladores. Esta interacción es clave para asegurar que todos estén alineados en los objetivos del proyecto.
-    
+- **Trabajo de calidad:** El objetivo es entregar un producto de calidad que cumpla con las expectativas del cliente y que sea fácil de mantener.
 
-  
+- **Simplicidad:** El código debe ser simple. No se debe intentar construir todo de una vez; la idea es refactorizar y mejorar a medida que avanza el desarrollo.
 
-- Simplicidad: Los modelos son esenciales para simplificar tanto el software como el proceso de desarrollo. Es más fácil explorar y mejorar una idea a través de diagramas que escribir extensas líneas de código. No hacer cosas demás en el código.
-    
+- **Abrazar el cambio:** A medida que el proyecto avanza, el entorno y las circunstancias cambian. El enfoque de desarrollo debe adaptarse a estas modificaciones.
 
-  
+### Principios Secundarios de XP
 
-- Retroalimentación: La utilización de diagramas permite obtener retroalimentación rápida sobre las ideas, lo que facilita la toma de decisiones informadas y la adaptación a nuevas circunstancias. ADAPTARSE AL CAMBIO.
-    
+- **Enseñar a aprender:** Todos los miembros del equipo pueden aprender de los demás, promoviendo un ambiente de aprendizaje continuo.
 
-  
+- **Pequeña inversión inicial:** Comenzar con una pequeña inversión permite al equipo probar ideas rápidamente sin comprometer grandes recursos.
 
-- Coraje: Crucial para tomar decisiones importantes y tener la disposición de cambiar el rumbo, ya sea descartando o refactorizando trabajo previo que no haya resultado adecuado.
-    
+- **Jugar para ganar:** Mantener una mentalidad positiva y enfocada en el éxito del proyecto.
 
-  
+- **Experimentos concretos:** Probar ideas de manera práctica permite evaluar rápidamente su eficacia sin arriesgar todo el proyecto.
 
-- Respeto: Cada miembro del equipo, incluidos los clientes y otros participantes, aporta su propia experiencia y valor al proyecto. Un enfoque efectivo es tratar a todos los involucrados con respeto, reconociendo su importancia en el proceso.
-    
+- **Comunicación abierta y honesta:** La transparencia en la comunicación es fundamental para tomar decisiones informadas y consensuadas dentro del equipo.
 
-### Principios Centrales
+- **Trabajar con los instintos de las personas:** En lugar de imponer una forma de trabajo, XP aprovecha las fortalezas y la naturaleza de las personas para mejorar el rendimiento.
 
-- Retroalimentación rápida.
-    
+- **Responsabilidad aceptada:** La responsabilidad no se asigna, se acepta. Cada miembro del equipo es responsable de su parte del proyecto.
 
-Trabajando estrechamente con sus clientes, para comprender sus requerimientos, para analizar dichos requerimientos, o para desarrollar la interfaz de usuario que cubra sus expectativas, provee oportunidades de rápida retroalimentación.
+- **Adaptación local:** Las prácticas de trabajo deben ajustarse a la realidad específica de cada equipo y proyecto, aprovechando sus fortalezas y características.
 
-- Cambio incremental.
-    
+- **Viaje liviano:** Minimizar las cargas innecesarias, como la documentación y los procesos, permite que el equipo se enfoque en lo que realmente agrega valor.
 
-No se tiene el todo desde el inicio, se aplica el desarrollo incremental.
+- **Medición honesta:** Evaluar el rendimiento de manera sincera ayuda al equipo a aprender y mejorar sin generar expectativas irreales.
 
-- Trabajo de calidad.
-    
+## Actividades Básicas
 
-Buen producto de software, cumple expectativas y el resto lo entiende (mantenimiento, o los clientes en si).
+### Programar
+La programación es el núcleo del desarrollo en XP. Implica prácticas como **programación en pareja (pair programming)** y **desarrollo iterativo** para escribir código funcional y de calidad. El objetivo es crear software que aporte valor y cumpla con las necesidades del cliente.
 
-  
-
-- Suponga simplicidad.
-    
-
-No pensar en desarrollar todo desde hoy, hacerlo simple y más adelante refactorizar para agregar cosas.
-
-  
-
-- Abrazar el cambio.
-    
-
-El ambiente del proyecto cambia a medida que avanza su esfuerzo, y como resultado su enfoque de desarrollo debe reflejar dicha realidad.
-
-### Principios Secundarios
-
-- Enseñar a aprender.
-    
-
-Todos pueden aprender de todos.
-
-  
-
-- Pequeña inversión inicial.
-    
-
-Empezar con una inversión pequeña permite al equipo probar sus ideas y adaptarse rápidamente sin comprometer grandes recursos.
-
-  
-
-- Jugar para ganar.
-    
-
-Mentalidad positiva y enfocada en el éxito.
-
-  
-
-- Experimentos concretos.
-    
-
-Probar ideas y soluciones de manera práctica permite evaluar su eficacia rápidamente y obtener información valiosa sin comprometer todo el proyecto.
-
-  
-
-- Comunicación abierta y honesta.
-    
-
-La comunicación transparente es clave en los métodos ágiles; permite que todos compartan información sin temor y que se puedan tomar decisiones informadas y consensuadas.
-
-  
-
-- Trabajar con los instintos de las personas, no contra ellos.
-    
-
-En lugar de imponer una manera de trabajar, ágil busca aprovechar las fortalezas y los instintos naturales de las personas para mejorar su rendimiento y satisfacción.
-
-  
-
-- Responsabilidad aceptada.
-    
-
-La responsabilidad no puede asignarse; sólo puede aceptarse. Si alguien intenta atribuirte responsabilidades, sólo tú puedes decidir si eres responsable o no.
-
-  
-
-- Adaptación local.
-    
-
-Ajustar las prácticas de trabajo a la realidad específica de cada proyecto y equipo permite aprovechar mejor sus fortalezas y características únicas.
-
-  
-  
-
-- Viaje liviano
-    
-
-Evitar cargas innecesarias en cuanto a documentación y procesos ayuda a que el equipo se enfoque en lo que realmente agrega valor.
-
-  
-
-- Medición honesta
-    
-
-Evaluar el rendimiento de manera sincera permite al equipo aprender y mejorar continuamente sin crear falsas expectativas.
-
-### Actividades Básicas
-
-  
-
-- Programar
-    
-
-Es el núcleo del desarrollo en XP. Incluye prácticas como programación en pareja (pair programming) y desarrollo iterativo para escribir código funcional y de calidad.
-
-El objetivo es crear software de valor, cumpliendo con las necesidades del cliente.
-
-  
-
-- Probar
-    
-
-En XP, las pruebas son fundamentales. La práctica de Test-Driven Development (TDD) asegura que las pruebas se escriban antes del código.
-
-Esto ayuda a detectar errores temprano y garantiza que el software cumpla con los requisitos.
+### Probar
+En XP, las pruebas son fundamentales. La práctica de **Test-Driven Development (TDD)** asegura que las pruebas se escriban antes del código, ayudando a detectar errores temprano y garantizando que el software cumpla con los requisitos.
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeGc7WBBiiuJp3Oo8vPe73t8wjqO3I6uTwPX0iX0LoxChI-XN5I_yRhg8-NUd9XrPvi1r8YZ4Wyb0ykcYTtA8QihsQKsKwdptxs_dWkaDdG4N2uiYmtsTlS8jIub91nyOl5ObUVPw?key=VReuh94fGGpJZLGsXsGdUQ)
 
-  
+### Escuchar
+Escuchar es esencial en XP, especialmente durante las interacciones con los clientes y el equipo. Los desarrolladores deben comprender las necesidades del cliente y recibir retroalimentación constante, lo que fomenta la colaboración y adaptación a los cambios.
 
-- Escuchar
-    
+### Diseñar
+Aunque XP promueve un diseño simple, se debe prestar atención al diseño inicial y a la refactorización continua para mantener el código limpio y extensible. También se deben tomar decisiones arquitectónicas que respalden el desarrollo ágil.
 
-Escuchar es esencial en XP, especialmente durante las interacciones con los clientes y el equipo. Los desarrolladores deben comprender las necesidades del cliente y recibir retroalimentación constante.
+## Prácticas Centrales
 
-Fomenta la colaboración y la adaptación a los cambios.
+### El Juego de la Planificación
+Involucra a los clientes y al equipo técnico para planificar iteraciones cortas (1-3 semanas). Los clientes priorizan las funcionalidades y los desarrolladores estiman el esfuerzo necesario, promoviendo la flexibilidad frente a cambios de requisitos.
 
-  
-  
+### Entregas Pequeñas
+Se entrega software funcional y de valor frecuentemente, en pequeños incrementos. Esto reduce los riesgos y facilita la retroalimentación continua.
 
-- Diseñar
-    
+### Metáfora
+Utilizada para facilitar la comunicación entre los miembros del equipo y los clientes. Ejemplos de metáforas:
 
-Aunque XP promueve un diseño simple, se debe prestar atención al diseño inicial y al refactorizado continuo para mantener el código limpio y extensible.
+- **Manufacturing Metaphor**
+- **Shopping Cart Metaphor**
 
-Diseñar también incluye tomar decisiones arquitectónicas que respalden el desarrollo ágil.
+### Diseño Simple
+El diseño se limita a lo necesario para cumplir con los requisitos actuales, evitando la complejidad innecesaria. Enfatiza la simplicidad para facilitar cambios futuros.
 
-  
+### Pruebas
+Se implementan pruebas automatizadas (unitarias y funcionales) desde el principio. Esto asegura que el software funcione como se espera y ayuda a detectar errores rápidamente.
 
-### Prácticas Centrales
+### Refactorización
+Mejora el diseño del código existente sin cambiar su funcionalidad. Refactorizar garantiza que el sistema sea más limpio, mantenible y fácil de entender.
 
-- El juego de la planificación
-    
+### Programación en Pares
+Dos desarrolladores trabajan juntos en una misma estación: uno escribe el código y el otro lo revisa en tiempo real. Esto mejora la calidad del código y fomenta el intercambio de conocimientos.
 
-Involucra a los clientes y al equipo técnico para planificar iteraciones cortas (1-3 semanas).
+### Propiedad Colectiva
+Todo el equipo es responsable del código. Cualquier miembro puede modificar cualquier parte del sistema, lo que promueve la colaboración y elimina cuellos de botella.
 
-Los clientes priorizan las funcionalidades, y los desarrolladores estiman el esfuerzo necesario.
+### Integración Continua
+Los desarrolladores integran su código frecuentemente (varias veces al día). Esto ayuda a detectar y resolver conflictos de integración temprano.
 
-Promueve la flexibilidad frente a cambios de requisitos.
+### Semana de 40 Horas
+Se fomenta un ritmo de trabajo sostenible, evitando las horas extras regulares. Esto ayuda a mantener la productividad y prevenir el agotamiento.
 
-  
-
-- Entregas pequeñas
-    
-
-Se entrega software funcional y de valor frecuentemente, en pequeños incrementos.
-
-Reduce riesgos y facilita la retroalimentación continua.
-
-  
-
-- Metáfora
-    
-
-Esto facilita la comunicación entre los miembros del equipo y los clientes.
-
-  
-
-- Diseño simple
-    
-
-Se diseña solo lo necesario para cumplir con los requisitos actuales, evitando la complejidad innecesaria.
-
-Enfatiza la simplicidad para facilitar cambios futuros
-
-  
-
-- Pruebas
-    
-
-Se implementan pruebas automatizadas (unitarias y funcionales) desde el principio.
-
-Esto asegura que el software funcione como se espera y ayuda a detectar errores rápidamente.
-
-  
-
-- Refactorización
-    
-
-Mejora el diseño del código existente sin cambiar su funcionalidad.
-
-Garantiza que el sistema sea más limpio, mantenible y fácil de entender.
-
-  
-  
-
-- Programación en pares
-    
-
-Dos desarrolladores trabajan juntos en una misma estación: uno escribe el código y el otro lo revisa en tiempo real.
-
-Mejora la calidad del código y fomenta el intercambio de conocimientos.
-
-  
-
-- Propiedad colectiva
-    
-
-Todo el equipo es responsable del código. Cualquier miembro puede modificar cualquier parte del sistema.
-
-Promueve la colaboración y elimina cuellos de botella.
-
-  
-
-- Integración continua
-    
-
-Los desarrolladores integran su código frecuentemente (varias veces al día).
-
-Esto ayuda a detectar y resolver conflictos de integración temprano.
-
-  
-
-- Semana de 40 horas
-    
-
-Fomenta un ritmo de trabajo sostenible. El equipo no debería trabajar horas extras regularmente.
-
-Ayuda a mantener la productividad y prevenir el agotamiento
-
-  
-
-- Cliente en el sitio
-    
-
+### Cliente en el Sitio
 Un representante del cliente trabaja en el equipo de desarrollo a tiempo completo, proporcionando retroalimentación constante y aclarando requisitos en tiempo real.
 
-  
+### Estándares de Codificación
+Todo el equipo sigue un conjunto de reglas y convenciones para escribir código de manera uniforme, lo que facilita la lectura, colaboración y mantenimiento del código.
 
-- Estandares de codificacion
-    
+## GAONA
 
-Todo el equipo sigue un conjunto de reglas y convenciones para escribir código de manera uniforme.
+### Metáfora
+La metáfora reemplaza el concepto de arquitectura. El sistema se define mediante una o varias metáforas que ayudan a comunicar su funcionamiento.
 
-Facilita la lectura, la colaboración y el mantenimiento del código.
+Ejemplos:
 
-  
+- **Manufacturing Metaphor**
+- **Shopping Cart Metaphor**
 
-### GAONA
-
-####   
-Metáfora
-
-- Historia compartida de cómo debería funcionar el sistema.
-    
-- La metáfora reemplaza el concepto de arquitectura.
-    
-- El sistema se define mediante una o varias metáforas.
-    
-- Ejemplos:
-    
-
-- Manufacturing Metaphor
-    
-- Shopping Cart Metaphor
-    
-
-  
-
-#### Diseño Simple
-
-- El diseño correcto es aquel que:
-    
+### Diseño Simple
+El diseño correcto es aquel que:
 
 - Ejecuta todas las pruebas.
-    
 - No tiene lógica duplicada.
-    
 - Declara todas las intenciones importantes de los programadores.
-    
 - Tiene la menor cantidad de clases y métodos posibles.
-    
 
-- Consejo opuesto a “implemente para hoy, diseñe para mañana”.
-    
+### Diagramas
+En XP, se prioriza el uso de **código sobre imágenes**. Los diagramas no se guardan y los diseñadores deben recurrir al código cuando surgen preguntas que pueden resolverse con código.
 
-- No especular.
-    
+### Refactorización
+La refactorización es una actividad constante de reestructuración del código para:
 
-#### Diagramas
+- Remover duplicación.
+- Mejorar la legibilidad.
+- Simplificar el código.
+- Facilitar futuros cambios.
 
-- La estrategia de XP es que cualquiera puede diseñar con imágenes todo lo que quiera, pero tan pronto como surge una pregunta que puede responderse con código, los diseñadores deben recurrir al código para obtener la respuesta.
-    
-- Las imágenes no se guardan.
-    
-- Los diagramas esconden el código, no se sabe si corren los costos de prueba.
-    
-
-#### Refactorización
-
-- Actividad constante de reestructuración del código:
-    
-
-- Remover duplicación de código.
-    
-- Mejorar su legibilidad.
-    
-- Simplificarlo.
-    
-- Facilitar los posteriores cambios.
-    
-
-- Mejora la estructura interna del código sin alterar su comportamiento.
-    
-
-#### Estándares de Codificación
-
-- XP enfatiza la comunicación de los programadores a través del código.
-    
-- Indispensable que se sigan ciertos estándares de programación:
-    
-
-- Del equipo.
-    
-- De la organización.
-    
-- Estándares reconocidos para los lenguajes de programación.
-    
-
-- Mantienen el código legible para los miembros del equipo, facilitando los cambios.
-    
-
-  
-
-### OTRAS
+### Estándares de Codificación
+XP enfatiza la importancia de que todo el equipo siga ciertos estándares de programación, tanto a nivel de equipo, organización como en lenguajes de programación reconocidos. Esto mantiene el código legible, facilitando los cambios.
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfhmjIeq_ZiFqeowqNkGXxOT3gQrVxptGK6VdQdPYXJx5fDUA3KRvu6HeFYzZEzxr6i9vVmuGSzjP3i9dWFuOc-CiFNO7MOaYlRYUbRRukLd9tiVGOZOydqDsn-sCC9hBXUiXxgQA?key=VReuh94fGGpJZLGsXsGdUQ)
 

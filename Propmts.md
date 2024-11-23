@@ -9,7 +9,10 @@ te voy a pasar apuntes que hice sobre DISEÑO DE SISTEMAS DE INFORMACION en un d
 ```
 
 ```txt
-devuelveme el archivo mardown del resumen... porque contiene imagenes recuerda mantener los enlaces de las imagenes... dejar hermoso el apunte y aclarar algunos conceptos que pueden ser dificiles de entender para que sea facil de estudiar
+continua convirtiendo el md que te paso en una version mas clara hermosa y organizada para facilitar el estudio. recuerda respetar los enlaces de las imagenes 
+"""md
+
+"""
 ```
 
 ```txt
