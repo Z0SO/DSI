@@ -146,265 +146,270 @@ Subsistemas de Servicio: Se utilizan en un nivel inferior de la jerarquía de su
     
 
 Organización de Artefactos: La organización de los artefactos del modelo de diseño utiliza subsistemas de diseño normales, pero se introduce un estereotipo «service subsystem» para diferenciar explícitamente los subsistemas que representan servicios, lo cual es crucial en sistemas grandes.
+## DISEÑO
 
-- ARTEFACTO: INTERFAZ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcrcBDaVukiDVEgwnl2IeUbzxE4KeSbuihRuEm6l1KpHQqs_N1kN6uBnsm7HWtxYn4cLMu1rXx2H-3CRWL2efVmdYAHFbZm6_tgMgtaDTRzhHONfIoExozChAhM-deVGIOqeeAJUwi50SsIyn9uq0R6quU?key=VReuh94fGGpJZLGsXsGdUQ)
+El diseño en el desarrollo de software se enfoca en modelar el sistema y su arquitectura para cumplir con todos los requisitos, incluidos los no funcionales. La entrada clave para este proceso es el modelo de análisis, el cual proporciona una comprensión detallada de los requisitos y establece la estructura que debe mantenerse durante todo el desarrollo.
+
+### Propósitos del Diseño
+
+- **Comprensión de Requisitos No Funcionales**: Aborda aspectos como lenguajes de programación, componentes reutilizables, sistemas operativos y tecnologías de interfaz.
+- **Punto de Partida para la Implementación**: Captura los requisitos, subsistemas, interfaces y clases necesarias para facilitar la implementación.
+- **Descomposición de Tareas**: Divide la implementación en partes manejables para diferentes equipos, considerando la concurrencia en el sistema.
+- **Captura de Interfaces**: Identifica las interfaces entre subsistemas temprano en el ciclo de vida del software para mejorar la arquitectura y la coordinación entre equipos.
+- **Visualización del Diseño**: Utiliza notaciones estándar para representar y reflexionar sobre el diseño.
+- **Abstracción de la Implementación**: Asegura que la implementación sea un refinamiento directo del diseño, permitiendo la generación automática de código y la ingeniería de ida y vuelta.
+
+#### Comparación entre Modelo de Análisis y Diseño:
+![Comparación entre Modelo de Análisis y Diseño](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcrEmpKHvxsvoQOQeGseRLaGNFIUN0alihaPabt4uigG6Z2g1WlCIHELnnz1SVEfmIAlOTK13ZY2qUb9f3P7U5SqJ--dMHsgD3na2v-4BdwqgVFlKaK-x6lr97A0VPalA1o4ddYa8OoneiYmhD6aenDpgPd?key=VReuh94fGGpJZLGsXsGdUQ)
+
+---
+
+### TRABAJADORES Y ARTEFACTOS
+
+Los **trabajadores** en el diseño son los encargados de crear los artefactos necesarios para la implementación del sistema. Los **artefactos** son los productos que resultan de este proceso, tales como modelos de diseño, clases de diseño, y otros elementos que guían la implementación del sistema.
+
+![Trabajadores y Artefactos](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcqlkQr0eRocOd6VK5wu9GNnchPQP-wQggjbmXRPhrqEbMLw50dQ6LbxMOfkGBVnP1YVs8ki9p37wPeJ9Zg5FHfExtwP9c1XtGKiNBr4VBJ35FfOOLufRUEm_IstnfMAF_gp_oeK5t4f1r2GHzQopZS44Cp?key=VReuh94fGGpJZLGsXsGdUQ)
+
+---
+
+### ARTEFACTOS
+
+#### Artefacto: Modelo de Diseño
+
+El **modelo de diseño** describe la implementación física de los casos de uso, centrándose en cómo los requisitos funcionales y no funcionales, así como otras restricciones del entorno, impactan el sistema. Este modelo actúa como una abstracción de la implementación y es esencial para las actividades de implementación.
+
+**Estructura del Modelo de Diseño**:
+- **Jerarquía**: Representa el subsistema de nivel más alto, organizando el modelo en porciones manejables.
+- **Subsistemas y Clases de Diseño**: Muestran abstracciones directas que tienen una correspondencia sencilla entre el diseño y la implementación.
+
+#### Realización de Casos de Uso
+
+Los **casos de uso** se implementan mediante clases de diseño y sus objetos, los cuales se representan mediante colaboraciones en el modelo de diseño.
+
+![Realización de Casos de Uso](https://lh7-rt.googleusercontent.com/docsz/AD_4nXczsgxuFIHG_5I2wtbwMnzxnLA5HFarLEIW3Du0BwHulYODJZd3sz9k2eFwHF1HKH1vlLgV-JB6PxfOeFFLtOcgMd5ihW71BAbzcPT9D5KoCli9-AFnr0LXUgrmbKs_La-M65xEiQRF8oMw3BVdGJfdCaQl?key=VReuh94fGGpJZLGsXsGdUQ)
+
+---
+
+#### Artefacto: Clase de Diseño
+
+Una **clase de diseño** es una abstracción que refleja de manera directa una clase o construcción en la implementación del sistema. Este tipo de clase tiene varias características clave:
+
+- **Lenguaje Consistente**: Utiliza el mismo lenguaje que el de programación para especificar las operaciones, parámetros, atributos, etc.
+- **Visibilidad de Atributos y Operaciones**: La visibilidad (pública, privada, protegida) se especifica claramente.
+- **Relaciones Directas**: Las relaciones entre clases tienen un significado directo en la implementación, como herencia y asociaciones.
+- **Correspondencia de Métodos**: Los métodos en la clase de diseño tienen una correspondencia directa con los métodos en la implementación.
+- **Postergación de Requisitos**: Algunos requisitos se postergan para la fase de implementación.
+- **Estereotipos Correspondientes**: Las clases pueden ser estereotipadas según las construcciones del lenguaje de programación.
+
+![Clase de Diseño](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfCFSRDc4xW0Ce2Ea3en0v91oo2puCboi-uGeA0evLEP_saGb32LhkrL2MdEfwFiK8-rNVg8jDxYkpIb4mMOCUOECkQNI_gP8Wm_1iRmLnngwD0gzEuDCNQC-9H2XZRGAD9BEydHEIQ8L5rPLlI14UJmes?key=VReuh94fGGpJZLGsXsGdUQ)
+
+---
+
+#### Artefacto: Realización de Caso de Uso - Diseño
+
+Este artefacto describe cómo se realiza un caso de uso específico en el diseño, utilizando clases de diseño y sus objetos. Representa una traza directa a un caso de uso en el modelo de análisis.
+
+![Realización de Caso de Uso - Diseño](https://lh7-rt.googleusercontent.com/docsz/AD_4nXetvPyiczzN8lAeFgkB5s4vNFG4ziSLvPZqsC2j7Tiks8fSTVb9i5uk26N_mtwv6BtqVdubrv3yVmaUqpcnW6aLZUoUdMG9YM1ppYJ6UW52iReISSTyOc9YLMqgH66-Hv_3ckkmaIvQPP4zZ_G_7pECqbDX?key=VReuh94fGGpJZLGsXsGdUQ)
+
+Los diagramas de clases y de interacción, junto con el flujo de sucesos, ayudan a coordinar los requisitos de implementación para los casos de uso.
+
+---
+
+#### Artefacto: Subsistema de Diseño
+
+Un **subsistema de diseño** es una unidad que organiza los artefactos del modelo de diseño en piezas más manejables. Un subsistema puede incluir clases de diseño, realizaciones de caso de uso, interfaces y otros subsistemas.
+
+**Características de los Subsistemas de Diseño**:
+- **Cohesión**: Los contenidos de un subsistema deben estar fuertemente asociados.
+- **Acoplamiento**: Las dependencias entre subsistemas deben ser mínimas.
+- **Separación de Aspectos**: Permite que diferentes equipos trabajen de manera independiente.
+- **Reutilización de Software**: Los subsistemas pueden encapsular productos de software reutilizados.
+
+![Subsistema de Diseño](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcj8rlGj1b6o9e8M1HFQ20NG3YUbACuUtJs3zlE2VKYo5qeCvf0FSUYTAToyNIfVeUYZ_VyCUIl0CuitFdaWnDvcvhUZVBYzeetPa-BELy-gH03XeLe8QvYCGMeJS8bncn1Dug3iG3UeZdtw-eR4m0GQNo?key=VReuh94fGGpJZLGsXsGdUQ)
+
+### ARTEFACTO: **INTERFAZ**
+
+![Interfaz](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcrcBDaVukiDVEgwnl2IeUbzxE4KeSbuihRuEm6l1KpHQqs_N1kN6uBnsm7HWtxYn4cLMu1rXx2H-3CRWL2efVmdYAHFbZm6_tgMgtaDTRzhHONfIoExozChAhM-deVGIOqeeAJUwi50SsIyn9uq0R6quU?key=VReuh94fGGpJZLGsXsGdUQ)
+
+Las interfaces son esenciales en el diseño de sistemas, asegurando la flexibilidad y la modularidad. Permiten que los clientes interactúen con el sistema sin estar ligados a la implementación concreta. Esto facilita la sustitución de una implementación por otra sin que los clientes necesiten modificaciones. Algunos puntos clave:
+
+- **Definición de Interacciones entre Subsistemas:** Las interfaces establecen cómo los subsistemas se comunican entre sí, lo cual es fundamental para la arquitectura.
+    
+- **Diseño de Interfaces Estables:** Es importante diseñar interfaces estables desde las etapas tempranas del desarrollo, ya que esto minimiza los cambios a futuro.
+    
+- **Herramientas de Sincronización:** Las interfaces también actúan como herramientas de sincronización entre equipos de desarrollo, asegurando que todos los componentes del sistema estén alineados.
     
 
-Especifican las operaciones que ofrecen las clases y subsistemas del diseño. Son clave en el diseño de sistemas, asegurando flexibilidad y modularidad.
+---
 
-Las interfaces permiten que los clientes sean independientes de la implementación concreta, facilitando la sustitución de implementaciones sin cambios en los clientes.
+### ARTEFACTO: **DESCRIPCIÓN DE LA ARQUITECTURA (MODELO DE DISEÑO)**
 
-- Definen interacciones entre subsistemas, relevantes para la arquitectura.
+![Modelo de Diseño](https://lh7-rt.googleusercontent.com/docsz/AD_4nXe8iJRA55_Y1hWE6A-PlhYGq-fsuYRmvcDMPW771998uHTFA5hBR9hyw0Q3YfF1Y4--B4lQeC10Rel8i-hX4NVDqXE76iVp083sTtJrvObuCUBLisUwvDpwpmF3C4wePtSSTZ8Pb-Sri0faBCTeNzBQrG1H?key=VReuh94fGGpJZLGsXsGdUQ)
+
+La **descripción de la arquitectura** es una representación clave del modelo de diseño, destacando los artefactos más importantes que forman la base del sistema. Este artefacto cubre los siguientes aspectos:
+
+- **Descomposición en Subsistemas:** Muestra cómo se dividen los subsistemas del sistema, detallando sus interfaces y dependencias para entender cómo interactúan entre sí.
     
-- Permiten diseñar interfaces estables desde etapas tempranas del desarrollo.
+- **Clases del Diseño Fundamentales:** Se identifican las clases clave que tienen conexiones directas con las clases del análisis, y que representan mecanismos genéricos y funciones importantes dentro del diseño.
     
-- Sirven como herramientas de sincronización entre equipos de desarrollo.
+- **Realizaciones de Caso de Uso-Diseño:** Este artefacto describe las funcionalidades críticas que deben implementarse de manera temprana en el ciclo de desarrollo, ya que involucran varias clases y subsistemas.
     
 
+Es fundamental para comprender cómo se estructura el sistema y cómo evoluciona durante su ciclo de vida.
+
+---
+
+### ARTEFACTO: **MODELO DE DESPLIEGUE**
+
+![Modelo de Despliegue](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeXAo88deLtCH8nOVCLea8vtsoPTpJbACyvbvVN-9uKaPFkOwUwuONyaLR1dMx7f6TlafbIdK0wU5dK9XEOqEFC-ru_DywrGe1JBbf1edbA3jEqmEHsGKZnrRDq2lZjt7K2xv_NotVjZ-8ASecVMbAbF3A?key=VReuh94fGGpJZLGsXsGdUQ)
+
+El **modelo de despliegue** describe la distribución física del sistema, detallando cómo se distribuyen los componentes del software en los nodos de cómputo. Los elementos clave incluyen:
+
+- **Nodos:** Cada nodo es un recurso de cómputo, que puede ser un procesador, servidor o dispositivo de hardware.
+    
+- **Relaciones entre Nodos:** Los nodos están conectados entre sí a través de diferentes medios de comunicación, como redes locales, intranets o Internet.
+    
+- **Configuraciones de Red:** Esto puede incluir configuraciones específicas para pruebas y simulaciones de redes, ayudando a garantizar que el sistema funcione en diferentes entornos.
+    
+- **Funcionalidad en los Nodos:** Define qué procesos se ejecutan en cada nodo, de acuerdo con los componentes distribuidos sobre ellos.
+    
+- **Correspondencia Arquitectónica:** Es importante entender cómo la arquitectura del software se relaciona con la del hardware, para que los componentes se distribuyan correctamente sobre los nodos.
+    
+
+---
+
+### ARTEFACTO: **DESCRIPCIÓN DE LA ARQUITECTURA (VISTA DEL MODELO DE DESPLIEGUE)**
+
+![Vista del Modelo de Despliegue](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcYdNRLWipUD9npeOKM3fS50yyDcngI_9ORWdBjQTusjb_a0AWGzgWHjtbrTdwcbsZGko2yRcZ98QCVm8XseQU0mWbBYDI1Eo02BfK5bFr0ngBlI8Hc0OpVqFNSl846c1OGwN65pcuNkJX2WiJTgwerVS_5?key=VReuh94fGGpJZLGsXsGdUQ)
+
+La **descripción arquitectónica** incluye todos los aspectos relacionados con el **modelo de despliegue**, mostrando cómo los componentes se distribuyen sobre los nodos identificados durante la fase de implementación. Este artefacto es esencial para:
+
+- **Diseño e Implementación:** Asegura que la distribución física del sistema esté bien alineada con el diseño lógico y funcional del sistema.
+    
+- **Distribución del Sistema:** A medida que el sistema se implementa, entender cómo se distribuyen los componentes a través de los nodos es clave para la eficiencia y el rendimiento.
+    
+
+Estos artefactos proporcionan una visión integral de cómo se estructura y distribuye el sistema en diferentes niveles, desde las interfaces hasta la implementación física, ayudando a garantizar que el sistema sea flexible, escalable y eficiente.
   
   
   
-
-- ARTEFACTO: DESCRIPCIÓN DE LA ARQUITECTURA (MODELO DE DISEÑO)![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXe8iJRA55_Y1hWE6A-PlhYGq-fsuYRmvcDMPW771998uHTFA5hBR9hyw0Q3YfF1Y4--B4lQeC10Rel8i-hX4NVDqXE76iVp083sTtJrvObuCUBLisUwvDpwpmF3C4wePtSSTZ8Pb-Sri0faBCTeNzBQrG1H?key=VReuh94fGGpJZLGsXsGdUQ)
-    
-
-La descripción de la arquitectura presenta una vista del modelo de diseño, destacando los artefactos relevantes para la arquitectura.
-
-- Descomposición en Subsistemas: Incluye subsistemas, sus interfaces y dependencias, formando la estructura fundamental del sistema.
-    
-- Clases del Diseño Fundamentales: Clases que tienen trazas con clases del análisis significativas, clases activas y clases generales que representan mecanismos de diseño genéricos.
-    
-- Realizaciones de Caso de Uso-Diseño: Describen funcionalidades críticas que deben desarrollarse pronto, implicando muchas clases del diseño y abarcando varios subsistemas.
-    
-
-Estos artefactos son esenciales para entender la arquitectura del sistema y su desarrollo a lo largo del ciclo de vida del software.
-
-- ARTEFACTO: MODELO DE DESPLIEGUE
-    
-
-Describe la distribución física del sistema, mostrando cómo se distribuye la funcionalidad entre los nodos de cómputo.![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeXAo88deLtCH8nOVCLea8vtsoPTpJbACyvbvVN-9uKaPFkOwUwuONyaLR1dMx7f6TlafbIdK0wU5dK9XEOqEFC-ru_DywrGe1JBbf1edbA3jEqmEHsGKZnrRDq2lZjt7K2xv_NotVjZ-8ASecVMbAbF3A?key=VReuh94fGGpJZLGsXsGdUQ)
-
-- Nodos: Cada nodo representa un recurso de cómputo, como un procesador o dispositivo hardware.
-    
-- Relaciones: Los nodos tienen relaciones que representan medios de comunicación, como Internet o intranet.
-    
-- Configuraciones de Red: Puede describir diferentes configuraciones, incluidas pruebas y simulaciones.
-    
-- Funcionalidad: Los procesos de un nodo se definen por los componentes distribuidos sobre él.
-    
-- Correspondencia Arquitectónica: Representa la relación entre la arquitectura software y la del sistema (hardware).
-    
-- ARTEFACTO: DESCRIPCIÓN DE LA ARQUITECTURA (VISTA DEL MODELO DE DESPLIEGUE)![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcYdNRLWipUD9npeOKM3fS50yyDcngI_9ORWdBjQTusjb_a0AWGzgWHjtbrTdwcbsZGko2yRcZ98QCVm8XseQU0mWbBYDI1Eo02BfK5bFr0ngBlI8Hc0OpVqFNSl846c1OGwN65pcuNkJX2WiJTgwerVS_5?key=VReuh94fGGpJZLGsXsGdUQ)
-    
-
-  
-La descripción arquitectónica incluye todos los aspectos del modelo de despliegue, mostrando la correspondencia de los componentes sobre los nodos tal como se identificó durante la implementación.
-
-Este modelo es fundamental para las actividades de diseño e implementación, ya que la distribución del sistema influye en su diseño.
-
   
   
-  
-  
-  
-
 ### TRABAJADORES
 
-- TRABAJADOR: ARQUITECTO
-    
-
+- **TRABAJADOR: ARQUITECTO**
+  
 Es responsable de la integridad de los modelos de diseño y de despliegue, garantizando que sean correctos, consistentes y legibles. Para sistemas grandes y complejos, puede incluirse un trabajador adicional para asumir las responsabilidades del subsistema de más alto nivel del modelo de diseño.
 
 Los modelos son correctos cuando realizan la funcionalidad descrita en el modelo de casos de uso y en los requisitos adicionales. El arquitecto también es responsable de la arquitectura de los modelos, asegurando la existencia de partes significativas en las vistas arquitectónicas.
 
 Es importante notar que el arquitecto no se encarga del desarrollo y mantenimiento continuo de los artefactos del modelo de diseño; esa responsabilidad recae en los ingenieros de casos de uso y de componentes.
 
-- TRABAJADOR: INGENIERO DE CASOS DE USO
-    
-
+- **TRABAJADOR: INGENIERO DE CASOS DE USO**
+  
 Es responsable de la integridad de una o más realizaciones de casos de uso-diseño, garantizando que cumplen con los requisitos esperados. Cada realización debe reflejar correctamente el comportamiento de su correspondiente realización de caso de uso-análisis y el caso de uso del modelo de casos de uso.
 
 Esto incluye hacer legibles y adecuadas todas las descripciones textuales y diagramas que describen la realización del caso de uso. Sin embargo, el ingeniero de casos de uso no es responsable de las clases, subsistemas, interfaces y relaciones de diseño utilizados en la realización del caso de uso; esa es responsabilidad del ingeniero de componentes.
 
-- TRABAJADOR: INGENIERO DE COMPONENTES
-    
-
+- **TRABAJADOR: INGENIERO DE COMPONENTES**
+  
 Define y mantiene las operaciones, métodos, atributos, relaciones y requisitos de implementación de una o más clases del diseño, asegurando que cada clase cumple con los requisitos esperados según las realizaciones de caso de uso en las que participa.
 
 Este ingeniero puede mantener la integridad de uno o más subsistemas, garantizando que sus contenidos y dependencias son correctos y que realizan correctamente las interfaces que ofrecen. Es común que el ingeniero de componentes responsable de un subsistema también sea responsable de los elementos del modelo que contiene, promoviendo un desarrollo uniforme y sin discontinuidades.
-
-  
 
 ### Flujo de Trabajo de Diseño
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfn4kxzzU7an0t6JWIGi1oJkuVBEQKUZFbQ-C8ui1j0CiUHjm61cW7FM26wlDbUqzCywk5FbfpxqoIm-zLG5cqlgUK4I_94FiSG6dbvMy0EgK9i_D3G3Xg0DJYHW5A7MI4L_CfJkOFXJRF4oWSDOMaUYmxc?key=VReuh94fGGpJZLGsXsGdUQ)
 
-- Los arquitectos crean los modelos de diseño y despliegue, definiendo nodos, subsistemas, interfaces y clases importantes.
-    
-- Los Ingenieros de Casos de Uso realizan cada caso de uso en términos de clases y subsistemas, estableciendo requisitos de comportamiento.
-    
-- Los Ingenieros de Componentes especifican e integran requisitos en las clases mediante operaciones, atributos y relaciones.
-    
-- Los desarrolladores identifican nuevos candidatos para subsistemas y clases, y los ingenieros de componentes los refinan.
-    
+1. **Arquitectos** crean los modelos de diseño y despliegue, definiendo nodos, subsistemas, interfaces y clases importantes.
+2. **Ingenieros de Casos de Uso** realizan cada caso de uso en términos de clases y subsistemas, estableciendo requisitos de comportamiento.
+3. **Ingenieros de Componentes** especifican e integran requisitos en las clases mediante operaciones, atributos y relaciones.
+4. **Desarrolladores** identifican nuevos candidatos para subsistemas y clases, y los ingenieros de componentes los refinan.
 
-  
+---
 
-#### Actividad: Diseño de la arquitectura![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXf7CnS5iplAVdnsiktm5rruxS-imJcaHTa7dCEukKxDvbPvyMXvFxt1mAPTtoTiW4-5GbSD8gD0jH1lVGG7HIgHuprB4R2E_prFr-9ShBJEd7VNnIfhsjwJLjmMh2FF9idTZyIpFZqyQ3y9Lf4aWiMfPkFg?key=VReuh94fGGpJZLGsXsGdUQ)
+#### Actividad: Diseño de la arquitectura
+
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXf7CnS5iplAVdnsiktm5rruxS-imJcaHTa7dCEukKxDvbPvyMXvFxt1mAPTtoTiW4-5GbSD8gD0jH1lVGG7HIgHuprB4R2E_prFr-9ShBJEd7VNnIfhsjwJLjmMh2FF9idTZyIpFZqyQ3y9Lf4aWiMfPkFg?key=VReuh94fGGpJZLGsXsGdUQ)
 
 El objetivo es esbozar los modelos de diseño y despliegue, identificando los siguientes elementos:
 
-- Nodos y configuraciones de red.
-    
-- Subsistemas y sus interfaces.
-    
-- Clases del diseño significativas, como las clases activas.
-    
-- Mecanismos de diseño genéricos para requisitos no funcionales.
-    
+- **Nodos y configuraciones de red.**
+- **Subsistemas y sus interfaces.**
+- **Clases del diseño significativas,** como las clases activas.
+- **Mecanismos de diseño genéricos** para requisitos no funcionales.
 
 A lo largo de esta actividad, los arquitectos consideran posibilidades de reutilización, como partes de sistemas similares o productos de software generales.
 
-Los subsistemas, interfaces y otros elementos resultantes se añadirán al modelo de diseño. Además, el arquitecto mantiene, refina y actualiza la descripción de la arquitectura y sus vistas arquitectónicas.
+---
 
-Identificación de nodos y configuraciones de red
+### Identificación de Nodos y Configuraciones de Red
 
 Las configuraciones físicas de red influyen en la arquitectura del software, afectando las clases activas y la distribución de la funcionalidad. Un patrón común es el de tres capas:
 
-- Clientes (interacciones de los usuarios).
-    
-- Funcionalidad de base de datos.
-    
-- Lógica del negocio o de la aplicación.
-    
+1. **Clientes** (interacciones de los usuarios).
+2. **Funcionalidad de base de datos.**
+3. **Lógica del negocio** o de la aplicación.
 
 El patrón cliente/servidor es un caso especial donde la lógica de negocio se ubica en una de las otras capas.
 
-Aspectos Clave de las Configuraciones de Red:
+**Aspectos Clave de las Configuraciones de Red:**
 
 - Identificación de nodos necesarios y su capacidad (potencia de proceso y tamaño de memoria).
-    
 - Tipos de conexiones entre nodos y protocolos de comunicación a utilizar.
-    
 - Características de las conexiones y protocolos (ancho de banda, disponibilidad, calidad).
-    
 - Necesidad de redundancia, modos de fallo, migración de procesos y copias de seguridad.
-    
 
-Con este conocimiento, el arquitecto puede incorporar tecnologías como brokers de solicitudes de objetos y servicios de replicación de datos para facilitar la distribución del sistema.
+---
 
-Cada configuración de red, incluidas las de pruebas y simulación, debe mostrarse en un diagrama de despliegue separado.
-
-Identificación de subsistemas y de sus interfaces
+### Identificación de Subsistemas y sus Interfaces
 
 Los subsistemas organizan el modelo de diseño en piezas manejables. Pueden identificarse al inicio para dividir el trabajo de diseño o surgir a medida que el modelo evoluciona.
 
 No todos los subsistemas se desarrollan internamente; algunos son productos reutilizados o recursos existentes en la empresa. Incluir estos subsistemas permite analizar alternativas de reutilización.
 
-Identificación de Subsistemas de Aplicación
+#### Identificación de Subsistemas de Aplicación
 
-En este paso, se identifican los subsistemas en las capas específica y general de la aplicación. Si se realizó una descomposición adecuada en paquetes durante el análisis, se pueden utilizar estos paquetes para identificar subsistemas dentro del modelo de diseño.
+Los subsistemas en las capas específica y general de la aplicación pueden ser identificados si se realizó una descomposición adecuada en paquetes durante el análisis. Los subsistemas de servicio mantienen la estructuración del sistema según los servicios que ofrecen.
 
-Es crucial identificar subsistemas de servicio que mantengan la estructuración del sistema según los servicios que ofrecen. Esta identificación puede refinarse durante el diseño para abordar temas relacionados con la implementación y distribución del sistema.
+---
 
-Refinamiento de la Descomposición Inicial
-
-Puede ser necesario refinar la descomposición inicial en subsistemas en los siguientes casos:
-
-- Si una parte de un paquete de análisis se corresponde con un subsistema por sí misma, permitiendo su uso compartido por otros subsistemas.
-    
-- Si algunas partes del paquete se realizan mediante productos software reutilizados, que podrían asignarse a capas intermedias o subsistemas.
-    
-- Si los paquetes del análisis no representan una división del trabajo adecuada.
-    
-- Si los paquetes no incorporan un sistema heredado, que puede encapsularse mediante un subsistema independiente.
-    
-- Si los paquetes no están preparados para una distribución directa sobre los nodos, lo que puede requerir descomponer algunos subsistemas en otros más pequeños.
-    
-
-Identificación de Subsistemas Intermedios y de Software del Sistema
+### Identificación de Subsistemas Intermedios y de Software del Sistema
 
 El software del sistema y la capa intermedia constituyen los cimientos de un sistema. La selección e integración de productos software son objetivos fundamentales durante las fases de inicio y elaboración.
 
-Es importante mantener una adecuada libertad de acción al adquirir middleware y software del sistema, evitando depender totalmente de un producto o fabricante. Cada producto debe considerarse como un subsistema independiente con interfaces explícitas.
+Es importante mantener una adecuada libertad de acción al adquirir middleware y software del sistema, evitando depender totalmente de un producto o fabricante.
 
-Definición de Dependencias entre Subsistemas
+---
 
-Las dependencias entre subsistemas deben definirse si sus contenidos tienen relaciones. La dirección de la dependencia debe coincidir con la dirección de la relación. Si se esbozan dependencias antes de conocer los contenidos, se deben considerar las dependencias entre los paquetes del análisis.
+### Identificación de Clases Activas
 
-Identificación de Interfaces entre Subsistemas
+Las **clases activas** representan la ejecución de procesos concurrentes y toman la información de las clases de análisis o subsistemas. Ejemplos de clases activas son **UI**, **Ctrl**, y **Procesamiento de pagos**.
 
-Las interfaces proporcionadas por un subsistema definen operaciones accesibles "desde fuera". Para esbozar las interfaces, se deben considerar las dependencias identificadas previamente. Cuando un subsistema tiene una dependencia, es probable que deba proporcionar una interfaz.
-
-Las interfaces de las capas intermedias y de software del sistema son más sencillas de identificar, ya que encapsulan productos software con interfaces predefinidas. Además de identificar las interfaces, es necesario definir las operaciones sobre ellas mediante el diseño de casos de uso.
-
-Identificación de clases del diseño relevantes para la arquitectura
-
-Suele ser práctico identificar las clases del diseño relevantes para la arquitectura pronto dentro del ciclo de vida del software, para comenzar el trabajo de diseño. Sin embargo, la mayoría de las clases se identificarán al diseñar las clases dentro de la actividad de diseño de clases, y se refinarán según los resultados obtenidos en la actividad de diseño de casos de uso.
-
-Por este motivo, los desarrolladores deberían evitar identificar demasiadas clases en esta etapa o quedar atrapados en demasiados detalles. Un esbozo inicial de las clases significativas para la arquitectura es suficiente.
-
-Identificación de Clases del Diseño a partir de Clases del Análisis
-
-Podemos esbozar inicialmente algunas clases del diseño a partir de las clases del análisis significativas para la arquitectura que encontramos en el análisis. Además, podemos utilizar las relaciones entre esas clases del análisis para identificar un conjunto tentativo de relaciones entre las correspondientes clases del diseño.
-
-  
-
-Identificación de Clases Activas
-
-Son clases que representan la ejecución de procesos concurrentes, estas clases toman la información de las clases de análisis o subsistemas (conjunto de clases). Ejemplos: UI, Ctrl, Procesamiento de pagos, etc.![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfaWfc1-b4iBCt8Ikq9GmQFdm04qvwv5TZTrmtnwTaj0Xg-_BGSCEdghNjLxkNhB8C2NwxhOrSA8UiSAm5AOOmO6w75UpfjF-hYQKU554JR5-T0TT5nMYlfTVh8LjDxY3rZaVDONyQwWkKweM6pRQMhznLl?key=VReuh94fGGpJZLGsXsGdUQ)
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfaWfc1-b4iBCt8Ikq9GmQFdm04qvwv5TZTrmtnwTaj0Xg-_BGSCEdghNjLxkNhB8C2NwxhOrSA8UiSAm5AOOmO6w75UpfjF-hYQKU554JR5-T0TT5nMYlfTVh8LjDxY3rZaVDONyQwWkKweM6pRQMhznLl?key=VReuh94fGGpJZLGsXsGdUQ)
 
 El arquitecto identifica las clases activas necesarias en el sistema considerando los requisitos de concurrencia. Algunos aspectos a considerar incluyen:
 
-- Los requisitos de rendimiento, tiempo de respuesta y disponibilidad que tienen los diferentes actores en su interacción con el sistema.
-    
-- La distribución del sistema sobre los nodos, donde los objetos activos deben soportar la distribución sobre varios nodos.
-    
-- Otros requisitos como arranque y terminación del sistema, progresión, evitación del interbloqueo, y capacidad de los nodos.
-    
+- Los **requisitos de rendimiento**, tiempo de respuesta y disponibilidad que tienen los diferentes actores en su interacción con el sistema.
+- La **distribución del sistema** sobre los nodos, donde los objetos activos deben soportar la distribución sobre varios nodos.
+- Otros requisitos como **arranque y terminación del sistema**, progresión, evitación del interbloqueo, y capacidad de los nodos.
 
-Cada clase activa se esboza considerando el ciclo de vida de sus objetos y cómo deberían comunicarse, sincronizarse y compartir información. Luego, se asignan los objetos activos a los nodos del modelo de despliegue, teniendo en cuenta la capacidad de los nodos y las características de las conexiones.
+---
 
-Esbozo de Clases Activas
+### Identificación de Mecanismos Genéricos de Diseño
 
-Para esbozar las clases activas inicialmente, se pueden utilizar los resultados del análisis y el modelo de despliegue como entradas. Otra posibilidad es utilizar los subsistemas identificados previamente y asignar esos subsistemas a nodos particulares.
+En este paso, el arquitecto debe tratar requisitos comunes como los **requisitos especiales** identificados durante el análisis, decidiendo cómo tratarlos usando tecnologías de diseño e implementación disponibles. El resultado es un conjunto de mecanismos genéricos de diseño que pueden manifestarse como clases, colaboraciones o incluso subsistemas.
 
-Cualquier clase activa que represente un proceso pesado es candidata para ser identificada como un componente ejecutable durante la implementación. La asignación de clases activas a los nodos es una entrada importante para la asignación de componentes (ejecutables) a los nodos durante la implementación.
+**Requisitos típicos:**
 
-Identificación de mecanismos genéricos de diseño
+- **Persistencia.**
+- **Distribución transparente de objetos.**
+- **Características de seguridad.**
+- **Detección y recuperación de errores.**
+- **Gestión de transacciones.**
 
-En este paso, estudiamos requisitos comunes, como los requisitos especiales identificados durante el análisis en las realizaciones de caso de uso y en las clases del análisis. Decidimos cómo tratarlos, teniendo en cuenta las tecnologías de diseño e implementación disponibles. El resultado es un conjunto de mecanismos genéricos de diseño que pueden manifestarse como clases, colaboraciones o incluso subsistemas.
-
-Requisitos:
-
-- Persistencia.
-    
-- Distribución transparente de objetos.
-    
-- Características de seguridad.
-    
-- Detección y recuperación de errores.
-    
-- Gestión de transacciones.
-    
-
-Colaboraciones Genéricas: El arquitecto también debería identificar colaboraciones genéricas que puedan servir como patrones utilizados por varias realizaciones de caso de uso dentro del modelo de diseño. Los patrones que son colaboraciones parametrizadas (con clases parametrizadas) también son genéricos y pueden utilizarse asociando clases concretas con los parámetros.
-
+Además, se identifican colaboraciones genéricas que pueden ser usadas en varias realizaciones de caso de uso dentro del modelo de diseño, adaptándolas a clases concretas mediante parámetros.
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-
 #### Actividad: Diseño de un Caso de Uso![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfWoiaKa2ka-i4AvhWPvCWuZaEenbWazo2FzusVVc3KxSeA1uzkv_E5xUS9A6NmZ1pq3-lZL4biM3MHpkB4EqZ8qaL5eMHfKzGhCNmU_bgSDdr75nGUn2UjuEzzFssKzNJyQ2IEhsk06Gbcvutq6w4Vp0ZG?key=VReuh94fGGpJZLGsXsGdUQ)
 
   

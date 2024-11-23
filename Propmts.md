@@ -13,5 +13,8 @@ devuelveme el archivo mardown del resumen... porque contiene imagenes recuerda m
 ```
 
 ```txt
-recuerda mantener los enlaces de las imagenes... dejar hermoso el apunte y aclarar algunos conceptos que pueden ser dificiles de entender para que sea facil de estudiar
+haz lo mismo que hiciste anteriormente. aclara conceptos para estudiar mas facil y mantiene los enlaces de las imagenes 
+"""md
+
+"""
 ```
