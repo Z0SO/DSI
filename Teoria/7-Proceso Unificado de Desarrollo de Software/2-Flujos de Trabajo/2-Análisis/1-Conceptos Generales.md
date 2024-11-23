@@ -1,620 +1,299 @@
-## ANALISIS
+## ANÁLISIS
 
 La fase de análisis en el desarrollo de software tiene como objetivo refinar y estructurar los requisitos capturados previamente, permitiendo una comprensión más precisa y detallada del sistema.
 
 ### Importancia del Análisis
 
-1. Refinamiento de Requisitos: El análisis busca resolver los aspectos no tratados durante la captura de requisitos, los cuales, debido al uso del lenguaje natural del cliente, pueden haber quedado imprecisos o incompletos. Se utiliza un lenguaje más formal y técnico, adecuado para desarrolladores, para aclarar estos detalles. COMPRENSIÓN DETALLADA 
+1. **Refinamiento de Requisitos**: El análisis busca resolver los aspectos no tratados durante la captura de requisitos, los cuales, debido al uso del lenguaje natural del cliente, pueden haber quedado imprecisos o incompletos. Se utiliza un lenguaje más formal y técnico, adecuado para desarrolladores, para aclarar estos detalles. **COMPRENSIÓN DETALLADA**.
     
-2. Estructuración y Mantenibilidad: El análisis permite estructurar los requisitos de manera que sean más fáciles de comprender, modificar y mantener. Esta estructura, que se basa en clases de análisis y paquetes, no depende de la estructura definida en los casos de uso, pero existe una trazabilidad directa entre ambas. Esto asegura que las diferentes descripciones de un mismo requisito se mantengan consistentes a lo largo del tiempo.
-    
+2. **Estructuración y Mantenibilidad**: El análisis permite estructurar los requisitos de manera que sean más fáciles de comprender, modificar y mantener. Esta estructura, que se basa en clases de análisis y paquetes, no depende de la estructura definida en los casos de uso, pero existe una trazabilidad directa entre ambas. Esto asegura que las diferentes descripciones de un mismo requisito se mantengan consistentes a lo largo del tiempo.
 
 ### Problemas no Resueltos en la Captura de Requisitos
 
-1. Interferencia, Concurrencia y Conflictos entre Casos de Uso:
+1. **Interferencia, Concurrencia y Conflictos entre Casos de Uso**:  
+   Pueden surgir conflictos cuando varios casos de uso compiten por recursos compartidos del sistema. Por ejemplo, "Ingresar Dinero" y "Sacar Dinero" pueden acceder a la misma cuenta bancaria, lo que puede generar problemas de concurrencia. El análisis permite resolver estos conflictos.
     
-
-- Pueden surgir conflictos cuando varios casos de uso compiten por recursos compartidos del sistema. Por ejemplo, "Ingresar Dinero" y "Sacar Dinero" pueden acceder a la misma cuenta bancaria, lo que puede generar problemas de concurrencia. El análisis permite resolver estos conflictos.
+2. **Lenguaje del Cliente**:  
+   El análisis permite introducir un lenguaje más formal (diagramas de estado, actividad, interacción, etc.) para detallar con mayor precisión los aspectos funcionales y no funcionales del sistema.
     
-
-3. Lenguaje del Cliente:
-    
-
-- El análisis permite introducir un lenguaje más formal (diagramas de estado, actividad, interacción, etc.) para detallar con mayor precisión los aspectos funcionales y no funcionales del sistema.
-    
-
-5. Redundancias y Descomposición de Casos de Uso:
-    
-
-- En el análisis, se puede encontrar un equilibrio entre la comprensibilidad y la mantenibilidad, descomponiendo los requisitos de manera que faciliten el diseño e implementación del sistema.
-    
+3. **Redundancias y Descomposición de Casos de Uso**:  
+   En el análisis, se puede encontrar un equilibrio entre la comprensibilidad y la mantenibilidad, descomponiendo los requisitos de manera que faciliten el diseño e implementación del sistema.
 
 ### Propósito del Análisis
 
 El propósito del análisis es resolver los problemas y ambigüedades que puedan haber surgido en la captura de requisitos, utilizando un enfoque más formal y técnico. Además, el análisis permite estructurar los requisitos de forma que sean más manejables a largo plazo, preparando el terreno para las fases de diseño y desarrollo del sistema.
 
-  
+### Comparación entre Modelos de Casos de Uso y Modelos de Análisis
 
-  
+![Cuadro Comparativo](https://lh7-rt.googleusercontent.com/docsz/AD_4nXclcRXUWs63HZ23wNA47nrmFPe-KJJ4JnqgEzpXUcl9Z7wt1IgvHH57AImoz9HSCazNraZdh669MTAhoWZt3_3lbxaSCppDW-g4c1RKrBTnijnoXT2Q03rzMVDIBnG0SlSz8rAxjDAZTFjSSmG7zZe6ub6e?key=VReuh94fGGpJZLGsXsGdUQ)
 
-Cuadro comparativo del modelo de casos de uso con el modelo de análisis![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXclcRXUWs63HZ23wNA47nrmFPe-KJJ4JnqgEzpXUcl9Z7wt1IgvHH57AImoz9HSCazNraZdh669MTAhoWZt3_3lbxaSCppDW-g4c1RKrBTnijnoXT2Q03rzMVDIBnG0SlSz8rAxjDAZTFjSSmG7zZe6ub6e?key=VReuh94fGGpJZLGsXsGdUQ)
+### Análisis y el Ciclo de Vida
 
-Análisis y el Ciclo de Vida:
+Dependiendo del proyecto, existen variantes en cómo manejar el análisis:
 
-Se tienen variantes en diferentes proyectos (se analiza el costo/beneficio):
+- **Usar el modelo de análisis y mantenerlo**: Costoso, pero proporciona un mayor detalle.
+- **Usarlo y no mantenerlo**: Común durante las primeras etapas, generalmente elegida por su simplicidad.
+- **No usarlo**: Se puede optar por saltarse directamente al modelo de diseño.
 
-- Usar el modelo de análisis y mantenerlo. Costoso, pero es lo que más detalle da
-    
-- Usarlo y no mantenerlo. Durante las primeras etapas, usualmente la elección
-    
-- No usarlo. Se puede saltar directamente al modelo de diseño
-    
+### Trabajadores y Artefactos
 
-  
+![Trabajadores y Artefactos](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfmDrmu2V2iZbFxCAVnY7oFF2jsjf3c_P0gcmHCWOW3uGEAJJKGbezeeQd3gFj_Rul1DhFzL4466-qeLkPM3Oa_Z3ej9_6cneh-dTtt7PJD2HwLHlnX_YChR_eibVvkYlA-qTUCdDMgvC_m2CyBdAgyzhUT?key=VReuh94fGGpJZLGsXsGdUQ)
 
-  
+El análisis es fundamental para afinar y estructurar los casos de uso de la fase anterior. El detalle sobre cómo se maneja esto se deja para los flujos de diseño e implementación.
 
-  
+Durante las primeras iteraciones de la fase de elaboración, se obtienen una arquitectura más estable y requisitos más definidos.
 
-  
+#### Artefactos
 
-  
+- **Modelo de Análisis**  
+   ![Modelo de Análisis](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcUExzjy09MphNwxPfXrN2jEYsAghrpedNz6qeY7_N5rO8mUTJvufYQtR3bPOz_SfAJ66UTVmswtAx1Hq5aFTDQTqr5_mzR5Lyzp2QoixvLjDjPwCo2wKhI8s7ma4HqV0MdlqtgzWrwqE4H7Z6fm1zNvAjM?key=VReuh94fGGpJZLGsXsGdUQ)  
+   Se estructura jerárquicamente mediante un sistema de análisis en el nivel más alto, subdividido en paquetes que representan subsistemas o capas del diseño.  
 
-  
+   - **Paquetes de Análisis**: Agrupan partes manejables del sistema, facilitando la comprensión y manejo de la complejidad.
+   - **Clases de Análisis**: Son abstracciones de clases del diseño, representando componentes del sistema que se refinan desde los requisitos.
+   - **Realización de Casos de Uso**: Describen cómo los casos de uso interactúan mediante colaboraciones entre clases de análisis.
 
-  
+- **Clases de Análisis**  
+   ![Clases de Análisis](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeynIrWzra1wlq0ruTE9fEFrLDqhIFd86cpI-YyF4nDYL16KEYovDFeRPR6xkZNdSB7jNp0CD7W_b8QqVgvUIWry1jDRSooKDicq_AdL8AzZcJYlhd_ZgKAVcKJnjQZwwtsJyTDlfDBGi_m-3e5QsJ3Psk?key=VReuh94fGGpJZLGsXsGdUQ)  
+   Las clases de análisis representan una abstracción de las clases de diseño, enfocándose en los requisitos funcionales a un nivel más conceptual y de mayor granularidad.
 
-  
+   - **Responsabilidades**: En lugar de definir operaciones, las clases de análisis describen el comportamiento de forma textual.
+   - **Atributos**: Están basados en conceptos del dominio del problema y son de alto nivel.
 
-### TRABAJADORES Y ARTEFACTOS![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfmDrmu2V2iZbFxCAVnY7oFF2jsjf3c_P0gcmHCWOW3uGEAJJKGbezeeQd3gFj_Rul1DhFzL4466-qeLkPM3Oa_Z3ej9_6cneh-dTtt7PJD2HwLHlnX_YChR_eibVvkYlA-qTUCdDMgvC_m2CyBdAgyzhUT?key=VReuh94fGGpJZLGsXsGdUQ)
+   **Estereotipos de Clases de Análisis**:  
+   - **Clases de Interfaz**: Modelan la interacción entre el sistema y los actores (usuarios o sistemas externos).
+   - **Clases de Entidad**: Modelan información persistente y de larga duración, como personas u objetos.
+   - **Clases de Control**: Encapsulan la lógica de control, secuencias y coordinación de objetos.
 
-El análisis es fundamental para poder afinar y estructurar los CU de la etapa anterior, y el cómo se hace todo eso se deja para los flujos de diseño e implementación. 
+- **Realización de Casos de Uso - Análisis**  
+   ![Realización de Casos de Uso](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcm3ekxyn5eKLgTa0NTwIc4iFwuA_xOuw1jbS8lgb2L7smscIxCBeuuKc9oG8WLL-t2_sVCo4YlX_ecuRhYUq6qqZJw8tjTeoUKPSN9GXa4mo3EKH9nM0GOJizz9BO3dHXgxhtsX8_ohFh7n_1pIwdXyTmi?key=VReuh94fGGpJZLGsXsGdUQ)  
+   Descripción de cómo se ejecuta un caso de uso en términos de clases y objetos de análisis. Incluye una traza hacia el modelo de casos de uso.
 
-En este flujo que ocurre durante las primeras iteraciones de la fase de elaboración vamos obteniendo una arquitectura más estable y requisitos más definidos.
+- **Componentes de los Diagramas**  
+   ![Componentes](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeaZAH2V3lAOKy4tvU6nh8VtvHYRSkTExr4ZY6GgoNw8kagxEbN4xvKUn0a_fqGOjKwP2L9_GoHcZEKrkZpXUnNfnYWxPOImmvY8QjvR6fwkYlRiLHueb0JwQa20eXXiS9oApp1t9qvLxiD2cnbzz5gKd9g?key=VReuh94fGGpJZLGsXsGdUQ)  
+   Se describen las relaciones entre los objetos y clases de análisis en el flujo de ejecución del caso de uso.
 
-#### ARTEFACTOS
+### Diagramas de Clases e Interacción
 
-- MODELO DE ANÁLISIS![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcUExzjy09MphNwxPfXrN2jEYsAghrpedNz6qeY7_N5rO8mUTJvufYQtR3bPOz_SfAJ66UTVmswtAx1Hq5aFTDQTqr5_mzR5Lyzp2QoixvLjDjPwCo2wKhI8s7ma4HqV0MdlqtgzWrwqE4H7Z6fm1zNvAjM?key=VReuh94fGGpJZLGsXsGdUQ)
-    
-
-Se estructura jerárquicamente mediante un sistema de análisis en el nivel más alto, subdividido en paquetes que representan subsistemas o capas del diseño.
-
-Paquetes de análisis: Agrupan partes manejables del sistema, facilitando la comprensión y manejo de la complejidad.
-
-Clases de análisis: Son abstracciones de clases del diseño, representando componentes del sistema que se refinan desde los requisitos.
-
-Realizaciones de casos de uso: Describen cómo los casos de uso interactúan mediante colaboraciones entre clases de análisis.
-
-- CLASES DE ANÁLISIS![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeynIrWzra1wlq0ruTE9fEFrLDqhIFd86cpI-YyF4nDYL16KEYovDFeRPR6xkZNdSB7jNp0CD7W_b8QqVgvUIWry1jDRSooKDicq_AdL8AzZcJYlhd_ZgKAVcKJnjQZwwtsJyTDlfDBGi_m-3e5QsJ3Psk?key=VReuh94fGGpJZLGsXsGdUQ)
-    
-
-Abstracción: Representan una abstracción de clases o subsistemas del diseño, centradas en los requisitos funcionales.
-
-Nivel conceptual: Son más conceptuales y de mayor granularidad que las clases de diseño, enfocándose en el dominio del problema.
-
-Responsabilidades: En lugar de definir operaciones, describen el comportamiento mediante responsabilidades de manera textual.
-
-Atributos: Los atributos son de alto nivel y se basan en conceptos del dominio del problema. Algunos atributos pueden convertirse en clases durante el diseño.
-
-Relaciones conceptuales: Las relaciones entre clases de análisis son menos formales y la navegabilidad no es crucial como en el diseño.
-
-Estereotipos: Las clases de análisis se dividen en tres tipos: 
-
-Clases de Interfaz:
-
-- Modelan la interacción entre el sistema y los actores (usuarios o sistemas externos).
-    
-- Abstracciones de interfaces como ventanas, formularios, API, etc.
-    
-- Describen qué información se intercambia, sin entrar en detalles de implementación.
-    
-- Aisladas para facilitar cambios en interfaces.
-    
-
-Clases de Entidad:
-
-- Modelan información persistente y de larga duración (personas, objetos, sucesos).
-    
-- Derivadas de clases del dominio del negocio.
-    
-- Reflejan la información de manera que beneficie el diseño y la implementación, aislando cambios.
-    
-- Pueden tener comportamiento complejo relacionado con la información que manejan.
-    
-
-Clases de Control:
-
-- Encapsulan la lógica de control, secuencia, transacciones y coordinación de otros objetos.
-    
-- Usadas para manejar la lógica de negocio o casos de uso complejos.
-    
-- Aíslan cambios en el control y la lógica, delegando trabajo a otras clases (interfaz o entidad).
-    
-- REALIZACIÓN DE CASO DE USO-ANÁLISIS![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcm3ekxyn5eKLgTa0NTwIc4iFwuA_xOuw1jbS8lgb2L7smscIxCBeuuKc9oG8WLL-t2_sVCo4YlX_ecuRhYUq6qqZJw8tjTeoUKPSN9GXa4mo3EKH9nM0GOJizz9BO3dHXgxhtsX8_ohFh7n_1pIwdXyTmi?key=VReuh94fGGpJZLGsXsGdUQ)
-    
-
-Describe cómo se ejecuta un caso de uso en términos de clases y objetos de análisis. Incluye una traza hacia el modelo de casos de uso.  
-Componentes:![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeaZAH2V3lAOKy4tvU6nh8VtvHYRSkTExr4ZY6GgoNw8kagxEbN4xvKUn0a_fqGOjKwP2L9_GoHcZEKrkZpXUnNfnYWxPOImmvY8QjvR6fwkYlRiLHueb0JwQa20eXXiS9oApp1t9qvLxiD2cnbzz5gKd9g?key=VReuh94fGGpJZLGsXsGdUQ)![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeXBoukZ2uyGFYFPV74_0lqMK_vQKnBDP8be8JRtYITcRY7_aaK3SbB4nkuvqebeoUB2f0m_kpgeRvmVN-MGfIS8tPZsAhLuPmdG-ezmRcHtwWEZHg1FnEPq5g1OZDjEPa9saQIxdjQkj-q8ulSKzk7ruU8?key=VReuh94fGGpJZLGsXsGdUQ)
-
-- Descripción textual del flujo de sucesos.
-    
-- Diagramas de clases y de interacción para representar la ejecución del caso de uso.
-    
-
-Enfoque: Se centra en los requisitos funcionales, dejando los no funcionales (requisitos especiales) para las fases de diseño e implementación.
-
-  
-
-  
-
-  
-
-  
-
-  
-
-Diagramas de Clases: Muestran las clases participantes en un caso de uso y sus relaciones. Se usan para coordinar los requisitos de diferentes casos de uso sobre una clase.![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeBB90pSQEKh6EYFn2W-DjEZkgfet94jm_pVPch3LPeAegbdhvbHXpniO1WjHxOqda_snE4wy9ptROPIJiqvkUy8cw2hR509rUvugXkOnAS-_yjMvBOFkKZXpA5AVX1PKJEVXdrfr10UmpXbCloMMPfIS1P?key=VReuh94fGGpJZLGsXsGdUQ)
-
-Diagramas de Interacción: Muestran cómo interactúan los objetos para llevar a cabo el caso de uso. Se prefieren los diagramas de colaboración en el análisis para identificar responsabilidades de los objetos ante qué sucesos en orden cronológico.![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXewzt8w8xMspPNvLnjEmXPjVclnSUuagvRqGxAL7ZymBnR5_3oDULdciVzEhveFIzjAB7Y2ppxVFyj1O38QTpXSZJr_Jr8HnLAb-_46LQNU5I2PHe-hbKBgNH7oUe2Cp1lREKrIJllK6TEbyk3BMdyWocoi?key=VReuh94fGGpJZLGsXsGdUQ)
-
-Ciclo de vida de objetos:
-
-- Objetos de interfaz: Pueden crearse y destruirse en una sola realización de caso de uso.
-    
-- Objetos de entidad: Tienen una vida larga y participan en varias realizaciones de casos de uso.
-    
-- Objetos de control: Se crean al inicio del caso de uso y se destruyen al finalizar, aunque hay excepciones.
-    
-
-Flujo de sucesos: Descripción textual de un diagrama de colaboración, sin entrar en detalles de atributos, responsabilidades, asociaciones, etc.  
-  
-Requisitos especiales: Textos que recogen requisitos no funcionales, algunos capturados previamente y otros derivados durante el análisis.
-
-- PAQUETES DE ANÁLISIS
-    
-
-Es una herramienta que permite organizar los artefactos del modelo de análisis en unidades más manejables. Es un concepto clave en la estructura de los sistemas, especialmente en proyectos grandes, ya que facilita la separación de responsabilidades y permite el trabajo concurrente entre distintos equipos. Un paquete de análisis puede incluir clases de análisis, realizaciones de casos de uso y otros paquetes.
-
-Las características clave de los paquetes de análisis son:![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdBa6ZXQM-4uMcjeZ1hzJmk7yVPI_xJON_9U6hXkkJ3EXpuwOwuiG_RRzVRtQww6dvjiw6TpWuIevrROLAHpIRjs-8xyiSdpEAK0TDPeM_5NJ1VmUHhEBf31v7B1LI93Z2in-sGGZk-tqyO29o127ZfLQxT?key=VReuh94fGGpJZLGsXsGdUQ)
-
-1. Cohesión: Los elementos dentro de un paquete deben estar fuertemente relacionados, lo que significa que las clases y casos de uso que contiene deben tener objetivos comunes.
-    
-2. Bajo acoplamiento: Las dependencias entre diferentes paquetes deben ser mínimas, lo que facilita el mantenimiento y la evolución del sistema.
-    
-3. Particionamientos funcionales del sistema: Los paquetes pueden representar diferentes áreas del sistema, que pueden ser trabajadas de manera independiente por diferentes equipos de desarrollo.
-    
-4. Basados en el dominio del problema: Se estructuran en torno a los requisitos funcionales y las necesidades del negocio, no en los requisitos técnicos o no funcionales.
-    
-
-Paquetes de servicio
-
-Representan una agrupación de funcionalidad relacionada que puede ser utilizada en varios casos de uso. Son fundamentales para estructurar sistemas en términos de los servicios que proporcionan, y su diseño es clave para lograr una alta cohesión y bajo acoplamiento.
-
-Características importantes de los paquetes de servicio:
-
-- Indivisibilidad: Un cliente del sistema obtiene un paquete de servicio completo o no obtiene nada. Los paquetes de servicio no se pueden dividir en partes menores.
-    
-- Relevancia para varios casos de uso: Puede ser utilizado por múltiples casos de uso y suele ser relevante para uno o pocos actores del sistema.
-    
-- Mutuamente excluyentes o variantes: Pueden ser excluyentes o pueden representar variantes de un mismo servicio (por ejemplo, diferentes versiones de una funcionalidad).
-    
-- Reutilizables: Debido a su cohesión y bajo acoplamiento, los paquetes de servicio son reutilizables tanto dentro del mismo sistema como en otros sistemas relacionados. Esto es especialmente cierto para aquellos centrados en clases de entidad, que representan objetos del dominio del negocio.
-    
-- Evolución del sistema: Estructurar el sistema en torno a paquetes de servicio facilita la localización de cambios, lo que contribuye a que el sistema sea más robusto y resistente a los cambios.
-    
-- DESCRIPCIÓN DE LA ARQUITECTURA (VISTA MODELO ANÁLISIS)
-    
-
-La descripción de la arquitectura resalta los artefactos clave del modelo de análisis que influyen en el diseño e implementación:![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfkkmG-AQxvcBApeeTbomeyZIAJd-uTVBRR4TS4YNSo8mQE6yefJWfJNJXPkB04a3koRrkA1YY9TeDZEVcPB7hetIU8_IMxauyZr_pw_Ety4hbsOvMHPtsfpAZmBic_j4r97AtAT8lSLv3tuYLxPnIkpIhE?key=VReuh94fGGpJZLGsXsGdUQ)
-
-1. Paquetes de análisis y dependencias: La descomposición del sistema en paquetes afecta directamente la estructura de los subsistemas y sus interacciones.
-    
-2. Clases fundamentales:
-    
-
-- Clases de entidad: Encapsulan fenómenos clave del dominio.
-    
-- Clases de interfaz: Gestionan las interacciones del usuario.
-    
-- Clases de control: Coordinan secuencias críticas.
-    
-
-4. Realizaciones de casos de uso: Describen funcionalidad crítica, cubren múltiples clases y paquetes, y son clave para el desarrollo temprano.
-    
+- **Diagramas de Clases**:  
+   Muestran las clases participantes en un caso de uso y sus relaciones.
+   
+- **Diagramas de Secuencia o Colaboración**:  
+   Describen cómo las clases interaccionan y coordinan sus operaciones.
 
 #### TRABAJADORES
 
-Arquitecto:
-
+**Arquitecto**:
 - Responsable de la integridad del modelo de análisis, asegurando su corrección, consistencia y legibilidad.
-    
-- Mantiene las partes significativas para la arquitectura.
-    
+- Mantiene las partes significativas para la arquitectura del sistema.
 - Puede delegar tareas rutinarias a otros trabajadores, pero sigue siendo responsable de la descripción de la arquitectura.
-    
 - No gestiona el desarrollo continuo de artefactos del modelo de análisis.
-    
 
-Ingeniero de casos de uso:
+**Ingeniero de Casos de Uso**:
+- Responsable de la creación de los casos de uso, asegurando que estos cumplan con los requisitos y se ajusten a sus descripciones.
+- No se encarga de las clases o relaciones del análisis.
+- También diseña las realizaciones de los casos de uso, facilitando una transición entre el análisis y el diseño.
 
-- Responsable de la realización de casos de uso, asegurando que cumplen los requisitos y se ajustan a sus descripciones.
-    
-- No es responsable de las clases o relaciones del análisis.
-    
-- También diseña las realizaciones de casos de uso, facilitando una transición suave entre análisis y diseño.
-    
-
-Ingeniero de componentes:
-
+**Ingeniero de Componentes**:
 - Mantiene las clases de análisis y sus atributos, relaciones y responsabilidades.
-    
-- Responsable de paquetes de análisis, asegurando que sus dependencias son mínimas y correctas.
-    
+- Es responsable de los paquetes de análisis, asegurando que sus dependencias sean mínimas y correctas.
 - Si es posible, también se encarga de los subsistemas de diseño asociados al paquete de análisis.
-    
-
-  
 
 ### FLUJO DE TRABAJO - ACTIVIDADES
 
-Comienza con los arquitectos, quienes crean el modelo de análisis identificando los paquetes principales, clases de entidad y requisitos comunes. Luego, los ingenieros de casos de uso desarrollan cada caso de uso con base en estas clases, detallando los comportamientos requeridos. Después, los ingenieros de componentes definen y consolidan estos requisitos, asignando responsabilidades, atributos y relaciones a las clases. A medida que el análisis avanza, se identifican nuevos paquetes, clases y requisitos, que los ingenieros de componentes refinan y mantienen continuamente para ajustar el modelo.![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdFgMvP4-8r_bKvGAvDcEYq6lYMxw-E6Q2xT4_sSOxOlytthbDW4_j0bg_cNFjMgSkcT2qJsKVFaHTpKrs2ZudIMOu_QAuq16ocihJMVKxBOMV9V2bPifQFf_OpYQBhOxEh9iTPEJGPf-vt-D0KeMgbg2E?key=VReuh94fGGpJZLGsXsGdUQ)
+El proceso comienza con los arquitectos, quienes crean el modelo de análisis, identificando los paquetes principales, clases de entidad y requisitos comunes. Luego, los ingenieros de casos de uso desarrollan cada caso de uso con base en estas clases, detallando los comportamientos requeridos. Después, los ingenieros de componentes consolidan estos requisitos, asignando responsabilidades, atributos y relaciones a las clases. A medida que el análisis avanza, se identifican nuevos paquetes, clases y requisitos, que los ingenieros de componentes refinan y mantienen continuamente para ajustar el modelo.
+
+![Flujo de Trabajo](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdFgMvP4-8r_bKvGAvDcEYq6lYMxw-E6Q2xT4_sSOxOlytthbDW4_j0bg_cNFjMgSkcT2qJsKVFaHTpKrs2ZudIMOu_QAuq16ocihJMVKxBOMV9V2bPifQFf_OpYQBhOxEh9iTPEJGPf-vt-D0KeMgbg2E?key=VReuh94fGGpJZLGsXsGdUQ)
 
 #### Actividad: Análisis de la Arquitectura
 
-Su objetivo es esbozar el modelo y la arquitectura mediante la identificación de paquetes de análisis, clases del análisis evidentes y requisitos especiales comunes.![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfnyd5sFSzrLS-m-eGk7PBsh6Giny1D1Tr6rD-CWLhx61nKzup78XjvjIuWTE__7IH5cLxOfMUjavBy-f0WPYQ4bOq9u6XUjObnfz1TyfBqKINtrtz6vMroir21LPTAhK8xvVTn26CWapB5-or9Dm_KbLI?key=VReuh94fGGpJZLGsXsGdUQ)
+El objetivo principal es esbozar el modelo y la arquitectura mediante la identificación de paquetes de análisis, clases evidentes y requisitos especiales comunes.
 
-Identificación de paquetes del análisis:
+![Análisis de la Arquitectura](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfnyd5sFSzrLS-m-eGk7PBsh6Giny1D1Tr6rD-CWLhx61nKzup78XjvjIuWTE__7IH5cLxOfMUjavBy-f0WPYQ4bOq9u6XUjObnfz1TyfBqKINtrtz6vMroir21LPTAhK8xvVTn26CWapB5-or9Dm_KbLI?key=VReuh94fGGpJZLGsXsGdUQ)
 
+**Identificación de Paquetes del Análisis**:
 - Los paquetes organizan el modelo en partes más manejables y pueden definirse al inicio o conforme evoluciona el modelo.
-    
-- Se identifican basándose en los requisitos funcionales y el dominio del problema. Una forma común es asignar casos de uso a un paquete, como:
-    
+- Se identifican basándose en los requisitos funcionales y el dominio del problema. Una forma común es asignar casos de uso a un paquete, por ejemplo:
+  - Soporte a un proceso de negocio.
+  - Soporte a un actor del sistema.
+  - Casos de uso relacionados por generalización o extensión.
 
-- Soporte a un proceso de negocio.
-    
-- Soporte a un actor del sistema.
-    
-- Casos de uso relacionados por generalización o extensión.![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcdRfOLPLiNMUiCPB3sdCNF7c0kKV6O-U5R-pbNHLrKyPxBHvmquDVgCBcrvBQf0er0e5pGr2M8kYSvBYSp6vuWXOkLY_7dI2DCtXTJm6aRa4KtLdkK-97WIuHjna0vgz5MPyUk3Nf-zDXTLZspNdo_-0Gr?key=VReuh94fGGpJZLGsXsGdUQ)
-    
+![Paquetes del Análisis](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcdRfOLPLiNMUiCPB3sdCNF7c0kKV6O-U5R-pbNHLrKyPxBHvmquDVgCBcrvBQf0er0e5pGr2M8kYSvBYSp6vuWXOkLY_7dI2DCtXTJm6aRa4KtLdkK-97WIuHjna0vgz5MPyUk3Nf-zDXTLZspNdo_-0Gr?key=VReuh94fGGpJZLGsXsGdUQ)
 
-- Gestión de aspectos comunes: Cuando varios paquetes necesitan compartir clases, se extraen esas clases en un paquete propio o simplemente fuera de cualquier otro paquete, y después los otros paquetes serán dependientes de este paquete o clase más general. Estas suelen ser clases de entidad, de las cuales se puede hacer una traza hasta clases del dominio o clases de entidad del negocio.
-    
-- Identificación de paquetes de servicio: Estos paquetes se definen más adelante en el análisis, cuando los requisitos están claros. Cada paquete agrupa clases que contribuyen a un mismo servicio. Al identificar paquetes de servicio, debemos hacer lo siguiente:
-    
+**Gestión de Aspectos Comunes**:
+Cuando varios paquetes necesitan compartir clases, se extraen esas clases en un paquete propio o fuera de cualquier otro paquete. Posteriormente, los otros paquetes dependerán de este paquete más general. Estas clases suelen ser de entidad, las cuales se pueden rastrear hasta clases del dominio o clases del negocio.
 
-- Identificar un paquete de servicio por cada servicio opcional. El paquete de servicio será una unidad de compra. Ejemplo:![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfWZ2PI9F6hNTDi2Ne0pbaiNfd9hV-WbplARyM8wX2lEfB-XKUPqAqx2JfVnMorxDl2cy7LeT9JK3mpRuABebMB2KCVgrFZPEN6ceLVt-b0kGnuuU29FDMJMLwWGs4ibMapzqbZ9mlI7fkH2zRtqEED4Nvz?key=VReuh94fGGpJZLGsXsGdUQ)
-    
+**Identificación de Paquetes de Servicio**:
+- Estos paquetes se definen más adelante en el análisis, cuando los requisitos están claros. Cada paquete agrupa clases que contribuyen a un mismo servicio. Al identificar paquetes de servicio, se deben considerar los siguientes pasos:
+  - Identificar un paquete de servicio para cada servicio opcional.
+  - El paquete de servicio se convierte en una unidad de compra.
 
-Se describe el caso de uso opcional Enviar Aviso. Algunos vendedores quieren avisos automáticos cuando se dé una factura atrasada, mientras que otros prefieren que se les avise cuando haya una factura atrasada, y ellos mismos decidirán después si mandan un aviso.
+![Paquete de Servicio](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfWZ2PI9F6hNTDi2Ne0pbaiNfd9hV-WbplARyM8wX2lEfB-XKUPqAqx2JfVnMorxDl2cy7LeT9JK3mpRuABebMB2KCVgrFZPEN6ceLVt-b0kGnuuU29FDMJMLwWGs4ibMapzqbZ9mlI7fkH2zRtqEED4Nvz?key=VReuh94fGGpJZLGsXsGdUQ)
 
-Esta variabilidad se representa mediante dos paquetes de servicio opcionales y mutuamente exclusivos Avisos Automáticos se utiliza para los avisos automáticos, y Avisos Manuales notifica al vendedor, el cual decide si contacta con el comprador. 
+**Ejemplo de Caso de Uso Opcional: "Enviar Aviso"**:
+- Algunos vendedores quieren avisos automáticos cuando se emita una factura atrasada, mientras que otros prefieren recibir la notificación y decidir si envían un aviso. Esta variabilidad se representa mediante dos paquetes de servicio opcionales y mutuamente exclusivos:
+  - **Avisos Automáticos**: Para los avisos automáticos.
+  - **Avisos Manuales**: El vendedor decide si contacta al comprador.
+- Si un vendedor no desea este servicio, no se entrega ninguno de los paquetes con el sistema.
 
-Cuando un vendedor no quiere este servicio, no se entrega ninguno de los paquetes con el sistema.
+Cuando un servicio es opcional, el sistema debe estar diseñado para ofrecer una flexibilidad que permita que los paquetes puedan ser activados o desactivados según las necesidades de cada cliente.
 
-- Identificar un paquete de servicio por cada servicio que podría hacerse opcional, incluso aunque todos los clientes siempre lo quieran. Debido a que los paquetes de servicio contienen clases relacionadas funcionalmente, obtendremos con ellos una estructura de paquetes que aísla la mayoría de los cambios en paquetes individuales. 
-    
+**Dependencias entre Paquetes**:
+- Se definen dependencias entre paquetes cuando están relacionados. El objetivo es conseguir paquetes que sean relativamente independientes pero que tengan alta cohesión interna, lo cual facilita el mantenimiento y reduce las dependencias entre los mismos.
 
-Una clase A y una clase B están relacionadas funcionalmente cuando:![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfXfr3-UR9Le-PXPrRN_3I41qq35St-O75e6X3e6smTt2gBc9AqOjxVkbdbDswDdxvyYtHZaUnR-aw0ROVF89m3Dosw-Vg5gAeYd9wt2G7n_sHy-Jn-AroyWtlft5NuEQ2u1pEwryy_hS8X8nnO9sLxa3hr?key=VReuh94fGGpJZLGsXsGdUQ)
+![Dependencias entre Paquetes](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfs4S79JfATUkBY9V5t5aGm9t0q7LvzjIgfyBE0kUJVAzJLoH9RgDXdTFCtsZGx5h-1qYk021yIN3PBOeHmR5LQiGIlIm2JztJ0L9_tA5u6_I8hCfuCW_gO2V7CEuDvYY5VuQE73GGWluipmbxzyBJXJ7lI?key=VReuh94fGGpJZLGsXsGdUQ)
 
-- Un cambio en A requerirá un cambio en B.
-    
-- La eliminación de A hace que B sea superflua.
-    
-- Los objetos de A interactúan intensamente con objetos de B, posiblemente a través de varios mensajes diferentes.
-    
+**Identificación de Clases de Entidad Obvias**:
+- En esta etapa, se proponen preliminarmente las clases de entidad más importantes (aproximadamente entre 10 a 20), basadas en las clases del dominio o en las entidades del negocio identificadas previamente. Es importante no sobrecargarse con detalles en esta etapa, ya que muchas clases surgirán a medida que se realicen los casos de uso.
 
-- Dependencias entre paquetes: Se definen dependencias si los paquetes están relacionados, el objetivo es conseguir paquetes que sean relativamente independientes y débilmente acoplados pero que posean cohesión interna alta. Esto es ideal, ya que facilita el mantenimiento y reduce las dependencias entre paquetes.![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfs4S79JfATUkBY9V5t5aGm9t0q7LvzjIgfyBE0kUJVAzJLoH9RgDXdTFCtsZGx5h-1qYk021yIN3PBOeHmR5LQiGIlIm2JztJ0L9_tA5u6_I8hCfuCW_gO2V7CEuDvYY5VuQE73GGWluipmbxzyBJXJ7lI?key=VReuh94fGGpJZLGsXsGdUQ)
-    
+**Identificación de Requisitos Especiales Comunes**:
+- Los requisitos especiales comunes surgen durante el análisis y es crucial documentarlos para su tratamiento en las siguientes fases (diseño e implementación). Estos deben ser identificados y documentados por el arquitecto para facilitar el trabajo posterior. Ejemplos de estos requisitos incluyen:
+  - Persistencia.
+  - Distribución y concurrencia.
+  - Características de seguridad.
+  - Tolerancia a fallos.
+  - Gestión de transacciones.
 
-Identificación de clases de entidad obvias:
+# Análisis de Casos de Uso y Clases de Análisis
 
-- Se proponen preliminarmente las clases de entidad más importantes (10 o 20) basadas en las clases del dominio o en las entidades del negocio que se identificaron en la etapa anterior. Es esencial no sobrecargarse con detalles en esta etapa, ya que la mayoría de clases surgirán al realizar casos de uso.
-    
+## Actividad: Analizar un caso de uso
 
-Identificación de requisitos especiales comunes:
+### Refinamiento de casos de uso usando clases de análisis
+![Refinamiento de casos de uso](https://lh7-rt.googleusercontent.com/docsz/AD_4nXePaJ60vf7ZFBhnA6zA9vGYk8yGIZMv3DrlsudggYvIsYmom2ckHpB_ah-oSMdIh7H2UKEwH6yMmyKKQB9Sr9Tc4M1OmOX1ma14c24cbxweLQSBuJjfPMLUFJXtdkj3j63YgvVN3z7KKCXw4v61wk6fzP9P?key=VReuh94fGGpJZLGsXsGdUQ)
 
-- Estos surgen durante el análisis y es importante anotar para que sean tratados en las siguientes actividades (diseño e implementación). Estos deben ser identificados y documentados por el arquitecto para facilitar el trabajo posterior. Ejemplos:
-    
+#### 1. Identificación de clases de análisis
 
-- Persistencia.
-    
-- Distribución y concurrencia.
-    
-- Características de seguridad.
-    
-- Tolerancia a fallos.
-    
-- Gestión de transacciones.
-    
+Las clases de análisis son fundamentales para comprender cómo se llevará a cabo el flujo de los requisitos en un caso de uso. Aunque en muchos casos los detalles no están completos, las clases de análisis se identifican a través de las siguientes normas generales:
 
-#### Actividad: Analizar un caso de uso
+- **Clases de entidad**: Representan el modelo de dominio y la descripción de los casos de uso. Algunos elementos podrían tratarse mejor como atributos.
+- **Clase de interfaz central**: Se asigna por cada actor humano que interactúa con el sistema. Es una refinación de la interfaz primitiva.
+- **Clase de interfaz primitiva**: Representa a cada clase de entidad que interactúa con un actor.
+- **Clase de interfaz de sistema externo**: Se asigna a cada actor que es un sistema externo (software o hardware).
+- **Clase de control**: Controla el tratamiento y la coordinación de las interacciones. En casos simples, este control puede delegarse a la interfaz.
 
-Refinamiento de casos de uso usando clases de analisis![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXePaJ60vf7ZFBhnA6zA9vGYk8yGIZMv3DrlsudggYvIsYmom2ckHpB_ah-oSMdIh7H2UKEwH6yMmyKKQB9Sr9Tc4M1OmOX1ma14c24cbxweLQSBuJjfPMLUFJXtdkj3j63YgvVN3z7KKCXw4v61wk6fzP9P?key=VReuh94fGGpJZLGsXsGdUQ)
+Se recomienda utilizar un **diagrama de clases** para representar estas interacciones.
 
-1 Identificacion clases de análisis
+#### Descripción de interacciones entre objetos del análisis
 
-Aquellas clases que intervienen en la realizacion. Casi todo lo anterior (flujo de requisitos) muchas veces no esta del todo detallado
+**Objetivo**: Describir cómo interactúan los objetos del análisis en un caso de uso mediante diagramas de colaboración.
 
-Normas generales para identificar las clases del análisis:
-
-- Clases de entidad mediante el modelo de dominio y la descripción de CU. Hay casos donde la información es mejor tratarla como atributo.
-    
-- Clase de interfaz central por cada ACTOR humano. Interfaz de usuario. Es una refinación de la interfaz primitiva.
-    
-- Clase de interfaz primitiva por cada clase entidad, estas clases representan objetos lógicos con los que el actor interactúa durante la realización.
-    
-- Clase de interfaz por cada actor sistema externo (software o hardware), sería un medio de comunicación.
-    
-- Clase de control, tratamiento y coordinación de la realización. Cuando es muy simple el control, se lo manda todo a una clase interfaz(el actor se encarga de hacer el control), en situaciones complejas se usan clases de control.
-    
-
-Aparte se tiene el modelo de análisis, del cual se extraen clases también.
-
-Se puede representar mediante un diagrama de clases
-
-  
-
-Descripción de interacciones entre objetos del análisis:
-
-Objetivo: Describir cómo interactúan los objetos del análisis en un caso de uso mediante diagramas de colaboración.
-
-- Diagramas de Colaboración:
-    
-
+##### Diagramas de Colaboración
 - Representan instancias de actores y objetos del análisis.
-    
-- Se recomienda crear un diagrama por cada flujo o subflujo del caso de uso para mayor claridad.
-    
+- Es recomendable crear un diagrama por cada flujo o subflujo del caso de uso.
+- El flujo de interacciones debe comenzar con un mensaje de un actor hacia un objeto de interfaz.
+- Cada clase de análisis debe tener al menos un objeto en el diagrama; de lo contrario, puede ser superflua.
+- Los enlaces representan asociaciones entre clases del análisis y deben reflejarse en el diagrama de clases correspondiente.
+- La secuencia de interacciones no es el objetivo principal; es más importante mostrar las relaciones y requisitos entre objetos.
 
-- Creación del Diagrama:
-    
+##### Relaciones entre Casos de Uso
+- El diagrama debe incluir todas las relaciones relevantes, como especializaciones de otros casos de uso.
+- En casos complejos, se pueden agregar descripciones textuales como complemento.
 
-- Comienza desde el inicio del flujo del caso de uso, avanzando paso a paso.
-    
-- Las interacciones entre objetos y actores son esenciales para la realización del caso de uso.
-    
+#### Captura de Requisitos Especiales
+Recoger requisitos no funcionales es crucial para la realización de un caso de uso y deben ser considerados en las fases de diseño e implementación.
 
-- Características de los Diagramas:
-    
+---
 
-- El caso de uso se inicia con un mensaje de un actor a un objeto de interfaz.
-    
-- Cada clase del análisis debe tener al menos un objeto en el diagrama; de lo contrario, es superflua.
-    
-- Los mensajes reflejan el propósito del objeto que los envía, no operaciones específicas.
-    
-- Los enlaces representan asociaciones entre clases del análisis; deben ser evidentes en el diagrama de clases asociado.
-    
-- La secuencia de interacciones no es el objetivo principal; se debe priorizar las relaciones y requisitos.
-    
+## Actividad: Analizar una clase
+![Análisis de clase](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfaYe7xGyEI2P6vuBcN-CyK_-KCmm53OJB-o7GUvhm8yIj13NRaHQv2K-B9JGER3Rn7nVkLUuDRUKRqBbyJVricMfhw6kfVB_R39BYDXyyOoMMBSiJ8OwguBefKS38lGBHG_64pmr4XUFyv2CNQPyqOoJc?key=VReuh94fGGpJZLGsXsGdUQ)
 
-- Relaciones entre Casos de Uso:
-    
+### Objetivos: Identificar responsabilidades, atributos, relaciones y requisitos especiales de una clase.
 
-- El diagrama debe incluir todas las relaciones relevantes; por ejemplo, especializaciones de otros casos de uso.
-    
-
-- Complemento Textual:
-    
-
-- En casos complejos, es útil añadir descripciones textuales que se incluyan en el artefacto de flujo de sucesos-análisis del caso de uso.
-    
-
-Captura de Requisitos Especiales
-
-Recoger requisitos no funcionales relevantes para la realización de un caso de uso que deben ser tratados en las fases de diseño e implementación.
-
+#### Identificación de Responsabilidades
+- **Combinar roles**: Identificar todos los roles que cumple una clase en los casos de uso.
+- **Estudiar diagramas de clases**: Revisar los diagramas de clases e interacción para determinar en qué casos de uso participa la clase.
+- **Consultar artefactos de flujo de sucesos**: Estos artefactos pueden proporcionar requisitos textuales que ayudan a identificar responsabilidades.
   
+Técnicas de recopilación:
+- Extraer las responsabilidades de manera secuencial.
+- Modificar o añadir responsabilidades según los cambios en las realizaciones de los casos de uso.
 
-  
+![Identificación de responsabilidades](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdxQ1bscHWkvV3SD98s0aGNRiYESJwzXzUtQMIbI6Fx8Vl4hazxOI3U-gltc745FPMH_EOtVW_RzLL8UOU_0yjmTib7T0JE335TBuVCbb4HALjECrnapZKBrCDeL9c25U0ky-NM1iZ4Xj5snRxlxmfOm9Gn?key=VReuh94fGGpJZLGsXsGdUQ)
 
-  
+#### Identificación de Atributos
 
-  
+Un **atributo** es una propiedad que define a una clase y es esencial para cumplir con sus responsabilidades. Para identificar atributos de manera efectiva, se deben seguir las siguientes normas:
 
-  
+- **Nomenclatura**: El nombre de un atributo debe ser claro y conciso.
+- **Tipo conceptual**: El tipo de los atributos debe ser conceptual, no restringido al entorno de implementación.
+- **Reutilización de tipos**: Se deben reutilizar tipos existentes cuando sea posible.
+- **Claridad**: Si los atributos son difíciles de comprender, se puede crear una clase separada para ellos.
+- **Clases de entidad**: Los atributos son evidentes en clases de entidad, y pueden identificarse a través de clases del dominio.
 
-#### Actividad: Analizar una clase![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfaYe7xGyEI2P6vuBcN-CyK_-KCmm53OJB-o7GUvhm8yIj13NRaHQv2K-B9JGER3Rn7nVkLUuDRUKRqBbyJVricMfhw6kfVB_R39BYDXyyOoMMBSiJ8OwguBefKS38lGBHG_64pmr4XUFyv2CNQPyqOoJc?key=VReuh94fGGpJZLGsXsGdUQ)
+#### Identificación de Asociaciones y Agregaciones
 
-Objetivos: Identificar responsabilidades, atributos, relaciones y requisitos especiales.
+Las asociaciones entre clases se representan en los diagramas de colaboración, reflejando cómo interactúan los objetos del análisis.
 
-Identificación de Responsabilidades:
+- **Proceso de identificación**: Estudiar los enlaces en los diagramas de colaboración para determinar las asociaciones necesarias.
+- **Minimización de relaciones**: Reducir las relaciones innecesarias.
+- **Modelar solo las relaciones necesarias**: Las relaciones deben ser lo más simples y necesarias posibles.
 
-- Combinar todos los roles que cumple la clase en diferentes realizaciones de casos de uso.
-    
-- Estudiar diagramas de clases e interacción para identificar en cuáles casos de uso participa la clase.
-    
-- Consultar el artefacto de flujo de sucesos - análisis para obtener requisitos textuales.
-    
-- Técnica de Recopilación:
-    
+#### Identificación de Generalizaciones
 
-- Extraer las responsabilidades de cada rol de manera secuencial.
-    
-- Añadir o modificar responsabilidades basadas en las realizaciones de casos de uso.
-    
+Las **generalizaciones** se utilizan para extraer comportamientos comunes entre varias clases, simplificando el modelo y mejorando su comprensión.
 
-  
-![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdxQ1bscHWkvV3SD98s0aGNRiYESJwzXzUtQMIbI6Fx8Vl4hazxOI3U-gltc745FPMH_EOtVW_RzLL8UOU_0yjmTib7T0JE335TBuVCbb4HALjECrnapZKBrCDeL9c25U0ky-NM1iZ4Xj5snRxlxmfOm9Gn?key=VReuh94fGGpJZLGsXsGdUQ)  
-  
+- Mantener un nivel alto y conceptual en las generalizaciones.
+- El objetivo es hacer que el modelo sea más fácil de entender, destacando similitudes entre clases.
 
-Identificación de Atributos:
+#### Captura de Requisitos Especiales
+Recoger los requisitos especiales, especialmente los no funcionales, es crucial para la fase de diseño e implementación de las clases del análisis.
 
-Un atributo especifica una propiedad de una clase de análisis y es fundamental para cumplir con las responsabilidades de dicha clase.
+# Análisis de Paquetes y Clases en el Desarrollo de Software
 
-Normas Generales para Identificar Atributos:
+### Actividad: Analizar un Paquete
 
-- Nomenclatura: El nombre de un atributo debe ser claro y conciso, siguiendo el formato [1,2].
-    
-- Tipo Conceptual: El tipo de los atributos debe ser conceptual en el análisis, sin estar restringido por el entorno de implementación. Por ejemplo, "cantidad" es adecuado en análisis, mientras que en diseño podría ser "entero".
-    
-- Reutilización de Tipos: Al decidir el tipo de un atributo, se debe intentar reutilizar tipos ya existentes para mantener coherencia.
-    
-- Instancias Únicas: Una instancia de un atributo no puede ser compartida por varios objetos. Si se requiere, el atributo debe definirse en su propia clase.
-    
-- Claridad: Si los atributos de una clase hacen difícil su comprensión, se pueden separar en clases independientes.
-    
-- Clases de Entidad: Los atributos son evidentes en clases de entidad. Las trazas con clases del dominio o de negocio son útiles para identificar atributos.
-    
-- Clases de Interfaz: Los atributos en clases de interfaz que interactúan con actores humanos suelen ser elementos de información (ej. campos de texto). En clases de interfaz que interactúan con sistemas, representan propiedades de la comunicación.
-    
-- Clases de Control: Aunque son poco frecuentes, pueden tener atributos que representan valores acumulados o calculados durante la realización de un caso de uso.
-    
+![Análisis de Paquete](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdoYTt_zAKM5EFqKr02VDf8wxedfQvE11D3FFp5CW01cSJ3E_OjDrdjWP8W2phM6lIYcCrVGdQVQKd3BAV5jsVrxNgau60YGo8IHZyIVMhWyrHVAFpcNEZJYDLipKInfOmZrWxZBZ9lfsfLgsh0-gwy9gkg?key=VReuh94fGGpJZLGsXsGdUQ)
 
-- Atributos Formales: No siempre son necesarios; a veces, una explicación simple de una propiedad es suficiente y puede añadirse a la descripción de responsabilidades.
-    
+#### Objetivos clave:
 
-- Diagrama de Clases: Si una clase tiene muchos atributos o atributos complejos, se puede crear un diagrama de clases separado que muestre solo la sección de atributos.
-    
+- **Independencia de Otros Paquetes**: Asegurar que el paquete sea lo más independiente posible de otros paquetes. Esto facilita el mantenimiento y reutilización del paquete. Se busca **bajo acoplamiento** para promover la modularidad.
 
-Identificación de Asociaciones y Agregaciones:
+- **Cumplimiento de Objetivos**: Verificar que el paquete cumpla su propósito, ya sea implementando clases del dominio o satisfaciendo casos de uso específicos.
 
-Los objetos del análisis interactúan mediante enlaces en los diagramas de colaboración, que suelen representar instancias de asociaciones entre clases.
+- **Descripción de Dependencias**: Documentar las dependencias del paquete para estimar el impacto de futuros cambios. Esto es clave para la planificación y gestión de riesgos durante el ciclo de vida del software.
 
-- Proceso de Identificación:
-    
+#### Normas Generales para el Análisis de Paquetes:
 
-- Estudio de enlaces: Analizar los enlaces en los diagramas de colaboración para determinar las asociaciones necesarias.
-    
-- Identificar referencias y agregaciones entre objetos.
-    
-- Minimización de relaciones: Reducir el número de relaciones entre clases.
-    
-- Modelar sólo aquellas relaciones que son necesarias para satisfacer las demandas de las realizaciones de casos de uso.
-    
+- **Definir relaciones entre paquetes**: Establecer claras interacciones entre diferentes paquetes.
 
-- Enfoque en el Análisis: El análisis no debe centrarse en modelar rutas de búsqueda óptimas a través de asociaciones o agregaciones; esto se debe abordar en las fases de diseño e implementación.
-    
+- **Cohesión del Paquete**: Asegurar que los elementos dentro del paquete sean altamente cohesivos, es decir, que tengan una fuerte relación entre sí.
 
-- Definición de Asociaciones: El ingeniero de componentes define:
-    
+- **Limitación de Dependencias**: Mantener un bajo acoplamiento entre los paquetes, lo que facilita cambios sin que se afecten otros componentes del sistema.
 
-- Multiplicidad de las asociaciones
-    
-- Nombres de los roles
-    
-- Auto-asociaciones
-    
-- Clases de asociación
-    
-- Roles ordenados
-    
-- Roles cualificados
-    
-- Asociaciones n-arias
-    
+![Paquete de Análisis](https://lh7-rt.googleusercontent.com/docsz/AD_4nXealp_LY4FRxGDHHL33fddjhxb3xFNVMMLJxLds7a3ZkvBwFU-bxnIPyMyj2Oc3WXyNE-nYApqwkkwLlRCbaeLTAh60DHDEL0br40oKwncYlPOXuRR6C0qdZ2R-KmSS620FKqZq9C4A-lkzXq7GCjSzO3YA?key=VReuh94fGGpJZLGsXsGdUQ)
 
-- Ejemplos de Uso de Agregaciones: Las agregaciones son apropiadas cuando los objetos representan:
-    
-
-- Contenidos Físicos: Ejemplo: Un coche que contiene al conductor y a los pasajeros.
-    
-- Composición: Un coche que consta de un motor y ruedas.
-    
-- Colecciones Conceptuales: Una familia que incluye un padre, una madre y los niños.
-    
-
-Identificación de Generalizaciones:
-
-Las generalizaciones se utilizan para extraer comportamientos compartidos y comunes entre varias clases del análisis, simplificando el modelo y mejorando su comprensión.
-
-- Deben mantener un nivel alto y conceptual: Mantener las generalizaciones en un nivel alto, evitando detalles específicos que puedan complicar el modelo.
-    
-- Facilitación de Comprensión: El objetivo principal es hacer el modelo de análisis más fácil de entender, resaltando similitudes entre clases.
-    
-
-Captura de Requisitos Especiales:
-
-Este paso implica recoger todos los requisitos de una clase del análisis que se han identificado, pero que deben ser tratados en las fases de diseño e implementación, especialmente los requisitos no funcionales.
-
-  
-
-  
-
-  
-
-  
-
-#### Actividad Analizar un paquete
-
-![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdoYTt_zAKM5EFqKr02VDf8wxedfQvE11D3FFp5CW01cSJ3E_OjDrdjWP8W2phM6lIYcCrVGdQVQKd3BAV5jsVrxNgau60YGo8IHZyIVMhWyrHVAFpcNEZJYDLipKInfOmZrWxZBZ9lfsfLgsh0-gwy9gkg?key=VReuh94fGGpJZLGsXsGdUQ)
-
-Objetivos clave:
-
-- Independencia de Otros Paquetes: Asegurar que el paquete sea lo más independiente posible de otros paquetes, lo que facilita su mantenimiento y reutilización. BAJO ACOPLAMIENTO.
-    
-
-- Cumplimiento de Objetivos: Verificar que el paquete cumple su propósito, ya sea implementando clases del dominio o satisfaciendo casos de uso específicos.
-    
-
-- Descripción de Dependencias: Documentar las dependencias del paquete para estimar el impacto de futuros cambios, lo que ayuda en la planificación y gestión de riesgos.
-    
-
-Normas Generales para el Análisis de Paquetes
-
-- Definir relaciones entre paquetes
-    
-- Cohesión del Paquete: Elementos altamente cohesivos
-    
-- Limitación de Dependencias: bajo acoplamiento entre paquetes
-    
-
-  
-
-![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXealp_LY4FRxGDHHL33fddjhxb3xFNVMMLJxLds7a3ZkvBwFU-bxnIPyMyj2Oc3WXyNE-nYApqwkkwLlRCbaeLTAh60DHDEL0br40oKwncYlPOXuRR6C0qdZ2R-KmSS620FKqZq9C4A-lkzXq7GCjSzO3YA?key=VReuh94fGGpJZLGsXsGdUQ)
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
+---
 
 ### Resumen del Análisis
 
-El flujo de trabajo del análisis culmina en el modelo de análisis, que refina y estructura los requisitos. Incluye:
+El **flujo de trabajo del análisis** culmina en el **modelo de análisis**, que tiene como objetivo refinar y estructurar los requisitos. Este modelo incluye los siguientes elementos clave:
 
-- Paquetes del Análisis: Aíslan cambios en procesos del negocio y casos de uso.
-    
-- Paquetes de Servicio: Aíslan cambios en servicios específicos, promoviendo la reutilización.
-    
-- Clases del Análisis: Definen responsabilidades y relaciones.
-    
+- **Paquetes del Análisis**: Ayudan a aislar los cambios en los procesos del negocio y en los casos de uso, lo que facilita la gestión de estos cambios.
 
-- Clases de Control: Coordinan la lógica del negocio.
-    
-- Clases de Entidad: Gestionan información persistente.
-    
-- Clases de Interfaz: Manejan interacciones de usuario.
-    
+- **Paquetes de Servicio**: Aíslan los cambios en servicios específicos, promoviendo la reutilización de componentes dentro del sistema.
 
-- Realizaciones de Casos de Uso-Análisis: Refinan casos de uso y aislan cambios.
-    
-- Vista de la Arquitectura: Ayuda a identificar cambios arquitectónicos.
-    
+- **Clases del Análisis**: Definen las responsabilidades y las relaciones entre los componentes del sistema.
 
-Influencia en el Diseño: El modelo de análisis influye en el diseño al:
+- **Clases de Control**: Son las encargadas de coordinar la lógica de negocio, asegurando que los procesos del sistema se realicen de acuerdo con las reglas establecidas.
 
-- Relacionar paquetes de análisis con subsistemas de diseño.
-    
-- Guiar el diseño de clases, abordando requisitos especiales.
-    
-- Servir como base para especificaciones de casos de uso.
-    
-- Proveer una vista arquitectónica que asegura trazas relevantes entre modelos.
-    
+- **Clases de Entidad**: Gestionan la información persistente, es decir, aquellas que representan datos que deben ser almacenados a largo plazo, como registros de base de datos.
 
-Este enfoque sistemático facilita un desarrollo de software coherente y estructurado.
+- **Clases de Interfaz**: Se encargan de manejar las interacciones con los usuarios o con otros sistemas, funcionando como un punto de comunicación entre el sistema y los actores externos.
+
+- **Realizaciones de Casos de Uso-Análisis**: Refinan los casos de uso y ayudan a aislar los cambios que pueden ocurrir durante el desarrollo del sistema.
+
+- **Vista de la Arquitectura**: Proporciona una visión general del sistema y ayuda a identificar posibles cambios en la arquitectura a medida que se avanza en el diseño.
+
+#### Influencia en el Diseño
+
+El modelo de análisis tiene una **gran influencia** en el diseño del software, ya que:
+
+- **Relaciona paquetes de análisis con subsistemas de diseño**, asegurando que la estructura del software sea coherente con los requisitos.
+
+- **Guía el diseño de clases**, abordando específicamente los requisitos especiales que puedan haber surgido durante el análisis.
+
+- **Sirve como base para las especificaciones de casos de uso**, detallando cómo cada caso de uso debe ser implementado en el sistema.
+
+- **Provee una vista arquitectónica** que asegura trazas relevantes entre modelos, facilitando la evolución del software de manera coherente y estructurada.
+
+Este enfoque sistemático permite un desarrollo de software **coherente** y **estructurado**, lo que facilita tanto el mantenimiento como la evolución del sistema a lo largo del tiempo.
