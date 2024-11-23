@@ -1,5 +1,4 @@
 
-
 ---
 ## Concepto de Diseño según Ralph y Wand
 
@@ -22,9 +21,6 @@ Este enfoque resalta la importancia del diseño en el proceso de desarrollo de s
 6. **Componentes Primitivos**: Recursos mínimos como controles, ventanas o cajas de texto.
 7. **Requisitos**: Las acciones que el objeto debe realizar (requisitos funcionales).
 8. **Restricciones**: Limitaciones que afectan al diseño (requisitos no funcionales).
-
-
-
 ### Requisitos en el Diseño
 
 - **Requisitos Funcionales**: Describen las funciones que el sistema debe realizar, es decir, las acciones específicas que el objeto debe llevar a cabo.
@@ -36,12 +32,36 @@ Este enfoque proporciona una estructura clara para el desarrollo de sistemas, as
 ---
 ### Ejemplo de Relación de Componentes en un Código Criminal
 
-- **Componentes Primitivos**: Palabras en inglés utilizadas en documentos legales.
-- **Restricciones**: Cumplimiento de la constitución y leyes internacionales.
-- **Entorno**: Marco legal nacional.
-- **Requerimientos**: Definir crímenes y castigos de forma clara y no ambigua.
-- **Objetivo**: Establecer un marco legal para abordar los crímenes.
-- **Objeto**: Código criminal.
-- **Agente**: Expertos legales.
-- **Requisitos Funcionales**: Relativos a la función principal del sistema.
-- **Requisitos No Funcionales**: Aspectos adicionales que no afectan la función principal.
+```spoiler-block
+
+- Componentes Primitivos: Palabras en inglés utilizadas en documentos legales.
+- Restricciones: Cumplimiento de la constitución y leyes internacionales.
+- Entorno: Marco legal nacional.
+- Requerimientos: Definir crímenes y castigos de forma clara y no ambigua.
+- Objetivo: Establecer un marco legal para abordar los crímenes.
+- Objeto: Código criminal.
+- Agente: Expertos legales.
+- Requisitos Funcionales: Relativos a la función principal del sistema.
+- Requisitos No Funcionales: Aspectos adicionales que no afectan la función principal.
+
+```
+
+Palabras en inglés utilizadas en documentos legales.  
+
+Cumplimiento de la constitución y leyes internacionales. 
+
+Marco legal nacional. 
+
+Definir crímenes y castigos de forma clara y no ambigua. 
+
+Establecer un marco legal para abordar los crímenes. 
+
+Código criminal. 
+
+Expertos legales.  
+
+Relativos a la función principal del sistema.  
+
+Aspectos adicionales que no afectan la función principal.  
+
+

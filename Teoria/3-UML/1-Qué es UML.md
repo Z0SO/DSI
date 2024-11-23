@@ -1,4 +1,4 @@
-# Mitos sobre UML
+## Mitos sobre UML
 
 #### UML es una metodología de desarrollo de software
 
@@ -30,11 +30,12 @@ Es unificado porque **cubre todas las** **etapas de diseño**, abarcando método
 ## ¿Qué es un modelo?
 
 Un modelo es una **representación de la realidad.** 
-
 Es una **representación** en **algún medio** que captura los **aspectos importantes del sistema** desde un **determinado punto de vista.** 
 
 Un modelo de un sistema de software es realizado en un lenguaje de modelado. 
 
->No es lo mismo un modelo que un diagrama. 
+>NO es lo mismo un modelo que un diagrama.  
+>   Modelo ≠ Diagrama
 
->El diagrama es una forma de representar un modelo y el modelo es el conjunto de todas las ideas representadas en diagramas y otras cosas.
+
+>El diagrama es una forma de representar un modelo; mientras que el modelo es el conjunto de todas las ideas representadas en diagramas y otras cosas.

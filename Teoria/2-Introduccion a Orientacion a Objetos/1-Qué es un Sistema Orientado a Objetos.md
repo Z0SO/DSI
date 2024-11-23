@@ -1,6 +1,6 @@
 
 
-# Introducción a Orientación a Objetos
+## Introducción a Orientación a Objetos
 
 La orientación a objetos es un paradigma de programación que utiliza "objetos" y sus interacciones para diseñar aplicaciones y sistemas de software. Los objetos son entidades que combinan datos y comportamientos relacionados.
 
@@ -24,7 +24,7 @@ La orientación a objetos es un paradigma de programación que utiliza "objetos"
 #### Adecuado para Resolver Problemas de Complejidad
 - **Enfoque:** Módulos pequeños interconectados
 
-# Tres Métodos para Comprender el Mundo (COAD/YOURDON)
+# Tres Métodos para Comprender el Mundo (COAD/YOURDON) (entro en el parcial)
 
 #### 1. Diferenciación de la Experiencia en Objetos y Atributos
 - **Descripción:** Separar lo que son objetos de los atributos de un objeto.
@@ -38,7 +38,6 @@ La orientación a objetos es un paradigma de programación que utiliza "objetos"
 #### 3. Formación y Distinción de Clases de Objetos
 - **Descripción:** Agrupar objetos similares en clases y definir las características comunes que comparten.
 - **Referencia:** Clases abstractas
-
 
 ---
 

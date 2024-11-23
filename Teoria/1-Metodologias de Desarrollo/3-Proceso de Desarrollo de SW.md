@@ -1,11 +1,10 @@
 
 ----
-
 ### Proceso de Desarrollo de Software: Un Viaje de Creación y Evolución
 
 ## Definiciones
 
-#### Según IEEE
+### Según IEEE
 
 - El desarrollo de software es una danza meticulosa de etapas interconectadas:
   - **Requisitos**: Capturar las aspiraciones y necesidades del usuario y traducirlas en requisitos precisos de software.
@@ -13,15 +12,15 @@
   - **Desarrollo**: Implementar el diseño en código funcional y robusto.
   - **Prueba**: Someter el código a rigurosas pruebas para asegurar su calidad y verificar que cumple con los requisitos. A menudo incluye la instalación y verificación para el uso operativo.
 
-#### Según Ian Sommerville
+### Según Ian Sommerville
 
 - **Especificación**: Definir detalladamente lo que el sistema debe hacer.
 - **Desarrollo**: Convertir las especificaciones en un sistema operativo.
 - **Validación**: Asegurar que el sistema cumple con los requisitos y expectativas del cliente.
 - **Evolución del Software**: Adaptar y mejorar el software para responder a cambios en los requisitos y el entorno operativo.
-- Cada uno de estos pasos puede tener productos intermedios, roles específicos y condiciones que preparan y verifican cada etapa.
+- Cada uno de estos pasos puede tener **productos intermedios**, **roles** específicos y **condiciones** que **preparan y verifican** cada etapa.
 
-#### Según Shari Pfleeger
+### Según Shari Pfleeger
 
 - **Proceso**: Una serie de pasos que incluyen actividades, restricciones y recursos, diseñados para producir un resultado previsto.
 
@@ -35,7 +34,7 @@
   
 Este ciclo abarca toda la vida del software, desde su nacimiento hasta su mantenimiento continuo.
 
-#### Según Roger Pressman
+### Según Roger Pressman
 
 **Proceso de Software**: Un marco compuesto por actividades, acciones y tareas, cada una con su propio enfoque y objetivos:
   - **Actividad**: Un objetivo amplio y abarcativo, como la planificación del proyecto.

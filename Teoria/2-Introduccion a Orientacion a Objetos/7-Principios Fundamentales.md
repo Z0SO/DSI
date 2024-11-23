@@ -1,7 +1,7 @@
 
 # Abstracción
 
-La abstracción es un mecanismo que nos permite concentrarnos en los detalles más importantes y dejar de lado otros. Trata la complejidad al dejar de lado aspectos irrelevantes. No es exclusiva de la programación orientada a objetos.
+La abstracción **es un mecanismo que nos permite concentrarnos en los detalles más importantes y dejar de lado otros**. Trata la complejidad al dejar de lado aspectos irrelevantes. No es exclusiva de la programación orientada a objetos.
 
 ### Características de la Abstracción
 
@@ -79,7 +79,7 @@ El polimorfismo es la capacidad de un objeto para presentar diferentes formas o 
 - **Definición:** Es el principio por el cual una misma operación es resuelta de manera diferente según el objeto que recibe el mensaje.
 - **Implementación:** La definición del método reside en la clase base, mientras que la implementación del método reside en la clase derivada.
 - **Invocación:** La invocación es resuelta en tiempo de ejecución.
-- **Tipos de Vinculación:** Se puede realizar con vinculación temprana (early binding) o vinculación tardía (late binding).
+- **Tipos de Vinculación:** Se puede realizar con vinculación temprana (early binding) o vinculación tardía (late binding). <---- ver esto mas tarde
 
 ![](https://lh7-us.googleusercontent.com/docsz/AD_4nXfndtt_NtYFjpq6upZlNcoEGcFu7YociYGLCw64oQpn0UqoDomAOSs_RyIo-j0S1IH49y53q8Cf1uugz9c6s88CCrcIoUjLQuOit3ckbjNDC-w9r6w1ixePyf-OnKHi9pio0DR8wXp-TUO3Xv6KLU_N2Yyf?key=VReuh94fGGpJZLGsXsGdUQ)
 

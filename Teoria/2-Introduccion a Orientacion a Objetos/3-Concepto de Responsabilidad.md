@@ -1,5 +1,4 @@
-
-# Definicion
+# Definición
 
 **UML** define una responsabilidad como “un contrato u obligación de un Clasificador”.  
 

@@ -1,28 +1,27 @@
 
 ----
-
 # Ciclo de Vida del Desarrollo de Software
 
-## Definición
+#### Definición
 
 **Según IEEE**
 - **Ciclo de Desarrollo de Software**: Abarca desde el inicio hasta la entrega del software.
 - **Ciclo de Vida del Desarrollo**: Abarca desde el inicio hasta el final del software, incluyendo su entrega y eventual desuso.
 
-#### Modelo de Procesos de Software
-- **Presentación Simplificada**: Representa el ciclo de vida del software sin detallar actividades específicas.
+### Modelo de Procesos de Software
+Representa el ciclo de vida del software sin detallar actividades específicas.
 - **Adaptabilidad**: Permite la adaptación o extensión según el modelo elegido.
 - **Tipos de Modelos**:
-  - **Cascada**
-  - **Prototipo**
-  - **Espiral**
-  - **Iterativo e Incremental**
+  - Cascada
+  - Prototipo
+  - Espiral
+  - Iterativo e Incremental
 
-#### Modelos de Proceso según Pressman
+#### Flujo de Proceso según Pressman
 
 **Flujo de Proceso**
-- Organización secuencial y temporal de actividades en los modelos de desarrollo.
-- **Tipos**:
+ Organización secuencial y temporal de actividades en los modelos de desarrollo.
+**Tipos**:
   - **Lineal**: Actividades realizadas en secuencia.
   - **Iterativo**: Repetición de actividades con mejoras en cada iteración.
   - **Evolutivo**: Desarrollo en etapas con prototipos y refinamientos sucesivos.

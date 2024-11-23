@@ -1,4 +1,4 @@
-
+# VER VIDEO QUE EXPLICA CON EJEMPLOS EN EL CAMPUS
 # Principios SOLID
 
 Enfocados a la elaboración de software de calidad. Cuando estos principios se aplican en conjunto, es más probable que un desarrollador cree un sistema que sea fácil de mantener y ampliar en el tiempo. 

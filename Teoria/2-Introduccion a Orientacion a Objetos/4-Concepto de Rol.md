@@ -1,8 +1,6 @@
-
 # Definición
 
 Un rol es un conjunto de responsabilidades relacionadas. Se utiliza como el *propósito* de la clase.
-
 ### Ejemplo: Factura
 - **Rol:** Documento legal que retrata una transacción
 - **Responsabilidades:**
@@ -13,7 +11,7 @@ Un rol es un conjunto de responsabilidades relacionadas. Se utiliza como el *pro
 
 > **Nota:** Siempre una clase cae en alguno de estos estereotipos.
 
-Los estereotipos de roles son caracterizaciones de las funciones que necesita una aplicación. Al simplificar y caracterizar, podemos reflexionar ligeramente sobre la naturaleza del papel de un objeto más fácilmente. Básicamente, facilita el desarrollo identificar el objeto que estás desarrollando con alguno de estos estereotipos, ofreciendo una guía útil.
+Los estereotipos de roles son caracterizaciones de las funciones que necesita una aplicación. Al simplificar y caracterizar, podemos reflexionar sobre la naturaleza del papel de un objeto más fácilmente. Básicamente facilita el desarrollo, identificando al objeto que estás desarrollando con alguno de estos estereotipos, ofreciendo una guía útil.
 
 ### Tipos de Estereotipos
 

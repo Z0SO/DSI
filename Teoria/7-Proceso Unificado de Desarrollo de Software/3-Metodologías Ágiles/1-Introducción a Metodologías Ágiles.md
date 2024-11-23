@@ -1,0 +1,1 @@
+Introducción a las Metodologías Ágiles. Procesos Predecibles vs. Adaptables. La Importancia del Factor Humano en los Métodos Ágiles.

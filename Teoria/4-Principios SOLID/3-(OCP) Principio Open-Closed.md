@@ -12,7 +12,7 @@ Cambia el comportamiento de una clase mediante herencia, polimorfismo y composic
 ![](https://lh7-us.googleusercontent.com/docsz/AD_4nXfdlWYF-MCeZA2X_AJv0XLcrdFFPpTvAfkvWv6fcXHhtSKJURx0f6qWIr67dAXcysz6OpnlpohYaS7xMnFGdXGQ8uNac27tzMzzr8Na0JEp3wPT81qWB42OwnCtdV66D9mtWYSplCSW2ef6aOhimbFmuCo?key=VReuh94fGGpJZLGsXsGdUQ)
 
 ### Explicación
-El **OCP** establece que el comportamiento de las entidades de software debe poder extenderse sin modificar su código fuente original. Esto se logra mediante la herencia, el polimorfismo y la composición, permitiendo que las clases sean reutilizables y resistentes a cambios futuros sin necesidad de alterarlas directamente.
+El **OCP** establece que el comportamiento de las entidades de software **debe poder extenderse sin modificar su código** fuente original. **Esto se logra mediante la herencia, el polimorfismo y la composición**, permitiendo que las clases sean reutilizables y resistentes a cambios futuros sin necesidad de alterarlas directamente.
 
 ### Ejemplo Práctico
 #### Problema Inicial
