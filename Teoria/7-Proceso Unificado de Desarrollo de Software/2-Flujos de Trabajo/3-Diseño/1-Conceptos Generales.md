@@ -17,23 +17,11 @@ En el diseño, modelamos el sistema y su arquitectura para cumplir con todos los
 - Abstracción de la Implementación: Asegurar que la implementación sea un refinamiento directo del diseño, permitiendo tecnologías como generación de código y ingeniería de ida y vuelta.
     
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+##### Comparación entre Modelo de Análisis y Diseño:
 
-Comparación entre Modelo de Análisis y Diseño:![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcrEmpKHvxsvoQOQeGseRLaGNFIUN0alihaPabt4uigG6Z2g1WlCIHELnnz1SVEfmIAlOTK13ZY2qUb9f3P7U5SqJ--dMHsgD3na2v-4BdwqgVFlKaK-x6lr97A0VPalA1o4ddYa8OoneiYmhD6aenDpgPd?key=VReuh94fGGpJZLGsXsGdUQ)
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcrEmpKHvxsvoQOQeGseRLaGNFIUN0alihaPabt4uigG6Z2g1WlCIHELnnz1SVEfmIAlOTK13ZY2qUb9f3P7U5SqJ--dMHsgD3na2v-4BdwqgVFlKaK-x6lr97A0VPalA1o4ddYa8OoneiYmhD6aenDpgPd?key=VReuh94fGGpJZLGsXsGdUQ)
 
 ### TRABAJADORES Y ARTEFACTOS
-
   
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcqlkQr0eRocOd6VK5wu9GNnchPQP-wQggjbmXRPhrqEbMLw50dQ6LbxMOfkGBVnP1YVs8ki9p37wPeJ9Zg5FHfExtwP9c1XtGKiNBr4VBJ35FfOOLufRUEm_IstnfMAF_gp_oeK5t4f1r2GHzQopZS44Cp?key=VReuh94fGGpJZLGsXsGdUQ)  
 
@@ -290,10 +278,7 @@ La **descripción arquitectónica** incluye todos los aspectos relacionados con 
     
 
 Estos artefactos proporcionan una visión integral de cómo se estructura y distribuye el sistema en diferentes niveles, desde las interfaces hasta la implementación física, ayudando a garantizar que el sistema sea flexible, escalable y eficiente.
-  
-  
-  
-  
+
   
 ### TRABAJADORES
 
@@ -410,368 +395,149 @@ En este paso, el arquitecto debe tratar requisitos comunes como los **requisitos
 
 Además, se identifican colaboraciones genéricas que pueden ser usadas en varias realizaciones de caso de uso dentro del modelo de diseño, adaptándolas a clases concretas mediante parámetros.
   
-#### Actividad: Diseño de un Caso de Uso![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfWoiaKa2ka-i4AvhWPvCWuZaEenbWazo2FzusVVc3KxSeA1uzkv_E5xUS9A6NmZ1pq3-lZL4biM3MHpkB4EqZ8qaL5eMHfKzGhCNmU_bgSDdr75nGUn2UjuEzzFssKzNJyQ2IEhsk06Gbcvutq6w4Vp0ZG?key=VReuh94fGGpJZLGsXsGdUQ)
+### Actividad: Diseño de un Caso de Uso
 
-  
+![Caso de Uso](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfWoiaKa2ka-i4AvhWPvCWuZaEenbWazo2FzusVVc3KxSeA1uzkv_E5xUS9A6NmZ1pq3-lZL4biM3MHpkB4EqZ8qaL5eMHfKzGhCNmU_bgSDdr75nGUn2UjuEzzFssKzNJyQ2IEhsk06Gbcvutq6w4Vp0ZG?key=VReuh94fGGpJZLGsXsGdUQ)
 
-Los objetivos del diseño de un caso de uso son:
+Los objetivos del diseño de un caso de uso son los siguientes:
 
-- Identificar las clases del diseño y/o los subsistemas cuyas instancias son necesarias para llevar a cabo el flujo de sucesos del caso de uso.
-    
-- Distribuir el comportamiento del caso de uso entre los objetos del diseño que interactúan y/o entre los subsistemas participantes.
-    
-- Definir los requisitos sobre las operaciones de las clases del diseño y/o sobre los subsistemas y sus interfaces.
-    
-- Capturar los requisitos de implementación del caso de uso.
-    
+- **Identificar las clases del diseño**: Las clases y/o subsistemas necesarias para llevar a cabo el flujo de sucesos del caso de uso.
+- **Distribuir el comportamiento**: Asignar las responsabilidades de las clases del diseño para que el caso de uso funcione correctamente.
+- **Definir los requisitos sobre las operaciones**: Especificar las operaciones necesarias sobre las clases y subsistemas.
+- **Capturar los requisitos de implementación**: Incluir los requisitos adicionales para la implementación del caso de uso.
 
-  
+#### 1. Identificación de Clases del Diseño
 
-1. Identificación de Clases del Diseño
-    
-
-Objetivo: Identificar las clases del diseño necesarias para un caso de uso.
+Objetivo: Identificar las clases necesarias para el caso de uso.
 
 Pasos:
 
-- Estudiar clases de análisis vinculadas al caso de uso.
-    
+- Estudiar las clases de análisis vinculadas al caso de uso.
 - Identificar requisitos especiales y las clases que los satisfacen.
-    
-- Asignar responsabilidades a ingenieros de componentes para el detalle de las clases
-    
-- Comunicar cualquier clase faltante a los arquitectos. Clases faltantes
-    
+- Asignar responsabilidades a los ingenieros para detallar las clases.
+- Comunicar cualquier clase faltante a los arquitectos.
 
-  
+#### 2. Descripción de Interacciones entre Objetos
 
-2. Descripción de Interacciones entre Objetos![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfpGUVDOz-yWKoEpA4V8YRTwOfC_EnLzJDSznI6tR8ptw7yTpOYFY81xuNLYPWjUXJs5KmokEEZwYfKasFwXrsNKZMbcnNahupbTupF6TYy3-cIKyyIZTs9bmc8qA3HK0w70XptVQoEjeU-Ao3e3hjTvP8?key=VReuh94fGGpJZLGsXsGdUQ)
-    
+![Interacciones entre Objetos](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfpGUVDOz-yWKoEpA4V8YRTwOfC_EnLzJDSznI6tR8ptw7yTpOYFY81xuNLYPWjUXJs5KmokEEZwYfKasFwXrsNKZMbcnNahupbTupF6TYy3-cIKyyIZTs9bmc8qA3HK0w70XptVQoEjeU-Ao3e3hjTvP8?key=VReuh94fGGpJZLGsXsGdUQ)
 
 Objetivo: Describir cómo interactúan los objetos del diseño.
 
-Herramienta: Diagramas de secuencia que muestran actores, objetos y mensajes.
-
 Pasos:
 
-- Estudiar la realización del caso de uso-análisis.
-    
-- Crear diagramas de secuencia para flujos y subflujos.
-    
-- Identificar interacciones y asegurar que cada clase tenga un objeto en el diagrama.
-    
-- Documentar excepciones y caminos alternativos.![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdJTyllbSF5RNHWbnUd0LMf4LRPNqyLEQMi9qOTJQgKBfzII3RNb3osmuYWCNg-YljtNWZ9bUeKgnkhUIuKCkul6Wo7QKof3_0-HgmAA9--1PxwVJfZkpPtB75FpGTqcu4uAhuGezkJ9RVShsL5txU0zss?key=VReuh94fGGpJZLGsXsGdUQ)
-    
+- Crear diagramas de secuencia que muestren los flujos de mensajes entre actores y objetos.
+- Identificar interacciones y asegurarse de que cada clase tenga al menos un objeto en el diagrama.
+- Documentar excepciones y caminos alternativos.
 
-Puede pasar que existan más caminos alternativos, e incluso el ingeniero de componentes puede detectar más caminos no descubiertos![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXev7X8EnYVSb5t90cw_fwl6dW0d6YwN-ZwCKQgFLWlMJ5V3g05SCq069FtwD52Uxq5d-t2Ox_r-UThD0oz0Tl5H1RMrQpV5JUlaZdBzmYF-Puht-VPJaFQ7acH_98UarJuFKb5Xvn4jGHdcK0Ib0-bwyZM?key=VReuh94fGGpJZLGsXsGdUQ)
+#### 3. Identificación de Subsistemas e Interfaces
 
-  
-
-3. Identificación de Subsistemas e Interfaces
-    
+![Subsistemas e Interfaces](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdXTYnJh91Tg4-GxRLpa7JUeVCiEcxTyFyJrAHhV_9X-8dw90WuPFrHtJEjZqbjhLDUiygp0ySOdrDNpHGd5Nup5C5zTauC0IY0tJjKlnDdPTY9aUyfVhqasp8uOL9K1lVnh8rVoCJm1JnXAD1W6NCXsbWH?key=VReuh94fGGpJZLGsXsGdUQ)
 
 Objetivo: Diseñar el caso de uso considerando subsistemas e interfaces.
 
 Pasos:
 
-- Identificar subsistemas necesarios analizando las clases y paquetes del análisis.
-    
-- Recoger subsistemas en un diagrama de clases que muestre dependencias e interfaces.
-    
-- Requisitos especiales mediante subsistemas![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdXTYnJh91Tg4-GxRLpa7JUeVCiEcxTyFyJrAHhV_9X-8dw90WuPFrHtJEjZqbjhLDUiygp0ySOdrDNpHGd5Nup5C5zTauC0IY0tJjKlnDdPTY9aUyfVhqasp8uOL9K1lVnh8rVoCJm1JnXAD1W6NCXsbWH?key=VReuh94fGGpJZLGsXsGdUQ)
-    
+- Identificar los subsistemas necesarios mediante el análisis de las clases y paquetes.
+- Recoger los subsistemas en un diagrama de clases que muestre dependencias e interfaces.
 
-  
-  
-  
-  
+#### 4. Descripción de Interacciones entre Subsistemas
 
-4. Descripción de Interacciones entre Subsistemas
-    
-
-Objetivo: Describir interacciones a nivel de subsistema.
-
-Herramienta: Diagramas de secuencia con líneas de vida representando subsistemas.
+Objetivo: Describir las interacciones entre subsistemas.
 
 Pasos:
 
-- Asegurar que cada subsistema tenga al menos una línea de vida en el diagrama.
-    
-- Cualificar mensajes con las interfaces correspondientes.
-    
+- Asegurarse de que cada subsistema tenga al menos una línea de vida en el diagrama de secuencia.
+- Cualificar los mensajes con las interfaces correspondientes.
 
-  
+#### 5. Captura de Requisitos de Implementación
 
-5. Captura de Requisitos de Implementación
-    
+Objetivo: Incluir los requisitos identificados durante el diseño, como los requisitos no funcionales, en la implementación del caso de uso.
 
-Objetivo: Incluir en la realización del caso de uso requisitos identificados durante el diseño para la implementación del caso de uso, como los requisitos no funcionales.
+---
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+### Actividad: Diseño de una Clase
 
-#### Actividad: Diseño de una Clase![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXc1Fun3HalY-4Eiqd5XOsH9GajfDnZAK_z9zmNulpnosMVC7fP8DTMSWkwPR2fm8QZnAiX-uVgtt1awR4wrqdLYfUpl5MaqmAHDssSN2llKTJdEHjDnFdfKirwdCYLPiJluqX_j5Vvn4AJikkKxhwpU_Iaf?key=VReuh94fGGpJZLGsXsGdUQ)
+![Diseño de una Clase](https://lh7-rt.googleusercontent.com/docsz/AD_4nXc1Fun3HalY-4Eiqd5XOsH9GajfDnZAK_z9zmNulpnosMVC7fP8DTMSWkwPR2fm8QZnAiX-uVgtt1awR4wrqdLYfUpl5MaqmAHDssSN2llKTJdEHjDnFdfKirwdCYLPiJluqX_j5Vvn4AJikkKxhwpU_Iaf?key=VReuh94fGGpJZLGsXsGdUQ)
 
-El propósito de diseñar una clase es crear una clase del diseño que cumpla su papel en las realizaciones de los casos de uso y los requisitos no funcionales que se aplican a estos. Esto incluye el mantenimiento del diseño de clases en sí mismo y los siguientes aspectos de éste:
+El propósito del diseño de una clase es crear una clase que cumpla su papel en la realización de los casos de uso y los requisitos no funcionales aplicables. Esto incluye aspectos como:
 
-- Sus operaciones.
-    
-- Sus atributos.
-    
-- Las relaciones en las que participa.
-    
-- Sus métodos (que realizan sus operaciones).
-    
-- Los estados impuestos.
-    
-- Sus dependencias con cualquier mecanismo de diseño genérico.
-    
-- Los requisitos relevantes a su implementación.
-    
-- La correcta realización de cualquier interfaz requerida
-    
+- **Operaciones**: Qué funciones realiza la clase.
+- **Atributos**: Qué propiedades tiene la clase.
+- **Relaciones**: Cómo se relaciona con otras clases.
+- **Métodos**: Cómo se realizan las operaciones.
+- **Estados**: Qué estados puede tener la clase.
+- **Dependencias**: Con qué mecanismos de diseño interactúa.
+- **Requisitos de implementación**: Requisitos adicionales a tener en cuenta.
 
-  
+#### 1. Esbozar la Clase del Diseño
 
-1. Esbozar la Clase del Diseño
-    
-
-Objetivo: Crear un esbozo de clases de diseño a partir de clases de análisis o interfaces.
+Objetivo: Crear un esbozo de clases basado en clases de análisis o interfaces.
 
 Consideraciones:
 
-Cuando tomamos una interfaz como entrada, suele ser simple y directo el asignar a una clase de diseño para que proporcione esa interfaz.
+- Si la entrada es una interfaz, asignar la clase que proporcione esa interfaz.
+- Si la entrada son clases de análisis, dependerá del tipo de clase (interfaz, entidad, control).
 
-Cuando se dan como entrada una o varias clases del análisis, dependen del estereotipo:
+#### 2. Identificar Operaciones
 
-- Clases de interfaz dependen de la tecnología utilizada (ej. Visual Basic).
-    
-- Clases de entidad deben reflejar información persistente, a menudo vinculadas a bases de datos.
-    
-- Clases de control deben considerar distribución, rendimiento y manejo de transacciones.
-    
+Objetivo: Definir las operaciones necesarias para las clases de diseño.
 
-Resultado: Identificación de clases de diseño que deben trazarse a las clases de análisis correspondientes.
+Pasos:
 
-  
+- Estudiar las responsabilidades de las clases de análisis relacionadas.
+- Identificar los requisitos especiales de las clases de análisis.
+- Definir las interfaces que la clase debe proporcionar.
 
-2. Identificar Operaciones (sintaxis de lenguaje de programación)
-    
+Nota: Las clases con comportamiento dependiente del estado se describen mejor con diagramas de estado. ![Diagrama de Estado](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdSz_GtXp2U8OgSw9MPC458vBLDHOnOHon5TzXE0TuUctvmxk8cRvYQqU52Jmc4RyRvcY1-jSbzoXjSJt1MdXQFAjlb6gnJNrr0tw_Z3zxCWmnlr-mOTFy6Anrh6eVGTJjj6bGIFYbkFKv8gFGSM_amqzv3?key=VReuh94fGGpJZLGsXsGdUQ)
 
-Objetivo: Definir operaciones necesarias para las clases de diseño.
+#### 3. Identificar Atributos
 
-Entradas Clave:
-
-- Responsabilidades de clases de análisis relacionadas.
-    
-- Requisitos especiales de clases de análisis.
-    
-- Interfaces que la clase debe proporcionar.
-    
-- Realizaciones de casos de uso donde participa la clase.
-    
-
-Nota: Clases con comportamiento dependiente del estado se describen mejor con diagramas de estado.![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdSz_GtXp2U8OgSw9MPC458vBLDHOnOHon5TzXE0TuUctvmxk8cRvYQqU52Jmc4RyRvcY1-jSbzoXjSJt1MdXQFAjlb6gnJNrr0tw_Z3zxCWmnlr-mOTFy6Anrh6eVGTJjj6bGIFYbkFKv8gFGSM_amqzv3?key=VReuh94fGGpJZLGsXsGdUQ)
-
-  
-  
-  
-  
-
-3. Identificar Atributos
-    
-
-Objetivo: Identificar y describir atributos de la clase de diseño.
+Objetivo: Identificar y describir los atributos de la clase de diseño.
 
 Normas Generales:
 
 - Considerar atributos de clases de análisis relacionadas.
-    
-- Respetar restricciones del lenguaje de programación.
-    
-- Reutilizar atributos existentes cuando sea posible.
-    
-- Evitar compartir instancias de atributos entre objetos.
-    
-- Simplificar atributos complejos en clases independientes si es necesario.
-    
+- Evitar compartir atributos entre instancias de objetos.
 
-  
+#### 4. Identificar Asociaciones y Agregaciones
 
-4. Identificar Asociaciones y Agregaciones
-    
+Objetivo: Definir las interacciones entre objetos mediante asociaciones y agregaciones.
 
-Objetivo: Definir interacciones entre objetos mediante asociaciones y agregaciones. Estas asociaciones luego se ven en la realización de caso de uso
+Pasos:
 
-Directrices:
+- Estudiar las relaciones entre clases de análisis que podrían requerir asociaciones en el diseño.
+- Refinar los nombres y relaciones de los atributos.
 
-- Estudiar relaciones de clases de análisis que puedan requerir asociaciones en el diseño.
-    
-- Refinar multiplicidad, nombres de rol y navegabilidad de asociaciones. En base al lenguaje elegido
-    
-- Minimizar el número de relaciones innecesarias.
-    
+#### 5. Identificar Generalizaciones
 
-  
+Objetivo: Usar generalizaciones cuando sea necesario, o considerar asociaciones si no es posible.
 
-5. Identificar Generalizaciones
-    
+![Generalización](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcUOfRK7vmi56AGMzNz9Ye5GkGHjuX4VEEVm18lFWIhDkyIMX32-Lw1-cAHW0UeqZfNq3BpWFXWsTS_UnxyQ39hkvh6UAQw4mp2iw9BuwMp8xbDk0zRLZaquIz3vxusd7gKxi1BmF9dS3lhGCB9IRWCc-0?key=VReuh94fGGpJZLGsXsGdUQ)
 
-Objetivo: Usar generalizaciones según la semántica del lenguaje de programación.
+#### 6. Describir Métodos
 
-Alternativa: Usar asociaciones o agregaciones si no se admite herencia.![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcUOfRK7vmi56AGMzNz9Ye5GkGHjuX4VEEVm18lFWIhDkyIMX32-Lw1-cAHW0UeqZfNq3BpWFXWsTS_UnxyQ39hkvh6UAQw4mp2iw9BuwMp8xbDk0zRLZaquIz3vxusd7gKxi1BmF9dS3lhGCB9IRWCc-0?key=VReuh94fGGpJZLGsXsGdUQ)
+Objetivo: Especificar cómo se realizarán las operaciones de la clase.
 
-6. Describir Métodos
-    
-
-Objetivo: Especificar cómo se realizarán las operaciones.
-
-Nota: Los métodos suelen ser creados durante la implementación, pero pueden especificarse en herramientas de diseño si se soporta generación de código.
-
-  
-
-7. Describir Estados
-    
+#### 7. Describir Estados
 
 Objetivo: Utilizar diagramas de estado para objetos cuyo comportamiento depende de su estado.
 
-Resultado: Diagramas de estado como entrada para la implementación de la clase.![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXepk0cCOhDlG0zTrFj0SWvVNPYIgamduCiRODB2KsemubDX1ZPgsMRVsuwmN29jB1s0x-WG-4ntKUXD0FJsyKrVm_x4YOlIYQ0y-9iYLTmF8s6unRqBTaXjZxlGy4eU2qvO8PoRlr-qrOOpRpr-1JudiM9B?key=VReuh94fGGpJZLGsXsGdUQ)
+![Diagrama de Estado](https://lh7-rt.googleusercontent.com/docsz/AD_4nXepk0cCOhDlG0zTrFj0SWvVNPYIgamduCiRODB2KsemubDX1ZPgsMRVsuwmN29jB1s0x-WG-4ntKUXD0FJsyKrVm_x4YOlIYQ0y-9iYLTmF8s6unRqBTaXjZxlGy4eU2qvO8PoRlr-qrOOpRpr-1JudiM9B?key=VReuh94fGGpJZLGsXsGdUQ)
 
-  
+#### 8. Tratar Requisitos Especiales
 
-8. Tratar Requisitos Especiales
-    
+Objetivo: Abordar cualquier requisito no considerado previamente, como los no funcionales, y utilizarlos para la implementación.
 
-Objetivo: Abordar requisitos no considerados previamente, incluyendo requisitos no funcionales.
+---
 
-Consideraciones:
+### Actividad: Diseño de un Subsistema
 
-- Estudiar requisitos en realizaciones de casos de uso.
-    
-- Utilizar mecanismos de diseño recomendados por el arquitecto.
-    
-- Posponer el tratamiento de algunos requisitos hasta la implementación si es necesario.
-    
+Objetivo: Asegurar que el subsistema sea lo
 
-#### Actividad: Diseño de un Subsistema
+suficientemente modular y fácil de implementar.
 
-Los objetivos del diseño de un subsistema son (véase la Figura 9.44):
+Pasos:
 
-- Garantizar que el subsistema es tan independiente como sea posible de otros subsistemas y/o de sus interfaces.
-    
-- Garantizar que el subsistema proporciona las interfaces correctas.
-    
-- Garantizar que el subsistema cumple su propósito de ofrecer una realización correcta de las operaciones tal y como se definen en las interfaces que proporciona.![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXevRAxTp2JVf-1stnbwKqT3gHuohzcK2RexddFlPRRNkxm-4lRuE3ldLJAbEw-ZVPUj9XG4tGC7QF3JJNe7UiXkonszBCiX6vIIjcjP5NS8faeih0bKCBJ_HpZdhIMfDMxHXMGeeg0E9zpJRfpLqjrl-MI9?key=VReuh94fGGpJZLGsXsGdUQ)
-    
-
-  
-  
-
-1. Mantenimiento de las Dependencias entre Subsistemas
-    
-
-Objetivo: Definir y mantener adecuadamente las dependencias entre subsistemas.
-
-Consideraciones:
-
-- Las dependencias deben establecerse en función de la asociación de elementos entre subsistemas.
-    
-- Si un subsistema proporciona interfaces, las dependencias deben declararse hacia esas interfaces, no hacia el subsistema en sí.
-    
-- Preferir la dependencia de interfaces, ya que permite mayor flexibilidad al cambiar subsistemas sin afectar la interfaz.
-    
-- Minimizar las dependencias entre subsistemas y/o interfaces, reubicando clases que sean excesivamente dependientes.
-    
-
-  
-
-2. Mantenimiento de Interfaces Proporcionadas por el Subsistema
-    
-
-Objetivo: Asegurar que las operaciones de las interfaces de un subsistema cumplan con todos los roles en diferentes realizaciones de casos de uso.
-
-Refinamiento:
-
-- Los ingenieros de componentes pueden necesitar refinar las interfaces a medida que el modelo de diseño evoluciona.
-    
-- Las mismas interfaces pueden ser utilizadas en varias realizaciones de casos de uso, aumentando así los requisitos sobre ellas.
-    
-
-Técnica: El mantenimiento de interfaces es similar al de las clases de diseño y sus operaciones.
-
-  
-
-3. Mantenimiento de los Contenidos de los Subsistemas
-    
-
-Objetivo: Asegurar que un subsistema cumpla correctamente con las operaciones descritas por sus interfaces.
-
-Aspectos Generales:
-
-- Por cada interfaz que proporciona un subsistema, debe haber clases de diseño u otros subsistemas que también ofrezcan esa interfaz.
-    
-- Para clarificar cómo se realizan las interfaces o casos de uso dentro de un subsistema, se pueden crear colaboraciones que justifiquen los elementos contenidos en él.
-    
-
-  
-
-### Resumen del Diseño
-
-El diseño de un sistema culmina en un modelo que preserva la estructura establecida por el modelo de análisis, sirviendo como guía para la implementación. Este modelo de diseño comprende varios elementos clave:
-
-1. Subsistemas del Diseño
-    
-
-Elementos: Incluye subsistemas de diseño, subsistemas de servicio, sus dependencias, interfaces y contenidos.
-
-Origen: Los subsistemas se derivan de los paquetes del análisis, y las dependencias se basan en las del análisis.
-
-Interfaces: Se generan a partir de las clases del análisis.
-
-  
-
-2. Clases del Diseño
-    
-
-Componentes: Incluye clases activas, operaciones, atributos y requisitos de implementación.
-
-Derivación: Las clases del diseño se obtienen de las clases del análisis relevantes para la arquitectura.
-
-  
-
-3. Realizaciones de Caso de Uso-Diseño
-    
-
-Descripción: Detallan cómo se diseñan los casos de uso mediante colaboraciones en el modelo de diseño.
-
-Especificaciones: Se basan en las realizaciones de caso de uso-análisis.
-
-  
-
-4. Vista Arquitectónica
-    
-
-Elementos Significativos: Identificación de elementos relevantes para la arquitectura del modelo de diseño, basados en el modelo de análisis.
-
-  
-
-5. Modelo de Despliegue
-    
-
-Descripción: Detalla las configuraciones de red para la implementación del sistema.
-
-Componentes: Incluye nodos, sus características y conexiones, así como la correspondencia inicial de clases activas sobre los nodos.
+1. Asignar tareas específicas a cada subsistema de diseño.
+2. Modularizar la implementación de clases o interfaces.
+3. Especificar el flujo de trabajo entre subsistemas.
