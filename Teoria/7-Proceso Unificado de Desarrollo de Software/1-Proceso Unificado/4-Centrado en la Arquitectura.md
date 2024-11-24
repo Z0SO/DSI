@@ -1,48 +1,67 @@
+## 2. Centrado en la Arquitectura
 
-### Definición de Arquitectura
-La arquitectura de software es el **conjunto de decisiones significativas** acerca de:
-- La **organización** de un sistema software.
-- La **selección de los elementos estructurales** que lo componen.
-- Las **interfaces** entre estos elementos.
-- Sus **comportamientos**, **colaboraciones** y **composición**.
+### ¿Qué es la Arquitectura?
 
-### Características Principales
-1. **Vistas múltiples**: Se describe mediante diferentes perspectivas, incluyendo:
-   - **Aspectos estáticos**: Estructura y organización.
-   - **Aspectos dinámicos**: Colaboración y comportamiento de los componentes.
-2. **Enfoque en elementos importantes**: Prioriza los componentes más relevantes desde el punto de vista arquitectónico.
-3. **Impacto multidimensional**:
-   - **Uso y funcionalidad**.
-   - **Rendimiento y flexibilidad**.
-   - **Reutilización y facilidad de comprensión**.
-   - **Restricciones económicas y tecnológicas**.
-   - **Estética del diseño**.
+La **arquitectura** de un sistema de software es el conjunto de decisiones significativas que se toman sobre:
 
-### Objetivos de la Arquitectura
-- **Comprender el sistema**: Facilitar una visión integral del sistema.
-- **Organizar el desarrollo**: Ayudar a coordinar equipos y procesos.
-- **Fomentar la reutilización**: Identificar elementos reutilizables.
-- **Hacer evolucionar el sistema**: Facilitar su adaptación a nuevos requisitos.
+- La **organización del sistema software**.
+- La **selección de los elementos estructurales** que componen el sistema y sus **interfaces**.
+- El **comportamiento** de los elementos estructurales y las **colaboraciones** entre ellos.
+- La **composición** de los elementos y su comportamiento en subsistemas progresivamente más grandes.
 
-![[Pasted image 20241123172752.png]]
-### Importancia de una Buena Arquitectura
-- Permite implementar los **casos de uso correctos** de manera **económica** y **eficaz**, tanto en el presente como en el futuro.
-- Establece una **línea base** al final de la fase de elaboración:
-  - A partir de esta línea base, los cambios deben ser mínimos y bien planificados.
+### Características de la Arquitectura
 
----
+La arquitectura de un sistema se describe mediante **diferentes vistas**, e incluye los aspectos más **significativos** tanto estáticos como dinámicos del sistema. Esta proporciona una **perspectiva completa** del sistema, basándose en los elementos más importantes desde un punto de vista arquitectónico.
 
-### Mantenimiento de la Arquitectura
-La descripción de la arquitectura debe mantenerse **actualizada** a lo largo de la vida del sistema, reflejando cambios y adiciones relevantes. Estos cambios suelen incluir:
-- **Identificación de nuevas clases abstractas e interfaces**.
-- **Adición de funcionalidad** a subsistemas existentes.
-- **Actualización de componentes reutilizables**.
-- **Reordenación de la estructura de procesos**.
+### Decisiones Importantes en la Arquitectura
 
-![[Pasted image 20241123172821.png]]
-### Nivel de Detalle
-- Aunque debe ser detallada en lo esencial, la arquitectura se representa como una **vista de alto nivel**:
-  - **Propósito**: Satisfacer las necesidades de todos los participantes del proyecto.
-  - **Descripción**: Una vista consolidada de los modelos del sistema en un momento específico.
+La arquitectura abarca decisiones cruciales sobre los siguientes aspectos:
 
-![[Pasted image 20241123172846.png]]
+- La **organización** general del sistema software.
+- Los **elementos estructurales** y sus **interfaces**, junto con sus comportamientos y colaboraciones.
+- La **composición** de estos elementos en subsistemas progresivos.
+- El **estilo arquitectónico** que guía la organización, colaboraciones y composición de los elementos.
+
+Sin embargo, la arquitectura no solo se ve influenciada por la estructura y el comportamiento, sino también por otros factores como:
+
+- El **uso** del sistema.
+- La **funcionalidad** requerida.
+- El **rendimiento**.
+- La **flexibilidad** y **reutilización**.
+- La **facilidad de comprensión**.
+- Las **restricciones** y compromisos **económicos y tecnológicos**.
+- La **estética** del sistema.
+
+### ¿Por qué Necesitamos una Arquitectura?
+
+La arquitectura es esencial para:
+
+- **Comprender el sistema** en su totalidad.
+- **Organizar el desarrollo** del sistema.
+- **Fomentar la reutilización** de componentes.
+- **Facilitar la evolución** del sistema a lo largo del tiempo.
+
+Una **buena arquitectura** nos permite obtener los **casos de uso correctos**, de manera económica, tanto en el presente como en el futuro.
+
+### Estableciendo la Arquitectura
+
+La arquitectura se **define** al establecer la **línea base** al final de la fase de **elaboración** del sistema. A partir de ese punto, los cambios a la arquitectura no deberían ser tan **significativos**.
+
+### Manteniendo Actualizada la Arquitectura
+
+Es crucial que la **descripción de la arquitectura** se mantenga **actualizada** a lo largo de la vida del sistema para reflejar los cambios y adiciones relevantes. Estos cambios son generalmente **secundarios** y pueden incluir:
+
+- La **identificación** de nuevas clases abstractas e interfaces.
+- La **adición de nueva funcionalidad** a los subsistemas existentes.
+- La **actualización** a nuevas versiones de los componentes reutilizables.
+- La **reorganización** de la estructura de procesos.
+
+![Imagen de Arquitectura 1](https://lh7-rt.googleusercontent.com/docsz/AD_4nXct-3Hg9gfiK1qBYV1h-VyR0m_r0IqhlIplwfNzxoSQKxkdbmUgUft806EX7fx6KLmlF8Sru69hM6TLd9dFUUyLu7zJ_W936rzXksNvjV1bVLPFurhoq1djU3HglVwpK9Rz3baIxW_bOz_cKtrGaYEWMze7?key=VReuh94fGGpJZLGsXsGdUQ)
+
+![Imagen de Arquitectura 2](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdZun_CTqu_F0ZQwNOk6zP_2Tc74e3zZiPYL_qFyVTkGYaxE65mwmc3TzcVALpLtow2EtfjQqVT-uZwEeniqnNgHHchdv-MfYj35HOu7bU1L6m7PlbgpDrP-X6YT_kL2Hy1drMDKtSco0eikAurwwcLJDQ?key=VReuh94fGGpJZLGsXsGdUQ)
+
+### Vista de Alto Nivel
+
+Aunque la descripción de la arquitectura es **detallada** en los aspectos necesarios, sigue siendo una **vista de alto nivel**. No se busca cubrir todos los detalles, sino representar **lo que cada participante necesita** conocer en un momento dado.
+
+La **descripción de la arquitectura** es una **vista** de todos los modelos del sistema en ese momento específico de su desarrollo.

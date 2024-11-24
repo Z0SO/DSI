@@ -1,74 +1,84 @@
-## Fase de Elaboración
-
-### Principales Objetivos
-1. **Comprender firmemente el problema**:
-   - Se espera desarrollar una arquitectura **ejecutable** que permita demostrar la funcionalidad al cliente.
-   - No es necesario que sea completamente usable en esta fase, pero debe mostrar las bases funcionales del sistema.
-2. **Establecer una base sólida de la arquitectura**:
-   - Crear un modelo que sirva como referencia para la construcción futura.
-3. **Planificar las iteraciones en detalle**:
-   - Preparar un plan exhaustivo para las fases siguientes (construcción y transición).
-4. **Eliminar mayores riesgos**:
-   - Los riesgos críticos deben ser mitigados, o al menos contar con un plan de contingencia.
-
-![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfsnAKCVjfKxRm_xVDU-m8C7rAx02XnJFJchwMDCw1hD_IhAy1oCUwfq8eyAoZInDeLYAsfywt4sh6Rg0l56dtDK9Setc8R3sE_QL1L6yx3m5vKGvlXywmr0scdX8CDtFCmA-1saEguYfVYJHaF7oLGLv4?key=VReuh94fGGpJZLGsXsGdUQ)
-
-![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcCv8OoHV-DtIXiALxZWEIqMRbhNN1z7Pw6VB2v09EdbZCA9L8CdSoORTgPchXtsxf6DOUqBIVCfnEH2GWaLic7Dhe-EjJk2aVWui7W3RbhvqrVg3zeAJoFkdlORNRNf_CQAJLY2FUTx2sk_oC-Hhxclps?key=VReuh94fGGpJZLGsXsGdUQ)
+Aquí tienes la versión más clara y organizada del contenido de la fase de elaboración, respetando los enlaces de las imágenes:
 
 ---
 
-### Actividades Clave
-- **El arquitecto**:
-  - Establece las prioridades de los casos de uso.
-  - Realiza actividades de análisis, diseño e implementación a nivel de arquitectura.
-- **Otros roles**:
-  - Diseñadores:
-    - Análisis de clases y paquetes.
-    - Diseño de clases y subsistemas.
-  - Ingenieros de pruebas:
-    - Construyen el entorno de pruebas.
-    - Prueban los componentes y la línea base completa que implementa los casos de uso clave desde el punto de vista arquitectónico.
+## FASE DE ELABORACIÓN
+
+### Principales Objetivos
+
+1. **Establecer una firme comprensión del problema**  
+    La arquitectura que se busca es una versión ejecutable del sistema, suficiente para demostrar la funcionalidad al cliente, aunque no esté completamente pulida ni usable.
+    
+2. **Establecer una base sólida de la arquitectura**  
+    Definir la estructura básica del sistema para asegurar su correcta implementación.
+    
+3. **Plan detallado de iteraciones**  
+    Definir cómo se desarrollará el sistema a lo largo de varias fases o iteraciones, asegurando la alineación con los objetivos del negocio.
+    
+4. **Eliminar los mayores riesgos**  
+    Durante esta fase, se trabajan en la mitigación de los riesgos más críticos, asegurando que si persisten, haya un plan de contingencia listo.
+    
+
+---
+
+### Imágenes Representativas
+
+**Evolución de la arquitectura:**
+
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXc-wOxgmC_H_O7oIHP_zl3ai3uvey5LcIIoIrB0XK-iun0cXrBD1W4GCxWYvHYw1OOc7sESfB4XQjHvHjUSgG3rM9JkjFPgstSTPuaFopS1ETZjdwJd5t7215wz7S6GdxKvuYIbRHuBDlkWwGQPMPeBz-8?key=VReuh94fGGpJZLGsXsGdUQ)
+
+**Definición y ajustes del modelo:**
+
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfbtb4tydt4QvPol_H-LNM0E0eedZDp6fseJaqi1-LjlKi8cta92eTvTu8wnD-gacKEc7rVHO6nnw8OPr1ZRBHFBpxENUicV2jx1CvoS8hMJ4FvZlfj2jd5pPnnRiPSjokVtAAiRUeiA0nOWzpvxm9h4r0?key=VReuh94fGGpJZLGsXsGdUQ)
+
+---
+
+### Actividades Principales
+
+- **Arquitectura y Priorización de Casos de Uso**  
+    El arquitecto se encarga de priorizar los casos de uso y realizar actividades de análisis y diseño a nivel arquitectónico.  
+    Además, se trabajan los análisis de clases y paquetes, el diseño de clases y subsistemas.
+    
+- **Pruebas y Validación**  
+    Los ingenieros de pruebas enfocan sus esfuerzos en construir el entorno de pruebas y probar los componentes clave del sistema desde la perspectiva de la arquitectura.
+    
 
 ---
 
 ### Principales Artefactos
-1. **Línea base de la arquitectura ejecutable**:
-   - Una versión funcional y demostrable del sistema basada en la arquitectura propuesta.
-2. **Modelo de negocio completo (en lo posible)**:
-   - Incluye el contexto del sistema y los beneficios asociados.
-3. **Modelos de casos de uso y análisis**:
-   - Hasta un **80% de avance en casos de uso y análisis**.
-   - Diseño: **10%**, suficiente para definir la arquitectura principal.
-4. **Plan de proyecto detallado**:
-   - Para las siguientes fases: construcción y transición.
-5. **Lista de riesgos actualizada**:
-   - Revisión y ajuste con respecto a los riesgos identificados en la fase anterior.
-6. **Análisis de negocio completo**:
-   - Consolidación de todos los aspectos relevantes desde una perspectiva empresarial.
+
+- **Línea base de la arquitectura ejecutable**  
+    Es la versión del sistema que se puede ejecutar para validar la funcionalidad central.
+    
+- **Modelo de negocio completo**  
+    Contextualiza el sistema y sus objetivos dentro del negocio.
+    
+- **Modelos de casos de uso y análisis (hasta 80%)**  
+    El diseño de la arquitectura se basa en los casos de uso y análisis realizados, mientras que el diseño se mantiene en un 10% para no perder el enfoque principal.
+    
+- **Plan de proyecto**  
+    Incluye las fases de construcción y transición del sistema, con una planificación detallada para la implementación.
+    
+- **Lista de riesgos actualizada**  
+    Refleja los riesgos mitigados y los nuevos riesgos identificados durante la fase de elaboración.
+    
 
 ---
 
-### Cierre de la Fase
-- La fase culmina con el **Hito “Arquitectura del Ciclo de Vida”**:
-  - Representa la definición completa de la arquitectura del sistema.
+### Fase de Finalización
 
-![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcVIM7v14sEP3SnkCXfqp9Bxi-mBFIa3O11KJoUfMvarbRq3XqxagPGHjW40tWWveliHVJjV7JXWv12mo2SjSlCgVXJmY4qdNmQoTpNCxZVIYyIzqcMU_RjEwTuh3jZUTDTGlVEgKXK9vYblTvJWs_2JdLZ?key=VReuh94fGGpJZLGsXsGdUQ)
+La fase de elaboración culmina con el **hito "Arquitectura del Ciclo de Vida"**, el cual marca la definición final de la arquitectura del sistema.
 
----
-
-## Análisis de Negocio
-
-### Propósito
-La razón principal para mitigar riesgos y desarrollar la línea base de la arquitectura es garantizar que el equipo esté listo para iniciar la **fase de construcción** con plena confianza de que:
-1. **El producto puede ser construido dentro de los límites del negocio**, considerando:
-   - **Planificación**: Esfuerzo y coste estimados para lograr una calidad aceptable.
-   - **Éxito económico**: Recuperación de la inversión u otras métricas de viabilidad económica.
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdv4ZHTfFGjH9GyPzBHWhy-0Uw9YWBxYNuX1cE58oQHYwkuKB4DL_T24Q1nIDEEs8cDS-k2keboIf6ObY3HeeTEDe0oWKEtbRMo-cV9gXntMJR2QQmhh67BEUCwtGnclRkpiP2fnPVmKMA1ZHW9njY2M7ug?key=VReuh94fGGpJZLGsXsGdUQ)
 
 ---
 
-### Progresión del Análisis de Negocio
-- Al final de la **fase de inicio**, las estimaciones iniciales pueden tener márgenes de error amplios, especialmente en proyectos grandes, complejos o novedosos.
-- Al final de la **fase de elaboración**, se han reducido significativamente estos márgenes, permitiendo:
-  - Preparar una **apuesta económica** más precisa.
-  - Ajustar el análisis de negocio dentro de los márgenes prácticos de la organización.
+### Análisis de Negocio
 
+Durante esta fase, el objetivo es reducir los riesgos y lograr una línea base de la arquitectura sólida, lo que permitirá que el equipo tenga la confianza necesaria para comenzar la fase de construcción. Es crucial que el proyecto se mantenga dentro de los límites de **planificación**, **esfuerzo** y **coste** estimados para alcanzar el éxito económico esperado.
+
+**Al final de la fase de inicio**, se realiza una evaluación amplia de los márgenes de error del análisis de negocio, especialmente en proyectos grandes o novedosos. Al concluir la fase de elaboración, los márgenes de error se han reducido significativamente, lo que permite un análisis de negocio más confiable y enfocado en la viabilidad económica del proyecto.
+
+---
+
+Esta versión organizada y clara tiene un formato visualmente agradable para facilitar el estudio, manteniendo los enlaces y proporcionando una estructura más comprensible.

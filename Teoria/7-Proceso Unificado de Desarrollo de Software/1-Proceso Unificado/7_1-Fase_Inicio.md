@@ -1,77 +1,57 @@
-## Fases
-
-### ¿Por qué iterativo e incremental?
-- **Razón principal**: Manejar el tiempo de forma efectiva mediante períodos cortos y manejables.
-- **División del problema**: Permite planificar mejor y mitigar riesgos.
-- **Fases**: Representan la primera división del tiempo en el proyecto, organizadas en períodos.
-
----
 
 ## Fase de Inicio
 
 ### Principales Objetivos
-1. **Definir el producto y los objetivos del proyecto**:
-   - Reflexionar sobre qué se debe hacer y cuáles son los objetivos a alcanzar.
-2. **Análisis de negocio**:
-   - **Identificar riesgos críticos**:
-     - Aquellos que ponen en peligro el proyecto entero.
-     - No todos los riesgos pueden ser mitigados por completo, pero se debe plantear un plan de contingencia.
-   - **Explorar soluciones y arquitecturas posibles**:
-     - Analizar candidatos viables.
-     - Responder preguntas clave:
-       - ¿La tecnología seleccionada (bases de datos, redes, etc.) es apropiada?
-       - ¿Es eficiente, fiable, tolerante a fallos, robusta y flexible al cambio?
-       - ¿Podrá evolucionar si se añaden nuevos requisitos?
-   - **Estudiar la factibilidad del proyecto**:
-     - Entender las grandes funciones del sistema.
-     - Evaluar las soluciones viables y preparar bocetos preliminares.
-     - Determinar si conviene desarrollar el proyecto o no.
 
-![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXe1izQgGvWJvuvk_xoBPr3DwPt5p8GFLkecxh6_A4yy5FnJpexI2i7ERzNNHLwq7BO7cMkvCNJpnzk0DHFG2Ar8dSVIvw2GWamn_BJC8tYw9nXbeBnJ7F1hSwlqfvViUcMVrfKr8SByjhhiDc87PmwZfkw?key=VReuh94fGGpJZLGsXsGdUQ)
+- **Describir el producto a desarrollar**: Se inicia con una visión clara de lo que se debe hacer y los objetivos que se deben alcanzar.
+    
+- **Análisis de negocio**  
+    ![Análisis de negocio](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcPocQvMecCbl5x3Z0ccJX0aeEhTjiL3UeDrk1S_RyxHUKGHSmdI4a97S5epRvCK0642ApEvweJsjKu0WTJ0JIl1dcsnYgM89CnaUUS8oDtexD58iqol7KXlwBOxu40rX3MwDbe8D62Sh2_iIhQRYLnqic?key=VReuh94fGGpJZLGsXsGdUQ)
+    
+- **Identificar riesgos importantes**: Se deben identificar los **riesgos críticos** que podrían poner en peligro el proyecto entero. Si bien algunos riesgos pueden no ser totalmente mitigados, es crucial contar con un plan de contingencia.
+    
+- **Explorar soluciones y arquitecturas posibles**:  
+    Se deben considerar posibles candidatos para la tecnología y arquitectura a utilizar, respondiendo preguntas como:
+    
+    - ¿Es la tecnología adecuada para la implementación (bases de datos, redes, etc.)?
+    - ¿Será eficiente, fiable y tolerante a fallos?
+    - ¿Podrá adaptarse a futuros cambios o requisitos adicionales?
+    - ¿Será robusta y escalable?
 
----
+**Estudio de factibilidad**: Esta fase implica estudiar si el proyecto conviene desarrollarlo. Se deben entender las grandes funciones del sistema, considerar las soluciones tecnológicas disponibles y hacer bocetos preliminares de arquitectura y funcionalidades.
 
 ### Principales Artefactos
-- **Artefactos**: 
-  - Información producida, cambiada o utilizada durante el desarrollo del sistema.
-  - Evolucionan a medida que avanza el proceso de desarrollo.
-  
-1. **Lista de características o *features***:
-   - Definen funcionalidades de alto nivel que se esperan del sistema futuro.
-   - Ejemplo: "Inscripción de alumnos", "Gestión de pagos".
-2. **Primera versión del Modelo de Negocio**:
-   - Contexto del sistema, beneficios esperados, y posibles implicaciones.
-3. **Principales requerimientos como Casos de Uso**:
-   - Lista detallada de los requerimientos clave.
-4. **Lista de riesgos**:
-   - Identificación inicial de los riesgos críticos.
-5. **Boceto de modelos para cada flujo**:
-   - Representaciones preliminares de posibles soluciones.
-6. **Boceto de la arquitectura**:
-   - Idea inicial de cómo será el sistema a nivel estructural.
-7. **Descripción de los objetivos del proyecto**:
-   - Qué se espera lograr en esta fase inicial.
-8. **Plan preliminar del proyecto**:
-   - Lista de características y planificación inicial. Todo es susceptible de cambios.
 
-![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeev5Oz1L9KQ3Xbb_psFFXU1TwF-fUZnmulmE0M7mGx1SHicUufeusoSXBZApUDIuWMnbc3evkWfP09LWorVhHYkZ26YyyS_rqYvOKyjcPIRF2rpn6-cdp_9xhcOeWXxsQv_z3rV3IyzPKpDtkTGCU-i24?key=VReuh94fGGpJZLGsXsGdUQ)
+Un **artefacto** es cualquier tipo de información creada o utilizada durante el proceso de desarrollo del sistema. Estos se producen y modifican constantemente a lo largo del proyecto.
 
----
+- **Lista de características (features)**: Son oraciones que definen funcionalidades clave del sistema. Estas características se pueden subdividir en funciones más específicas. Ejemplos:
+    
+    - Inscripción de alumnos
+    - Gestión de pagos
+- **Primera versión del Modelo de Negocio**: Descripción del contexto del sistema, beneficios potenciales, etc.
+    
+- **Principales requerimientos**: Detalle de los casos de uso que se espera que el sistema cubra.
+    
+- **Lista de riesgos**: Identificación de riesgos potenciales que podrían afectar el proyecto, con planes de mitigación.
+    
+- **Bocetos de la arquitectura**: Representaciones iniciales de cómo se estructurará el sistema.
+    
+- **Descripción de los objetivos del proyecto**: Resumen claro de los objetivos que se buscan alcanzar con el proyecto.
+    
+- **Plan preliminar del proyecto**: En esta fase, todo es un boceto y puede cambiar. Se incluyen aspectos como la lista de características y otros documentos de planificación.
+    
 
-### Cierre de la Fase
-- La fase finaliza con el **Hito “Objetivo del Ciclo de Vida”**:
-  - **Hito**: Punto de control donde se decide si el proyecto es factible para continuar.
-  - Preguntas clave:
-    - ¿Estamos listos para seguir?
-    - ¿Es factible continuar el desarrollo?
-  - Si no se cumplen las expectativas, el proyecto puede cancelarse.
-- **Importancia del Hito**:
-  - Es una decisión crítica tomada tanto por el equipo de desarrollo como por los financiadores del proyecto.
-  - Esta fase dura **días o semanas** debido a su importancia.
+### Hito Final de la Fase
 
----
+Esta fase concluye con el **hito "Objetivo del Ciclo de Vida"**, donde se toma la decisión de si continuar con el proyecto o no.
 
-### Enfoque de Actividades
-- La mayoría de las actividades en esta fase se centran en los **primeros flujos de trabajo**:
-  - **Requisitos**, **análisis** y **diseño**.
-- Actividades relacionadas con **implementación y pruebas** son mínimas en esta etapa.
+- **Hito**: Es un punto de control importante donde se evalúa si el proyecto es viable y si el equipo está listo para continuar. Si no es factible, el proyecto se cancela.
+    
+- **Duración de la fase**: Esta fase es crítica y puede durar desde días hasta semanas, ya que se toma una decisión importante sobre el futuro del proyecto. La decisión final es tomada por el equipo de desarrollo y los patrocinadores del proyecto.
+    
+
+### Actividades Principales
+
+La mayoría de las actividades de esta fase se concentran en los primeros flujos de trabajo, como los requisitos, análisis y diseño. Las actividades en los últimos flujos (como la implementación) son menos relevantes en esta fase inicial.
+
+![Flujos de trabajo](https://lh7-rt.googleusercontent.com/docsz/AD_4nXc50UCKnVITtruvWiG7wFaJf2vO9OHMYegVdJ9LCizCKwcoXh_27MKLnPVSjqWlG8Txmsp8Ie7Gl9R7sct_dLlNNsCjiZvRvzp1l2giIsYGZny4dLJoC4xM5iN4-pMevl353tnjay0sB8clvOiZrTYemAw?key=VReuh94fGGpJZLGsXsGdUQ)
