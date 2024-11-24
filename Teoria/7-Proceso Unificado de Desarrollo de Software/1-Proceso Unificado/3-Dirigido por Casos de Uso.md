@@ -1,3 +1,7 @@
+### Dirigido por Casos de Uso (CU)
+- **Caso de Uso (CU)**:  
+  Pieza de funcionalidad que ofrece valor al usuario, representando **requisitos funcionales**.  
+  **Modelo de CU**: Conjunto de todos los casos de uso.
 
 ## 1. Dirigido por Caso de Uso
 
@@ -33,3 +37,5 @@ Un **Caso de Uso (CU)** es una **pieza de funcionalidad** que ofrece **valor al 
 ![Imagen de Casos de Uso 1](https://lh7-rt.googleusercontent.com/docsz/AD_4nXciKPOPPRvgHD32FRpOkR7xQzO5Ya0iaCUao2iQLtujhcqDwr6oB8vNsZ-BnQF2FkSPHzg6o1TK8UeuiIRCFd5W6kplEvP-meI7Ol8G4qcFy12ByR_eY3CZ9QD53DJXy92Sr17QCN1IPEQvZRUOsH0zS2im?key=VReuh94fGGpJZLGsXsGdUQ)
 
 ![Imagen de Casos de Uso 2](https://lh7-rt.googleusercontent.com/docsz/AD_4nXc8hlBJKodnAgbI5x5y91hyboh0JRxGCxyDhPkdVLXn86qIBe-T5Rnw5yh7209dUmyyOld7nZO0_vbpyBJW2IDaX4V3Perm4tHbkeMuxuQOiwbJaBzBd9xz6duq310Bka5AxwHAmb3QFtvPdUiLdcdHi6bC?key=VReuh94fGGpJZLGsXsGdUQ)
+![[Pasted image 20241123172711.png]]
+
