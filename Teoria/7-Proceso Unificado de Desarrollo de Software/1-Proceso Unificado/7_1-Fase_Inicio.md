@@ -22,7 +22,7 @@
 
 ### Principales Artefactos
 
-Un **artefacto** es cualquier tipo de información creada o utilizada durante el proceso de desarrollo del sistema. Estos se producen y modifican constantemente a lo largo del proyecto.
+Un **artefacto** es **cualquier tipo de información** creada o utilizada durante el proceso de desarrollo del sistema. Estos se producen y modifican constantemente a lo largo del proyecto.
 
 - **Lista de características (features)**: Son oraciones que definen funcionalidades clave del sistema. Estas características se pueden subdividir en funciones más específicas. Ejemplos:
     
