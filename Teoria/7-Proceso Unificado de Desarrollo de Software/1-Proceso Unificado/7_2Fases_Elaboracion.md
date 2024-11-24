@@ -1,13 +1,11 @@
-Aquí tienes la versión más clara y organizada del contenido de la fase de elaboración, respetando los enlaces de las imágenes:
 
 ---
-
 ## FASE DE ELABORACIÓN
 
 ### Principales Objetivos
 
 1. **Establecer una firme comprensión del problema**  
-    La arquitectura que se busca es una versión ejecutable del sistema, suficiente para demostrar la funcionalidad al cliente, aunque no esté completamente pulida ni usable.
+    La arquitectura que se busca es una **versión ejecutable del sistema**, *suficiente para demostrar la funcionalidad al cliente*, aunque no esté completamente pulida ni usable.
     
 2. **Establecer una base sólida de la arquitectura**  
     Definir la estructura básica del sistema para asegurar su correcta implementación.
