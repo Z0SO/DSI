@@ -1,67 +1,46 @@
+
 ## Fase de Construcción
 
-### Transición del Proyecto
-- Al pasar de la **fase de elaboración** a la **fase de construcción**, se produce un cambio en el enfoque:
-  - **Inicio y elaboración**: Investigación y acumulación de conocimiento básico.
-  - **Construcción**: Desarrollo del producto dentro de parámetros definidos de **coste**, **esfuerzo** y **agenda**.
-- Durante esta fase:
-  - La arquitectura se mantiene estable y solo se actualiza si es necesario.
-  - Aunque los riesgos críticos y significativos ya han sido mitigados, pueden surgir nuevos riesgos o cambiar el impacto de los existentes.
+En la transición de la fase de _elaboración_ a la de _construcción_, el enfoque del proyecto cambia. Mientras que las fases anteriores se enfocan en la investigación y en la acumulación de conocimientos básicos, esta fase se centra en el desarrollo del sistema o producto, dentro de los parámetros de coste, esfuerzo y agenda.
+
+La fase de construcción va más allá de la arquitectura. Si bien la arquitectura se deja como está, puede ser actualizada si es necesario. A pesar de que los riesgos más críticos han sido mitigados en fases anteriores, durante la fase de construcción surgirán nuevos riesgos a medida que el sistema se desarrolle y sea probado por los usuarios.
 
 ---
 
 ### Principales Objetivos
-1. **Desarrollar el producto**:
-   - Producir una versión **BETA** funcional.
-2. **Implementar todos los casos de uso**:
-   - Completar el desarrollo funcional basado en la arquitectura definida.
+
+- **Desarrollar el Producto (Versión Beta)**
+- **Desarrollo de todos los casos de uso**
 
 ---
 
 ### Asignación de Trabajo
-- La **línea base de la arquitectura** sirve como referencia principal.
-- **Responsabilidad por subsistemas**:
-  - Cada subsistema se asigna a un desarrollador (ingeniero de componentes).
-  - El responsable de un subsistema también se encarga de las clases relacionadas con ese subsistema.
+
+La línea base de la arquitectura, junto con la representación de subsistemas e interfaces, sirve como base para dividir el trabajo. Cada subsistema es asignado a un desarrollador, quien será responsable de la ingeniería de componentes dentro de su subsistema. Este desarrollador también es responsable de las clases correspondientes a ese subsistema.
 
 ---
 
 ### Principales Artefactos
-1. **Software ejecutable**:
-   - Representa la **capacidad operativa inicial** del sistema.
-2. **Casos de prueba**:
-   - Diseñados para validar las funcionalidades implementadas.
-3. **Manuales del usuario**:
-   - Documentación suficiente para acompañar la versión **BETA**.
-4. **Plan de la fase de transición**:
-   - Estrategia para llevar el producto al entorno de producción.
-5. **Modelos completos**:
-   - Finalización de modelos (aunque pueden agregarse detalles en fases posteriores).
-6. **Descripción de la arquitectura actualizada**:
-   - Documentación de la arquitectura final con ajustes realizados.
-7. **Análisis de negocio actualizado**:
-   - Incluye métricas y ajustes basados en el progreso real del proyecto.
+
+- **Software ejecutable** (capacidad operativa inicial)
+- **Casos de prueba**
+- **Manuales del usuario** (suficientes para la versión Beta)
+- **Plan de transición**
+- **Modelos completos** (pueden agregarse en la fase posterior)
+- **Descripción de la arquitectura (ARQ)**
+- **Análisis de negocio actual**
 
 ---
 
-### Finalización de la Fase
-- La fase culmina con el **Hito “Capacidad Operativa Inicial”**:
-  - Representa la entrega de la versión **BETA**.
-  - El hito se alcanza tras evaluar los resultados de las pruebas del sistema al final de la última iteración.
+### Finaliza con
 
-![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXc8PgUf4AMvlq38ggwjngqyeehZLnb5KEN2JRdrP_FcJb5h4jip9qfoHUkKyQc8ug-5dL_NFgOXecqhC-MGhC33IGu4xk8oe8oyyIEhKX9AHJdCMoqFThbZPWC03GRoIxCF0T2nQ8G4ZmqBTae8eVHjHcs?key=VReuh94fGGpJZLGsXsGdUQ)
+- **Hito "Capacidad Operativa Inicial" → Versión Beta**, que se consigue al evaluar los resultados de las pruebas del sistema al final de la última iteración.
+
+![Imagen Fase de Construcción](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdeyhK4jjesqfaLRvR5NAvf1tsccZ_w2vsJrlY2S0jDoxGxMdDuBjlJyZyaDQDVp2GXpnpHj-YYmuuzVsYnNrhclvaIH_buPCPnOw1oAgmmBpoVY9Eme-53RgFdSN-3LUlqJDUL7QcvemWirpPwnK2pou8?key=VReuh94fGGpJZLGsXsGdUQ)
+
 ---
 
-## Análisis de Negocio en la Fase de Construcción
+### Análisis de Negocio
 
-### Propósito
-- **Guía para el jefe de proyecto e inversores** durante la fase de construcción.
-- Permite comparar el **progreso real** al final de cada iteración con las métricas planificadas.
-
-### Métricas a Revisar
-- Productividad del proyecto.
-- Cantidad de código desarrollado.
-- Tamaño de la base de datos.
-- Costes y esfuerzo empleados.
-- Cumplimiento de la agenda.
+Uno de los principales objetivos de esta fase es guiar al jefe de proyecto y a los inversores en la ejecución de la fase de construcción. El jefe de proyecto comparará el progreso real al final de cada iteración con la agenda, esfuerzo y costes planificados. Además, revisará métricas como la productividad del proyecto, cantidad de código desarrollado, tamaño de la base de datos, entre otras.
 

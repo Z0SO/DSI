@@ -1,94 +1,71 @@
 ## Fase de Transición
 
-### Propósito General
-- Extender y finalizar el producto desarrollado en la fase de construcción.
-- **Entrega del producto final** al cliente.
+La fase de transición se enfoca en extender lo que ya se ha logrado en las fases anteriores. En esta etapa, se busca entregar el producto final.
 
 ---
 
 ### Principales Objetivos
-1. **Puesta en producción** de la versión beta.
-2. Incorporación de casos de uso adicionales:
-   - **No fundamentales**, pero que mejoren la experiencia del usuario.
-3. **Corrección y adecuación**:
-   - Resolver defectos detectados en la versión beta.
-   - Realizar ajustes y extensiones para satisfacer los requisitos de los usuarios.
-4. **Satisfacción del cliente**:
-   - Cumplir con los requisitos hasta lograr la conformidad total del cliente.
+
+- **Puesta en producción de la versión beta.**
+- **Agregar casos de uso adicionales** (no fundamentales).
+- **Correcciones, adecuaciones y extensiones.**
+- **Cumplir con los requisitos hasta lograr la satisfacción del usuario.** Esto incluye la corrección de defectos reportados durante la versión beta.
 
 ---
 
 ### Actividades de la Fase
-1. **Preparación de la versión beta**:
-   - Derivada de la capacidad operativa inicial.
-2. **Instalación en entornos definidos**:
-   - Migración de datos desde sistemas anteriores.
-   - Configuración y actividades relacionadas en los lugares seleccionados.
-3. **Actuación basada en pruebas**:
-   - Revisión de la información recogida en las instalaciones de prueba.
-   - Adaptación del producto a las circunstancias del usuario.
-4. **Completar los artefactos del proyecto**.
-5. **Determinación del fin del proyecto**:
-   - La fase termina cuando:
-     - El cliente queda satisfecho.
-     - La responsabilidad del mantenimiento es transferida a una organización de soporte.
+
+Durante esta fase, se llevan a cabo diversas actividades de transición, organizadas en las siguientes líneas:
+
+1. **Preparación de la versión beta** (o de pruebas de aceptación), utilizando la versión con capacidad operativa inicial producida en la fase de construcción.
+2. **Instalación de la versión** en los lugares elegidos, incluyendo actividades relacionadas como la migración de datos desde el sistema anterior.
+3. **Monitoreo de la información recogida** en las instalaciones de pruebas.
+4. **Adaptación del producto corregido** a las circunstancias y necesidades de los usuarios.
+5. **Finalización de los artefactos del proyecto.**
+6. **Determinación del fin del proyecto.** La fase de transición concluye no cuando todas las tareas están completadas, sino cuando el cliente queda "satisfecho". El proyecto se considerará terminado cuando la responsabilidad del mantenimiento pase a una organización de soporte.
 
 ---
 
 ### Principales Artefactos
-1. **Software ejecutable**:
-   - Versión final, corregida y completa.
-2. **Documentos legales**:
-   - Contratos, licencias, renuncias de derechos y garantías.
-3. **Línea base de la versión final**:
-   - Modelos del sistema actualizados y completos.
-4. **Descripción completa de la arquitectura**.
-5. **Manuales y material de formación**:
-   - Documentos para:
-     - Usuarios finales.
-     - Operadores.
-     - Administradores del sistema.
-6. **Referencias de ayuda al cliente**:
-   - Recursos disponibles para obtener más información.
-   - Procedimientos para reportar defectos.
-   - Información sobre defectos conocidos y actualizaciones.
+
+- **Software ejecutable** (versión final).
+- **Documentos legales**, como contratos, licencias, renuncias de derechos y garantías.
+- **Versión completa y corregida** de la línea base del producto, que incluye todos los modelos del sistema.
+- **Descripción completa y actualizada** de la arquitectura.
+- **Manuales y material de formación** para el usuario final, el operador y el administrador del sistema.
+- **Referencias de ayuda** para el cliente, que incluyen información sobre cómo reportar defectos, encontrar actualizaciones y buscar más información.
 
 ---
 
-### Finalización de la Fase
-- La fase concluye con el **Hito “Lanzamiento del Producto”**:
-  - Se formaliza un acuerdo con el cliente.
+### Finaliza con
+
+- **Hito "Lanzamiento del Producto"**: Acordado con el cliente.
 
 ---
 
-## Análisis de Negocio en la Fase de Transición
+### Análisis del Negocio
 
-### Propósito
-- El análisis de negocio concluye junto con el proyecto desde el punto de vista presupuestario.
-- Evaluación del proyecto basada en:
-  1. **Tiempo**, **esfuerzo** y **costes**.
-  2. **Porcentajes de defectos** y métricas adicionales.
+Al final de esta fase, se realiza un análisis del proyecto en términos presupuestarios y de resultados. El jefe de proyecto convocará a un grupo para revisar varias métricas, tales como:
 
-### Acciones del Jefe de Proyecto
-- Convocar un grupo de revisión para:
-  - Confirmar si se alcanzaron los objetivos.
-  - Identificar razones por las que no se cumplieron objetivos, si aplica.
-- Incorporar las métricas del proyecto en la base de datos de la empresa.
+- **Tiempo** invertido, **personas-hora**, **coste** y **porcentaje de defectos**.
+- Se evaluará si el proyecto ha alcanzado los **objetivos planeados** o si no lo ha logrado, analizando las razones.
+- Las métricas del proyecto se añadirán a la base de datos de métricas de la empresa para su uso futuro.
 
-### Información Recogida de los Usuarios
-- Evaluar si el sistema cumple con los requisitos del negocio y las demandas de los usuarios.
-- Detectar riesgos inesperados.
-- Identificar problemas no resueltos y fallos.
-- Eliminar ambigüedades y lagunas en la documentación de usuario.
-- Identificar áreas donde los usuarios necesitan más información o formación.
+El proyecto también recibirá retroalimentación de los usuarios, lo que permitirá:
+
+- Verificar si el sistema cumple con las demandas de los usuarios y las necesidades del negocio.
+- Detectar **riesgos inesperados**.
+- Identificar problemas **no resueltos**.
+- **Encontrar fallos** y corregirlos.
+- Eliminar ambigüedades y lagunas en la **documentación del usuario**.
+- Centrar esfuerzos en áreas donde los usuarios necesiten más **información** o **formación**.
 
 ---
 
-## Flujos de Trabajo en la Fase de Transición
+### Flujos de Trabajo
 
-### Actividad Baja
-- La mayor parte del trabajo se completó en la **fase de construcción**.
-- Actividades restantes:
-  - **Corrección de problemas** encontrados en pruebas.
-  - **Mejoras menores de última hora**.
+En esta fase, la actividad en los flujos de trabajo es **baja**, ya que la mayor parte del trabajo ya se completó durante la fase de construcción. La actividad en la fase de transición se limita a:
+
+- Corregir problemas detectados durante las pruebas en el entorno del usuario.
+- Realizar **mejoras menores** de última hora.
 
