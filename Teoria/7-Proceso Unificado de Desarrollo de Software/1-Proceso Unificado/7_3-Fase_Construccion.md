@@ -1,7 +1,7 @@
 
 ## Fase de Construcción
 
-En la transición de la fase de _elaboración_ a la de _construcción_, el enfoque del proyecto cambia. Mientras que las fases anteriores se enfocan en la investigación y en la acumulación de conocimientos básicos, esta fase se centra en el desarrollo del sistema o producto, dentro de los parámetros de coste, esfuerzo y agenda.
+En la transición de la fase de _elaboración_ a la de _construcción_, el enfoque del proyecto cambia. Mientras que **las fases anteriores se enfocan en la investigación y en la acumulación de conocimientos básicos**, esta fase se centra en el desarrollo del sistema o producto, dentro de los parámetros de coste, esfuerzo y agenda.
 
 La fase de construcción va más allá de la arquitectura. Si bien la arquitectura se deja como está, puede ser actualizada si es necesario. A pesar de que los riesgos más críticos han sido mitigados en fases anteriores, durante la fase de construcción surgirán nuevos riesgos a medida que el sistema se desarrolle y sea probado por los usuarios.
 
@@ -16,7 +16,9 @@ La fase de construcción va más allá de la arquitectura. Si bien la arquitectu
 
 ### Asignación de Trabajo
 
-La línea base de la arquitectura, junto con la representación de subsistemas e interfaces, sirve como base para dividir el trabajo. Cada subsistema es asignado a un desarrollador, quien será responsable de la ingeniería de componentes dentro de su subsistema. Este desarrollador también es responsable de las clases correspondientes a ese subsistema.
+La línea base de la **arquitectura**, junto con la representación de **subsistemas e interfaces**, sirve como base para dividir el trabajo. 
+
+Cada subsistema es asignado a un desarrollador, quien será responsable de la ingeniería de componentes dentro de su subsistema. Este desarrollador también es responsable de las clases correspondientes a ese subsistema.
 
 ---
 

@@ -7,8 +7,8 @@
 1. **Establecer una firme comprensión del problema**  
     La arquitectura que se busca es una **versión ejecutable del sistema**, *suficiente para demostrar la funcionalidad al cliente*, aunque no esté completamente pulida ni usable.
     
-2. **Establecer una base sólida de la arquitectura**  
-    Definir la estructura básica del sistema para asegurar su correcta implementación.
+2. **Establecer la base sólida de la arquitectura**  
+    Definir la **estructura básica** del sistema para asegurar su correcta implementación.
     
 3. **Plan detallado de iteraciones**  
     Definir cómo se desarrollará el sistema a lo largo de varias fases o iteraciones, asegurando la alineación con los objetivos del negocio.
@@ -34,7 +34,7 @@
 ### Actividades Principales
 
 - **Arquitectura y Priorización de Casos de Uso**  
-    El arquitecto se encarga de priorizar los casos de uso y realizar actividades de análisis y diseño a nivel arquitectónico.  
+    **El arquitecto** se encarga de priorizar los casos de uso y realizar actividades de análisis y diseño a nivel arquitectónico.  
     Además, se trabajan los análisis de clases y paquetes, el diseño de clases y subsistemas.
     
 - **Pruebas y Validación**  
@@ -75,8 +75,4 @@ La fase de elaboración culmina con el **hito "Arquitectura del Ciclo de Vida"**
 
 Durante esta fase, el objetivo es reducir los riesgos y lograr una línea base de la arquitectura sólida, lo que permitirá que el equipo tenga la confianza necesaria para comenzar la fase de construcción. Es crucial que el proyecto se mantenga dentro de los límites de **planificación**, **esfuerzo** y **coste** estimados para alcanzar el éxito económico esperado.
 
-**Al final de la fase de inicio**, se realiza una evaluación amplia de los márgenes de error del análisis de negocio, especialmente en proyectos grandes o novedosos. Al concluir la fase de elaboración, los márgenes de error se han reducido significativamente, lo que permite un análisis de negocio más confiable y enfocado en la viabilidad económica del proyecto.
-
----
-
-Esta versión organizada y clara tiene un formato visualmente agradable para facilitar el estudio, manteniendo los enlaces y proporcionando una estructura más comprensible.
+**Al final de la fase de inicio**, se realiza una evaluación amplia de los márgenes de error del análisis de negocio, especialmente en proyectos grandes o novedosos. Al concluir la fase de elaboración, *los márgenes de error se han reducido significativamente*, lo que permite un análisis de negocio **más confiable y enfocado** en la viabilidad económica del proyecto.
