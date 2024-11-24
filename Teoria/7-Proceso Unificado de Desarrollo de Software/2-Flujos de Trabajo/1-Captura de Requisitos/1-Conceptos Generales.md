@@ -1,6 +1,6 @@
 ### ¿QUÉ ES?
 
-Es el proceso de averiguar lo que se debe construir. De hecho, es tan difícil que todavía no es poco común para los equipos de proyecto comenzar a escribir código (lo cual es bastante fácil) antes de haber definido claramente lo que debe hacer ese código (lo cual es difícil de determinar).
+Es el proceso de **averiguar lo que se debe construir**. De hecho, es tan difícil que todavía no es poco común para los equipos de proyecto comenzar a escribir código (lo cual es bastante fácil) antes de haber definido claramente lo que debe hacer ese código (lo cual es difícil de determinar).
 
 **Objeto**: Guiar el desarrollo a un sistema correcto.
 
