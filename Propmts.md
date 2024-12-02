@@ -21,3 +21,7 @@ haz lo mismo que hiciste anteriormente. aclara conceptos para estudiar mas facil
 
 """
 ```
+
+```md
+haz mas sencillo de entender esto respetando las posiciones de las imagenes tambien
+```
